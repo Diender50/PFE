@@ -1,0 +1,224 @@
+\glsdefs@newdocentry{vec}%
+{%
+name={\acronymfont {\glsentryshort {vec}}},%
+sort={VEC},%
+type={acronym},%
+first={VEC},%
+firstplural={VECs},%
+text={VEC},%
+plural={VECs},%
+description={Vitrages extérieurs collés},%
+descriptionplural={Vitrages extérieurs collés},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Vitrages extérieurs collés},%
+longplural={Vitrages extérieurs colléss},%
+short={VEC},%
+shortplural={VECs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{cstb}%
+{%
+name={\acronymfont {\glsentryshort {cstb}}},%
+sort={CSTB},%
+type={acronym},%
+first={CSTB},%
+firstplural={CSTBs},%
+text={CSTB},%
+plural={CSTBs},%
+description={Centre Scientifique et Technique du Bâtiment},%
+descriptionplural={Centre Scientifique et Technique du Bâtiment},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Centre Scientifique et Technique du Bâtiment},%
+longplural={Centre Scientifique et Technique du Bâtiments},%
+short={CSTB},%
+shortplural={CSTBs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{dtu}%
+{%
+name={\acronymfont {\glsentryshort {dtu}}},%
+sort={DTU},%
+type={acronym},%
+first={DTU},%
+firstplural={DTUs},%
+text={DTU},%
+plural={DTUs},%
+description={Document Technique Unifié},%
+descriptionplural={Document Technique Unifié},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Document Technique Unifié},%
+longplural={Document Technique Unifiés},%
+short={DTU},%
+shortplural={DTUs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{pvb}%
+{%
+name={\acronymfont {\glsentryshort {pvb}}},%
+sort={PVB},%
+type={acronym},%
+first={PVB},%
+firstplural={PVBs},%
+text={PVB},%
+plural={PVBs},%
+description={Polybutyral vinylique (feuille intercalaire liant plusieurs couches de verre entre elles dans un vitrage feuilleté)},%
+descriptionplural={Polybutyral vinylique (feuille intercalaire liant plusieurs couches de verre entre elles dans un vitrage feuilleté)},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Polybutyral vinylique (feuille intercalaire liant plusieurs couches de verre entre elles dans un vitrage feuilleté)},%
+longplural={Polybutyral vinylique (feuille intercalaire liant plusieurs couches de verre entre elles dans un vitrage feuilleté)s},%
+short={PVB},%
+shortplural={PVBs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{sgp}%
+{%
+name={\acronymfont {\glsentryshort {sgp}}},%
+sort={SGP},%
+type={acronym},%
+first={SGP},%
+firstplural={SGPs},%
+text={SGP},%
+plural={SGPs},%
+description={SentryGlas® interlayer (feuille intercalaire liant plusieurs couches de verre entre elles dans un vitrage feuilleté)},%
+descriptionplural={SentryGlas® interlayer (feuille intercalaire liant plusieurs couches de verre entre elles dans un vitrage feuilleté)},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={SentryGlas® interlayer (feuille intercalaire liant plusieurs couches de verre entre elles dans un vitrage feuilleté)},%
+longplural={SentryGlas® interlayer (feuille intercalaire liant plusieurs couches de verre entre elles dans un vitrage feuilleté)s},%
+short={SGP},%
+shortplural={SGPs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{FEM}%
+{%
+name={\acronymfont {\glsentryshort {FEM}}},%
+sort={FEM},%
+type={acronym},%
+first={FEM},%
+firstplural={FEMs},%
+text={FEM},%
+plural={FEMs},%
+description={Finite Element Method (Méthode des éléments finis)},%
+descriptionplural={Finite Element Method (Méthode des éléments finis)},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Finite Element Method (Méthode des éléments finis)},%
+longplural={Finite Element Method (Méthode des éléments finis)s},%
+short={FEM},%
+shortplural={FEMs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{ELU}%
+{%
+name={\acronymfont {\glsentryshort {ELU}}},%
+sort={ELU},%
+type={acronym},%
+first={ELU},%
+firstplural={ELUs},%
+text={ELU},%
+plural={ELUs},%
+description={État Limite Ultime},%
+descriptionplural={État Limite Ultime},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={État Limite Ultime},%
+longplural={État Limite Ultimes},%
+short={ELU},%
+shortplural={ELUs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{ELS}%
+{%
+name={\acronymfont {\glsentryshort {ELS}}},%
+sort={ELS},%
+type={acronym},%
+first={ELS},%
+firstplural={ELSs},%
+text={ELS},%
+plural={ELSs},%
+description={État Limite de Service},%
+descriptionplural={État Limite de Service},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={État Limite de Service},%
+longplural={État Limite de Services},%
+short={ELS},%
+shortplural={ELSs},%
+counter={page},%
+parent={},%
+%
+}%
+

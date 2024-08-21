@@ -1,0 +1,481 @@
+\documentclass[11pt,titlepage]{article}
+
+\usepackage{packages}
+\addbibresource{bib/Biblio.bib}
+\selectlanguage{french}
+
+\begin{document}
+\renewcommand{\headrulewidth}{0pt}
+
+\pagestyle{fancy}
+%... then configure it.
+\fancyhead{} % clear all header fields
+\fancyhead[L]{École Nationale des Ponts et Chaussées - Projet de Fin d'Études}
+\fancyfoot{} % clear all footer fields
+\fancyfoot[R]{\thepage}
+\fancyfoot[L]{ROUDNINSKI Samuel - Département Génie Civil et Construction}
+
+\begin{titlepage}
+\center
+\includegraphics[scale=0.5]{img/logo/logo_enpc.png}
+\\[0.25cm]
+{\large 2024}
+\\[0.75cm]
+{\LARGE \bfseries Projet de Fin d'Etudes}
+\\[1cm]
+{\Large Département Génie Civil et Construction}
+\\[1cm]
+{\Large Samuel ROUDNINSKI}
+\\[0.5cm]
+{\Large Élève ingénieur, double-diplôme d'architecture}
+\\[1cm]
+{\Large Tuteur professionnel: Robert JAN VAN SANTEN}
+\\[1cm]
+{\Large Tuteur académique: Jorge HIDALGO}
+\\[1cm]
+{\huge \bfseries Titre du rapport}
+\\[1cm]
+{\Large Rapport non confidentiel}
+\\[1.5cm]
+{ Stage réalisé au sein de VS-A.HK}
+\\[0.25cm]
+{W2, 9/F, 93 Bedford Road, Tai Kok Tsui, Kowloon, Hong Kong SAR, China}
+\\[0.25cm]
+{ 18 mars 2024 - 18 septembre 2024}
+\end{titlepage}
+
+\def\abstract{
+   \vfil
+\begin{center}%
+{\bfseries \abstractname\vspace{-.5em}}%
+\end{center}
+\quotation
+}
+
+\def\endabstract{\par
+\endquotation
+}
+\newpage
+ 
+\section*{Remerciements}
+
+
+\newpage
+ 
+\section*{Résumé}
+
+Insérez votre résumé en français.
+Le résumé comprend 3 parties (contexte, missions et objectifs, résumé). L’ensemble doit faire 2600 signes maximum en comptant les espaces. La partie ‘résumé’ doit être plus longue que les 2 parties précédentes.
+N’oubliez pas d’effacer ce texte quand vous n’en aurez plus besoin.
+
+Mots-clés : 5 mots-clés
+
+\newpage
+ 
+\section*{Abstract}
+Insérez votre résumé en anglais.
+Le résumé comprend 3 parties (context, missions and goals, abstract). L’ensemble doit faire 2600 signes maximum en comptant les espaces. La partie ‘résumé’ doit être plus longue que les 2 parties précédentes.
+Vous pouvez corriger votre abstract en anglais avec Writefull ou Grammarly.
+N’oubliez pas d’effacer ce texte quand vous n’en aurez plus besoin.
+
+Keywords: 5 keywords
+
+\newpage
+
+\renewcommand{\baselinestretch}{1.0}\normalsize
+\tableofcontents
+\renewcommand{\baselinestretch}{1.15}\normalsize
+
+\newpage
+ 
+\listoffigures
+\newpage
+ 
+\listoftables
+\newpage
+
+\newacronym{vec}{VEC}{Vitrages extérieurs collés}
+\newacronym{cstb}{CSTB}{Centre Scientifique et Technique du Bâtiment}
+\newacronym{dtu}{DTU}{Document Technique Unifié}
+\newacronym{pvb}{PVB}{Polybutyral vinylique (feuille intercalaire liant plusieurs couches de verre entre elles dans un vitrage feuilleté)}
+\newacronym{sgp}{SGP}{SentryGlas® interlayer (feuille intercalaire liant plusieurs couches de verre entre elles dans un vitrage feuilleté)}
+\newacronym{FEM}{FEM}{Finite Element Method (Méthode des éléments finis)}
+\newacronym{ELU}{ELU}{État Limite Ultime}
+\newacronym{ELS}{ELS}{État Limite de Service}
+
+\printglossary[type=\acronymtype,title=Liste des abréviations]
+\newpage
+\section{Introduction}
+
+\subsection{Contexte}
+
+\subsection{Problématique et objectifs}
+\subsection{Plan du mémoire}
+\newpage
+\section{Le verre}
+\subsection{Le verre dans l'architecture et la construction}
+\subsection{Propriétés mécaniques du verre}
+\subsubsection{Chimie du verre}
+\subsubsection{Comportement du verre}
+\subsection{Fabrication et traitement du verre}
+\subsubsection{Méthodes de fabrication}
+\subsubsection{Traitement du verre}
+\subsection{Le verre dans les façades}
+\subsubsection{Verre monolithique}
+\subsubsection{Verre feuilleté}
+\paragraph{Le \acrshort{pvb}}
+blabla
+\paragraph{Le \acrshort{sgp}}
+\subsubsection{Verre isolant}
+\newpage
+\section{Le calcul du verre dans les normes}
+\subsection{Détermination des charges}
+\subsection{Calcul analytique du verre}
+\subsubsection{Méthode simplifiée}
+DTU39: $P = \qty{3000}{\pascal}$
+\begin{align}
+    t_1 = \frac{L \cdot \sqrt{P}}{6.3} = \qty{86.94}{\milli\meter}
+\end{align}
+$c=1$, $\varepsilon_3 = 0.8$, $\varepsilon_3 = 0.61$
+\begin{align}
+    t_R &= \frac{t}{\varepsilon_3} \geq t_1 =  \qty{86.94}{\milli\meter}\\ 
+    t_{\text{durci}} &= 0.8\cdot \qty{86.94}{\milli\meter}= \qty{70}{\milli\meter}\\
+    t_{\text{trempé}} &= 0.61 \cdot \qty{86.94}{\milli\meter} = \qty{54}{\milli\meter}
+\end{align}
+FD-P78 => méthode poutre
+\begin{align}
+    \sigma_{\text{max}} &= 0.75\left (\frac{L}{t}\right)^2 P \\
+    t &= \sqrt{0.75\frac{L^2}{\sigma_{\text{max}}}P}\\
+     t_{\text{durci}} &= \qty{71}{\milli\meter}\\
+    t_{\text{trempé}} &= \qty{57}{\milli\meter}
+\end{align}
+\subsubsection{Méthode VEC}
+\subsubsection{Méthode non linéaire}
+
+\subsection{Calcul FEM}\label{sec:temoin}
+\begin{table}[H]
+\begin{center}
+\caption{Description des matériaux utilisés dans les \acrshort{FEM}.}
+\label{tab:mat_autoportant}
+\begin{tabularx}{\textwidth}{l*{5}{Y}}
+\toprule
+\textbf{Matériau} & \textbf{Module d'Young} $E$ [MPa] & \textbf{Module de cisaillement} $G$ [MPa]&\textbf{Coefficient de poisson} $\nu$ & \textbf{Limite d'élasticité} $f_y$ [MPa]& \textbf{Masse volumique} $\rho$ [kg/m$^3$] \\\midrule
+Verre durci & 72$\cdot 10^3$ & 29.5$\cdot 10^3$ & 0.22 &45 & 2457 \\
+Verre trempé & 72$\cdot 10^3$ & 29.5$\cdot 10^3$ & 0.22 &70 & 2457 \\
+DOWSIL™ 895 & 1.0 & 0.33 & 0.499 & 1.06* & 1430 \\
+DOWSIL™ 781 & 0.4 & 0.13 & 0.499 & 1.8* & 1020 \\
+Silicone & 4.5 & 1.5 & 0.499 & 4.5* & 1000\\
+\bottomrule
+\end{tabularx}
+\end{center}
+{\RaggedLeft \footnotesize * Valeur de limite d'élasticité prise égale à la limite en traction.}\end{table}
+QCC. $L=10m$, $b=3m$, $P=2kPa$, self standing.
+
+Analyse linéaire solidworks: \qty{70.5}{\milli\meter} \qty{56.5}{\milli\meter}
+\subsubsection{Impact du silicone}
+Aucun impact sur le verre plat
+
+\newpage
+
+\section{Optimisation géométrique du verre}
+
+Introduction sur l'optimisation géométrique... Gain en inertie, section en I pour l'acier etc...
+
+\subsection{Le cintrage du verre}
+
+\subsubsection{Cintrage à froid}
+
+\subsubsection{Limitations géométriques}
+
+\subsection{Le verre plié}
+
+\subsection{Le verre ondulé}
+\begin{figure}[H]
+    \centering
+    \includegraphics[height=0.39\textwidth]{img/ondul/casa_musica4 (1).jpg}
+    \includegraphics[height=0.39\textwidth]{img/ondul/casa_musica1 (1).jpg}
+    \caption{Photographie de la façade en verre ondulé de la Casa Da Música de Porto, par \cite{CasaDaMusica}.}
+    \label{fig:CasaDaMusica}
+\end{figure}
+L'intérêt premier du verre ondulé, en plus de attrait esthétique, est sa grande inertie dans le sens des ondulations, à l'instar des bacaciers. Cette inertie lui permet d'être plus rigide dans ce sens et donc d'être plus résistant.
+
+\subsubsection{Forme des ondulations}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{img/ondul/circ.pdf}
+    \caption{Schéma d'une longueur d'onde sinusoïdale \textit{(à gauche)} et circulaire \textit{(à droite)}.}
+    \label{fig:ondcirc}
+\end{figure}
+L'ondulation sinusoïdale ne dépend que de deux paramètres: sa longueur d'onde $b$ et sa hauteur (son amplitude) $h$. Ainsi sa section et son inertie ne dépend que de $b$, $h$ et $t$.
+
+Ce n'est pas le cas de l'ondulation circulaire qui dépend en plus d'un rayon $r_1$, le rayon du premier arc de cercle de l'onde comme noté sur la figure \ref{fig:ondcirc}. En posant le paramètre $\theta = 2 \tan^{-1} \frac{b-2h}{b+2h}$, on peut remarquer que sa section est égale à:
+\begin{align}
+    S_{\text{circ}} = \frac{b^2+4h^2}{8h} \left ( \frac{\pi}{2} - \theta\right )t
+\end{align}
+Ainsi la section de l'ondulation circulaire ne dépend, tout comme l'ondulation sinusoïdale, que de $b$, $h$ et $t$. En d'autres termes, faire varier la paramètre $r_1$ changera l'inertie de la section mais pas la quantité de verre utilisée pour mettre en oeuvre un tel vitrage.  Il est donc intéressant de chercher la rayon donnant la plus grande inertie à $b$, $h$ et $t$ fixés.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\linewidth]{img/ondul/circ2.pdf}
+    \caption{Schéma comparant les ondulations circulaires pour différents rayons $r_1$.}
+    \label{fig:ondcirc2}
+\end{figure}
+L'ondulation circulaire est formée de deux arcs de cercles de telle sorte que la somme soit de leur rayon soit constante à $h$ et $b$ fixés. Intuitivement, augmenter ou faire diminuer $r_1$ augmentera le rayon de courbure de l'ondulation (puisque si $r_1$ diminue, le rayon du cercle central augmente), ce qui aura pour effet de diminuer l'inertie de la section. Ainsi, l'ondulation idéale serait lorsque les deux rayons sont égaux, ce qui peut-être démontré par le calcul mais nous ne le ferons pas ici. Dans ce cas, 
+\begin{align}
+    r_1 = \frac{b^2+4h^2}{16h}
+\end{align}
+C'est le cas de l'ondulation verte schématisée sur la figure \ref{fig:ondcirc2}. Cette ondulation se rapproche de celle sinusoïdale. On peut d'ailleurs comparer l'écart relatif, $ER = \frac{I_{\text{circ}}-I_{\text{sin}}}{I_{\text{sin}}}\times 100\%$, entre les inerties de l'ondulation sinusoïdale et de l'optimum circulaire en fonction de la longueur d'onde $b$ et la hauteur de l'onde $h$. Cet écart relatif est mis en parallèle de l'écart relatif sur la section dans le figure \ref{fig:ERcirc}.
+\\
+
+Les écarts relatifs entre l'ondulation sinusoïdale et circulaire sont croissants en $\frac{h}{b}$. Comme la figure \ref{fig:ondcirc2} pouvait le laisser penser, à $b$ et $h$ fixés, l'inertie et la section de l'onde circulaire sont toujours supérieurs à celles de l'onde sinusoïdale. 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{img/ondul/section_circ.pdf}
+    \caption{\textbf{a.} et \textbf{b.} Écart relatif entre l'inertie et la section respectivement, de l'onde sinusoïdale et de l'onde circulaire optimale selon la longueur d'onde et la hauteur de l'onde. \textbf{c.} Inertie de l'onde selon sa section pour différentes longueur d'onde.}
+    \label{fig:ERcirc}
+\end{figure}
+Il est intéressant de regarder, pour une même quantité de verre, quelle onde sera la plus intéressante structurellement. En d'autres termes, pour une même section et une même longueur d'onde, quelle onde aura la meilleure inertie. Lorsque l'on fixe ces deux paramètres, on obtient une hauteur d'onde différente pour l'onde circulaire est sinusoïdale, comme présenté dans le graphique \textbf{b.} de la figure \ref{fig:ERcirc}. L'écart entre ces deux hauteurs d'ondes est d'autant plus grande que la section $S$ est grande.
+
+  Cependant, cette différence de hauteur d'onde n'implique pas une aussi grande différence d'inertie. Ainsi, on obtient que pour des grandes valeurs de section, l'inertie de la section circulaire est plus petite que celle de la section sinusoïdale: il est nécessaire d'aplatir l'onde circulaire pour conserver la même section. Le graphique \textbf{c.} confirme ce résultat et montre également que la différence d'inertie est d'autant plus grande que $b$ est petit.
+
+  Le choix de la forme d'ondulation est un compromis à faire entre la volonté architecturale et l'économie de matériau. Pour une même quantité de matériau, l'amplitude de l'ondulation peut-être jusqu'à 25\% plus petite pour l'onde circulaire par rapport à l'onde sinusoïdale. Toutefois, à  section et longueur d'onde égale, l'ondulation sinusoïdale a très souvent une meilleure inertie.
+  \\
+  
+Dans la suite nous nous concentrerons sur l'ondulation sinusoïdale.
+\subsubsection{Autoportance}
+En plus de l'avantage inertiel du verre ondulé par rapport au vert plat, il profite également d'une meilleure stabilité de part son amplitude d'oscillation. Il peut donc être intéressant de l'utiliser de façon autoportant sans prise en feuillure latérale. 
+
+On étudie, dans la suite, le verre ondulé autoportant soumis à une charge de vent et à son poids propre. On prendra notamment une charge de vent égale à $\text{W} = \qty{1000}{\pascal}$ et on considérera un vitrage formé de 3 ondulations sinusoïdales.
+
+
+\paragraph{Première approche analytique linéaire}\mbox{}
+
+En première approximation on peut modéliser la situation par une poutre de longueur $L$, isostatique sur deux appuis simples, de section $S_{\text{sin}}$ et d'inertie $I_{\text{sin}}$, la section et l'inertie de son ondulation.
+
+\begin{wrapfigure}{l}{0.3\textwidth}
+ \includegraphics[width=\linewidth]{img/ondul/schem_stat.pdf}
+    \caption{Schéma statique du verre ondulé dans une première approximation.}
+\label{fig:ondul_stat}
+\end{wrapfigure}
+
+Le poids propre du vitrage est simplement pris égal à: 
+\begin{align}
+    g = \frac{\rho_{\text{verre}}}{100} S_{\text{sin}} \text{ }\unit{\kilo\newton/\meter}
+\end{align}
+tandis que la charge surfacique de vent doit être convertie en charge linéique le long de la hauteur du vitrage. Ce qui nous intéresse, pour notre première approximation, est la résultante du vent dans le sens de la hauteur du profil, i.e. sans prise en compte de la résultante s'appliquant latéralement sur la section.
+
+Pour cela on présente, dans la figure \ref{fig:ondul_cas}, deux approches. La première est simple: on suppose que le vent agit comme une charge de neige indépendamment de la forme du profil. Sa résultante dans le sens de la hauteur du profil (selon $\underline{e_y}$) est alors:
+\begin{align}
+    \sum f_y = -q\times b 
+\end{align}
+
+Le second cas est le cas réel: le vent s'applique perpendiculairement à la surface en tout point du profil. Dans ce cas, comme précisé dans la figure \ref{fig:ondul_cas}, on peut étudier un bout de section infinitésimal entre $x$ et $x+\mathrm{d}x$. La longueur de cet élément est $\mathrm{d}l = \frac{\mathrm{d}x}{\cos \alpha}$. La force appliquée à l'élément s'écrit:
+\begin{align}
+    \underline{\mathrm{d}f} = \mathrm{d}l q \left (\sin \alpha \underline{e_x} - \cos \alpha \underline{e_y}\right )
+\end{align}
+
+\begin{wrapfigure}{r}{0.5\textwidth}
+    \centering
+\includegraphics[width=0.9\linewidth]{img/ondul/proj_load.pdf}
+\caption{Schémas de l'application de la charge de vent sur la section du verre ondulé.}
+\label{fig:ondul_cas}
+\vspace{10pt}
+\end{wrapfigure}
+
+Donc sa résultante selon $\underline{e_y}$ est simplement donnée par:
+\begin{align}
+    \mathrm{d}f_y = - \mathrm{d}l q\cos \alpha = -q \times \mathrm{d}x
+\end{align}
+
+Ainsi, la résultante totale sur toute la section est:
+\begin{align}
+    \sum f_y = \int \mathrm{d}f_y = \int_0^b -q \mathrm{d}x = -q\times b \label{eq:fy}
+\end{align}
+
+On en déduit qu'en terme de résultante selon $\underline{e_y}$, les deux cas sont équivalents.
+
+A noté que si l'on revient au cas d'une section sinusoïdale, la symétrie du profil implique que la résultante selon $\underline{e_x}$ de la charge est nulle. 
+
+On prend donc, dans notre première approximation, une charge linéique de vent s'appliquant à la poutre égale à:
+
+\begin{align}
+    q_{\text{w}} = \text{W} \times b
+\end{align}
+On en déduit la contrainte maximale dans le verre: 
+\begin{align}
+    \sigma_{\text{max}} = \frac{\num{3d-3} b L^2}{16 I_{\text{sin}}}h + \num{1.228d-2} L\text{ }\unit{\mega\pascal}
+\end{align}
+et le déplacement:
+\begin{align}
+    U_y = \frac{\num{15d-3} b L^4}{384 E_{\text{v}}I_{\text{sin}}}
+\end{align}
+
+\paragraph{Prise en compte de la torsion dans la section}\mbox{}
+
+Pour aller un peu plus loin, on peut prendre en compte la composante dans la direction longitudinale du profil (i.e. selon $\underline{e_x}$ d'après la figure \ref{fig:ondul_cas}). 
+
+\begin{wrapfigure}{l}{0.35\textwidth}
+\centering
+\includegraphics[width=0.8\linewidth]{img/ondul/torsion.pdf}
+\caption{Schéma de la torsion engendrée par l'effet du vent dans la section.}
+\label{fig:tors_ondul}
+\vspace{10pt}
+\end{wrapfigure}
+
+Cette composante engendre des contraintes supplémentaires dus à la torsion de la section, comme schématisé dans la figure \ref{fig:tors_ondul}.
+
+Par un calcul semblable à celui réalisé précédemment, on montre que le moment engendré par la composante selon $\underline{e_x}$ du vent est égal au moment créé au pied d'une console de longueur $h$:
+\begin{align}
+    M_{\text{tors}} = \frac{q h^2}{2}
+\end{align}
+
+Ainsi la contrainte supplémentaire dans le verre est:
+\begin{align}
+    \sigma_{\text{tors}} = \frac{3\text{W}\times h^2}{t^2} = \num{3d-3} \frac{h^2}{t^2}\text{ }\unit{\mega\pascal}
+\end{align}
+
+Ce qui nous donne la nouvelle contrainte maximale:
+\begin{align}
+    \sigma_{\text{max}} = \frac{\num{3d-3} b L^2}{16 I_{\text{sin}}}h + \num{1.228d-2} L + \num{3d-3} \frac{h^2}{t^2}\text{ }\unit{\mega\pascal}\label{eq:s_maxondul}
+\end{align}
+\paragraph{Calcul \acrshort{FEM}}\mbox{}
+
+Pour comparer nos résultats analytiques, on effectue un calcul statique linéaire \acrshort{FEM} à l'aide du logiciel SOLIDWORKS. On considère un vitrage de 3m de haut et formé de 3 ondes de 300mm de longueur d'onde et de 3mm d'épaisseur. On modélise la prise en feuillure sur les bords hauts et bas du vitrage par une un contact simple avec deux parallélépipèdes en silicone dans lesquels le vitrage est inséré sur 15mm à l'instar des vitrages dans la Casa Da Música de Porto. Le verre est libre de se déplacer autrement. Les propriétés des matériaux utilisés dans l'analyse sont décrites dans le tableau \ref{tab:mat_autoportant}.
+
+La géométrie des éléments et le maillage est présenté dans la figure \ref{fig:ondulmaill}. Les parallélépipèdes en silicone sont fixés sur 5 de leurs côtés. La charge surfacique de vent est prise perpendiculaire à la surface du verre.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\linewidth]{img/ondul/fem/maillage_simple.pdf}
+    \caption{Géométrie et maillage SOLIDWORKS du verre ondulé simple.}
+    \label{fig:ondulmaill}
+\end{figure}
+
+On peut comparer les résultats obtenus par \acrshort{FEM} pour trois amplitudes d'ondulation, \qty{10}{\milli\meter} et \qty{200}{\milli\meter}, présentés dans la figure \ref{fig:ondulfemscreen}. 
+
+Les contraintes maximales se situent au niveau des crêtes dans les creux du vent bien qu'on puisse trouver de très fortes contraintes ponctuellement au niveau de la jonction avec le silicone ce qui n'est dû qu'aux contraintes de notre modélisation. L'emplacement de ces contraintes maximales sont en accord avec nos intuitions sur la torsion présente dans la section du verre discutée précédemment. De plus, la contrainte maximale calculée pour une amplitude d'onde de \qty{100}{\milli\meter} est plus faible que pour les amplitudes \qty{10}{\milli\meter} et \qty{200}{\milli\meter}. On pouvait intuiter ce résultat avec l'équation (\ref{eq:s_maxondul}). La contrainte engendrée par le moment de flexion est en $\frac{h}{I_{\text{sin}}}$ ce qui, comme $I_{\text{sin}}$ est plus que linéaire en $h$ d'après la figure \ref{fig:ERcirc}, décroît lorsque $h$ augmente. A contrario, la contrainte engendrée par la torsion de la section croît en $h^2$. Il y a donc une bataille entre ces deux termes: si $h$ est trop grand, la torsion sera importante tandis que si $h$ est trop petit, l'ondulation aura peu d'impact sur l'inertie.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{img/ondul/fem/FEM1.pdf}
+    \caption{\textbf{1.} Contrainte et \textbf{2.} déplacement global ($U = \sqrt{U_x^2 + U_y^2 + U_z^2}$, échelle x5) du verre ondulé pour trois différentes amplitudes d'ondulation: \textbf{a.} 10mm, \textbf{b.} 100mm et \textbf{c.} 200mm. Les échelles de couleur sont toutes différentes.}
+    \label{fig:ondulfemscreen}
+\end{figure}
+
+On observe également un déplacement latéral important au niveau des bords du vitrage. Ce déplacement est d'ailleurs à prendre en compte afin de réaliser une façade en verre ondulé: le verre ne doit pas trop se déplacer latéralement pour éviter le contact avec les autres verres.
+
+Les résultats \acrshort{FEM} et analytiques pour plusieurs hauteurs d'ondulation entre \qty{10}{\milli\meter} et \qty{300}{\milli\meter} sont présentées dans la figure \ref{fig:ondulfem1}. 
+
+Les résultats obtenus numériquement diffèrent de la première approximation analytique. La contrainte est d'abord une fonction décroissante de $h$ jusqu'à atteindre un minimum autour de \qty{75}{\milli\meter}, puis croissante. Cela confirme notre intuition sur la tension engendrée par la forme de la section puisque, pour la contrainte maximale dans la crête centrale, l'allure de la contrainte semble clairement être proche de la courbe donnée par l'équation (\ref{eq:s_maxondul}). Toutefois, pour les crêtes latérales, la contrainte diverge beaucoup plus rapidement, ce qui peut-être expliqué par la non symétrie en ce point, contrairement à la crête centrale. 
+
+Le résultat analytique simple sur-évalue les contraintes et le déplacement transversal du verre, notamment de par la modélisation du problème en poutre et non en plaque. 
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{img/ondul/fem/simple_fem.pdf}
+    \caption{\textbf{a.} Contrainte maximale à mi-portée et \textbf{b.} déplacement maximal du verre ondulé selon l'amplitude de l'onde par un calcul analytique et un calcul \acrshort{FEM}.}
+    \label{fig:ondulfem1}
+\end{figure}
+
+
+
+Ainsi, notre modèle tenant compte de la torsion, donné par l'équation (\ref{eq:s_maxondul}), permet de donner une bonne approximation de la contrainte dans le crête centrale, bien qu'elle sur-évalue les contraintes pour les plus petites hauteurs d'onde. Un meilleure modèle pour évaluer les contraintes dus à la flexion permettraient de se rapprocher du résultat \acrshort{FEM}. Bien qu'il ne permette pas de rendre compte des contraintes dans les crêtes latérales, un tel modèle est suffisant pour calculer un verre ondulé avec beaucoup d'ondes dont on maintiendrait les bords.
+
+
+\subsubsection{Assemblage des vitrages (trouver meilleur nom)}
+
+En réalité il est difficile de produire des verres de très grandes largeurs et il est nécessaire d'accoler plusieurs vitrages. Pour des raisons de simplicité de production et d'installation, un panneau de verre ne sera composé que d'une seule onde, comme c'est le cas pour la façade de la Casa Da Música de Porto ou de La Samaritaine à Paris.
+
+Il est nécessaire, entre deux panneaux de verre autoportants côte à côte sur une façade, d'ajouter un morceau de silicone, ponctuellement ou de façon linéaire sur tout le bord, afin d'éviter le contact entre les deux verres. Plusieurs cas sont possibles pour le positionnement du joint en fonction de la découpe de l'onde. La séparation entre les panneaux de verre peut se faire au niveau de l'axe neutre de l'onde, comme c'est le cas de la façade de La Samaritaine à Paris, ou bien au niveau des crêtes, comme pour la façade de la Casa Da Música de Porto. On choisit d'étudier ces deux cas pour le joint. On effectue donc un calcul \acrshort{FEM}, comme présenté dans la figure \ref{fig:jointsq}, pour les deux situations évoqués ainsi que pour un verre sans joint, à titre de comparaison. Les matériaux utilisés sont les mêmes que ceux décrits dans la table \ref{tab:mat_autoportant}. La longueur d'onde du verre est prise égale à \qty{300}{\milli\metre} et sa hauteur à \qty{75}{\milli\metre}. Les joints remplissent tout l'espace entre les verres. Cette distance est prise égale à \qty{5}{\milli\meter}. Les joints sont donc des parallélépipèdes de dimension \qtyproduct{3 x 5 x 3000}{\milli\metre}. Afin de pouvoir approcher le comportement d'une façade comportant plusieurs panneaux de verres autoportants on effectue le calcul \acrshort{FEM} avec 7 pièces de verre ondulé et on s'intéresse uniquement au comportement du verre central. Les bords latéraux des ensembles de verres sont contraints de sorte à ne pas bouger latéralement.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{img/ondul/jointsq.pdf}
+    \caption{\textbf{a. }Schéma des différents cas de jointure entre les verres ondulés étudiés. \textbf{b.} Modèles \acrshort{FEM} des trois différents cas de jointure (\textbf{1.} élévation; \textbf{2.} axonométrie).}
+    \label{fig:jointsq}
+\end{figure}
+
+Les résultats sont présentés dans le figure \ref{fig:femjoints}. On peut, en premier lieu, observer l'allure de la déformée du verre. La déformée est semblable pour le verre sans joint et celui avec joints aux crêtes. Ce déplacement est principalement transversal (i.e. perpendiculairement au plan du vitrage). En revanche, le déplacement latéral n'est pas négligeable pour le verre avec des joints dans l'axe. Cela s'explique par le dissymétrie du profil par rapport à l'effet du vent. La partie du profil ouverte face au vent va se déplier tandis que la partie fermée va se replier. Ainsi mettre des joints dans l'axe de l'ondulation va engendrer une plus grande instabilité du verre de part l'ajout du silicone qui est bien moins rigide. Ce résultat est confirmé par le profil des contraintes dans le verre. Les contraintes dans le verre avec les joints dans l'axe sont bien plus importantes que dans les autres cas.
+
+En effet, relativement au cas sans joint, la contrainte maximale dans le cas des joints aux crêtes n'augmente pas tandis que pour les joints dans l'axe, elle augmente de 66\%.  
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{img/ondul/fem/femjoint.pdf}
+    \caption{\textbf{a.} Résultats du calcul \acrshort{FEM} pour les trois cas de joints: sans joints, aux crêtes et dans l'axe (\textbf{1.}: vent en pression et \textbf{2.} vent en dépression).}
+    \label{fig:femjoints}
+\end{figure} 
+
+
+
+L'ajout des joints dans l'axe semble avoir un effet sur les contraintes par rapport à un verre sans aucun joints. En effet, on observe une augmentation des contraintes en pied et en tête du verre mais une diminution au niveau des joints. Cela s'explique par la faible rigidité du joint en silicone qui va permettre au verre de plus se déformer. Or, en pied et en tête, sous l'effet de la pression du vent, le verre ondulé de par sa forme, va se rétracter latéralement. Cette rétractation va engendrer de la flexion au niveau du creux et donc une augmentation des contraintes dans cette zone. Tandis qu'a mi-portée, le verre s'étend, donnant lieu à de la compression dans le joint qui, plus souple que le verre, va permettre une diminution des contraintes. 
+\newpage
+\begin{wrapfigure}{l}{0.5\textwidth}
+\centering
+\includegraphics[width=\linewidth]{img/ondul/fem/femjoint3.pdf}
+\caption{Calcul \acrshort{FEM} comparant les contraintes dans le verre selon le type de silicone (DOWSIL™ 895: haut module et DOWSIL™ 781: bas module).}
+\label{fig:femjoints3}
+\vspace{-10pt}
+\end{wrapfigure}
+ff
+On peut dès lors comparer l'impact de la rigidité du silicone sur la contrainte dans le verre en mettant en parallèle un silicone haut module d'élasticité (c'est le cas du DOWSIL™ 895) et un bas module d'élasticité (c'est le cas du DOWSIL™ 781). Cette comparaison est présentée dans la figure \ref{fig:femjoints3}. 
+Comme attendu, la plus faible rigidité du DOWSIL™ 781 va engendrer plus de contraintes en pied et en tête du vitrage et une diminution de la contrainte sur les bords à mi-portée. La contrainte au niveau du creux du verre à mi-portée reste semblable. Cependant, la contrainte augmente, en pied, de près de 9\% avec le silicone DOWSIL™ 781 tandis qu'elle ne diminue que de 0.5\% à mi-portée. On comprend donc qu'il est préférable d'avoir un silicone très rigide pour empêcher le déplacement en pied et en tête du vitrage et donc une concentration des contraintes dans cette zone.
+
+\subsubsection{Calcul témoin}
+On peut désormais conclure en calculant l'épaisseur de verre minimale pour la réalisation de notre vitrage autoportant présenté dans la partie \ref{sec:temoin}.
+
+\paragraph{Prédimensionnement de l'ondulation}\mbox{}
+
+On cherche à diviser notre verre en 1, 2 ou 3 ondes sinusoïdales. L'équation (\ref{eq:s_maxondul}), modifiée pour correspondre au cas de charge à l'\acrshort{ELU}, permet un prédimensionnement de la hauteur de l'onde dans chacun des cas. La figure \ref{fig:sin_predim} présente le calcul de prédimensionnement ainsi que le schéma des trois périodes d'ondulation considérées. 
+
+Si l'on regarde dans chaque cas la hauteur d'onde donnant le minimum de contrainte dans le verre, on observe que pour une épaisseur de verre donnée, celle-ci est quasiment identique quelque soit la période d'ondulation. Naturellement, la contrainte diminue lorsque l'épaisseur de verre augmente.
+
+Pour comparer les périodes d'ondulation, on peut s'intéresser à la quantité de verre utilisée, c'est-à-dire la section de verre, pour obtenir ce minimum de contrainte, selon l'épaisseur du verre. Comme on pouvait s'y attendre, le cas à 3 ondes nécessite une plus grande section que le cas à 2 ondes, qui lui même nécessite une plus grande section que le cas à 1 onde. Plus l'épaisseur du verre augmente, plus cet écart de section augmente, allant de +11\% à +43\% entre la section à 2 ondes et celle à 1 onde et de +43\% à +233\% entre la section à 3 ondes et celle à 1 onde.
+
+C'est la situation inverse pour la contrainte minimum pour une épaisseur de verre donnée. Toutefois, l'augmentation des contraintes par rapport au cas à 1 onde ne va que de +4\% à +10\% pour 2 ondes et de +10\% à +20\% pour 3 ondes.
+
+En d'autres termes, pour une contrainte limite, une épaisseur de verre plus importante sera nécessaire dans le cas à 1 onde mais la quantité de verre nécessaire sera au final moindre. Cela concorde avec nos remarques relatives à la figure \ref{fig:ondulfem1}: si la longueur d'onde est trop petite par rapport à la hauteur de l'onde, le gain en inertie ne sera pas suffisamment important pour contrebalancer la perte en matière.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{img/ondul/predim.pdf}
+    \caption{\textbf{a.} Schémas des trois périodes d'ondulation considérée. \textbf{b.} Contrainte maximale dans le verre calculée d'après (\ref{eq:s_maxondul}) selon la hauteur de l'onde pour les trois périodes d'ondulation et l'épaisseur de verre. \textbf{c.} Comparaison des contraintes et des sections obtenus en prenant la hauteur d'onde minimisant la contrainte pour les trois cas, en fonction de l'épaisseur de verre (\textbf{1.} contrainte et section en fonction de l'épaisseur et \textbf{2.} écart relatif $\sigma_{\text{ER}} = \frac{\sigma_{\text{1 onde}}-\sigma_{\text{i ondes}}}{\sigma_{\text{1 onde}}}$ et $S_{\text{ER}} = \frac{S_{\text{1 onde}}-S_{\text{i ondes}}}{S_{\text{1 onde}}}$).}
+    \label{fig:sin_predim}
+\end{figure}
+On obtient donc les épaisseurs et les sections de verre présentées dans le tableau \ref{tab:mat_predimsin} pour le verre durci et le verre trempé. La section de verre nécessaire est donc bien plus faible pour 1 onde que pour 2 ou 3 ondes mais la hauteur d'onde est l'épaisseur de verre sont plus importants. 
+
+\begin{table}[H]
+\centering
+\caption{Épaisseur et section de verre minimum nécessaire pour le prédimensionnement.}
+\label{tab:mat_predimsin}
+\begin{tabularx}{\textwidth}{l*{5}{Y}}
+\toprule
+\textbf{Matériau} & \textbf{Limite d'élasticité}$f_y$ [\unit{\mega\pascal}] &\textbf{Nombre d'ondes} & \textbf{Épaisseur} $t$ [\unit{\milli\metre}]& \textbf{Hauteur d'onde} $h$ [\unit{\milli\metre}] & \textbf{Section} $S$ [\unit{\square\centi\meter}] \\\midrule
+Verre durci & 45 & 1 onde & 18.5 &790& 640 \\
+ & & 2 ondes & 17.25 &770& 770 \\
+ & & 3 ondes & 16.1 & 755&900 \\
+Verre trempé & 70 & 1 onde & 13.5 &715& 460 \\
+ & & 2 ondes & 12.6 & 697&540 \\
+ & & 3 ondes & 11.9 & 680&625 \\
+\bottomrule
+\end{tabularx}
+\end{table}
+Bien qu'on veuille diminuer l'épaisseur des vitrages, on souhaite avant tout économiser de la matière. On choisit donc un verre ondulé formé d'une seule onde de \qty{3}{\metre} de longueur d'onde et de \qty{790}{\milli\metre} de hauteur d'onde pour le verre durci et \qty{715}{\milli\metre} pour le verre trempé.
+
+\paragraph{Calcul de l'épaisseur de verre minimale}
+
+\subsection{Le verre bulle}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{img/bulle/Vakko_ext.jpg}
+    \includegraphics[width=\linewidth]{img/bulle/Vakko_int.jpg}
+    \caption{Photographie rapprochée de la façade du Vakko Headquarters and Power Media Center, par \cite{VekkoHQ}.}
+    \label{fig:VakkoHQ}
+\end{figure}
+
+\newpage
+
+\printbibliography
+
+\end{document}
