@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber main"] 1724230245.42237 "main.bcf" "main.bbl" "main" 1724231711.57154 0
+["biber main"] 1724319009.38987 "main.bcf" "main.bbl" "main" 1724324582.90164 0
   "bib/Biblio.bib" 1724229302 1967 17747ab6841e4e47e5f835ee35910883 ""
-  "main.bcf" 1724231710 108801 5e7dc6234089036a3b6c5854941ec89d "pdflatex"
+  "main.bcf" 1724324582 108801 5e7dc6234089036a3b6c5854941ec89d "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1724231701.53116 "main.tex" "main.pdf" "main" 1724231711.57423 0
+["pdflatex"] 1724324572.09383 "main.tex" "main.pdf" "main" 1724324582.90323 0
   "c:/texlive/2024/texmf-dist/fonts/enc/dvips/inconsolata/i4-t1-5.enc" 1724220816 7709 74634db4a06477f35279f32281f87689 ""
   "c:/texlive/2024/texmf-dist/fonts/enc/dvips/libertine/lbtn_76gpa5.enc" 1724221014 2933 9ad527ce78d7c5fa0a642dead095f172 ""
   "c:/texlive/2024/texmf-dist/fonts/enc/dvips/libertine/lbtn_7grukw.enc" 1724221014 2934 a4a9158faed2e9e89c771b4e3b7fc12f ""
@@ -210,12 +210,15 @@
   "c:/texlive/2024/texmf.cnf" 1724222251 713 e69b156964470283e0530f5060668171 ""
   "img/bulle/Vakko_ext.jpg" 1724201000 155768 b37e4fa532389846308663d29f41f15a ""
   "img/bulle/Vakko_int.jpg" 1724201000 138864 2b52982ebdc09a6fee32e6ae9a79755c ""
+  "img/bulle/types_bulles.pdf" 1724324027 76049 ddb86dbb9eb51a5686c44820c7fefd6e ""
   "img/logo/logo_enpc.png" 1724224125 20965 451de268d8c67372bc56805b57d2a923 ""
   "img/ondul/casa_musica1 (1).jpg" 1724226110 409706 f3ed83cd15a16e1f6018b3e353feecc6 ""
   "img/ondul/casa_musica4 (1).jpg" 1724226114 275206 d9fbd4f94966e4ccc57abccbb987b380 ""
   "img/ondul/circ.pdf" 1724201000 84200 37259aef8858e4313af34f4e89f8e048 ""
   "img/ondul/circ2.pdf" 1724201000 107267 474d9afd67eb8702b9bcd3a90e30f94d ""
   "img/ondul/fem/FEM1.pdf" 1724201002 3874693 9e7f3857e4857795c02eb6e2a546dcf1 ""
+  "img/ondul/fem/dim_fem.pdf" 1724317465 466735 b45c53e435410e9da84a8f373949fa73 ""
+  "img/ondul/fem/dim_float.pdf" 1724307184 2408726 b75f8b01f3dd40bd13a0c4f2efaa4586 ""
   "img/ondul/fem/femjoint.pdf" 1724201002 5328377 203ac08a65fe9eae030e8e50a13c0386 ""
   "img/ondul/fem/femjoint3.pdf" 1724201002 721720 354eb5a3525e571bb6632a1edc148eed ""
   "img/ondul/fem/maillage_simple.pdf" 1724201002 876283 ccb2725d9614d07630a215d970043002 ""
@@ -227,16 +230,16 @@
   "img/ondul/section_circ.pdf" 1724201000 588485 9a477c9848d212e4facd5d5dd700f589 ""
   "img/ondul/torsion.pdf" 1724201000 402790 d8149383f5de3fc7471b87632c12d5d4 ""
   "main.acr" 0 -1 0 ""
-  "main.aux" 1724231710 15546 ccdfd3da50050df486979d5946197fd1 "pdflatex"
-  "main.bbl" 1724230246 3201 918139c12cbc68d0b81fdfe6ef2f5215 "biber main"
-  "main.glsdefs" 1724231710 5049 58ef34d3671962d04844f2cffb62e6ef "pdflatex"
-  "main.lof" 1724231710 3985 bf4e11eb607e36278e21927a636bd2aa "pdflatex"
-  "main.lot" 1724231710 354 7f8826207b4ae10aa4fc830ab0171faf "pdflatex"
-  "main.out" 1724231710 6019 1082c1131d1cccbba573f3942845996e "pdflatex"
-  "main.run.xml" 1724231710 2414 f28ac3c0befa8544f4b4e800375f3d09 "pdflatex"
-  "main.tex" 1724231699 33102 8b9a64b2a878f717cf961a7f1c966c2c ""
-  "main.toc" 1724231710 3835 c7eabf70144aa350e5fecc7710a328db "pdflatex"
-  "packages.sty" 1724229589 1682 30fc1a2a9f9c74965bfdb2779240d8ad ""
+  "main.aux" 1724324582 17179 a5e9515857e0ddfe87bc5541870f2b9e "pdflatex"
+  "main.bbl" 1724319010 3201 918139c12cbc68d0b81fdfe6ef2f5215 "biber main"
+  "main.glsdefs" 1724324582 5049 58ef34d3671962d04844f2cffb62e6ef "pdflatex"
+  "main.lof" 1724324582 4611 eb1d13a847419a0621ffbb06d262a890 "pdflatex"
+  "main.lot" 1724324582 354 7f8826207b4ae10aa4fc830ab0171faf "pdflatex"
+  "main.out" 1724324582 7525 c7795cee756ec82481b538cef307bc6f "pdflatex"
+  "main.run.xml" 1724324582 2414 f28ac3c0befa8544f4b4e800375f3d09 "pdflatex"
+  "main.tex" 1724324559 36215 a1f2b03cc176634acddb19cd649bdca0 ""
+  "main.toc" 1724324582 4065 bc003e4f81f6375c73e6f6143ac299d3 "pdflatex"
+  "packages.sty" 1724318851 1843 0da52a7255d62fff38368f2ac10999d3 ""
   (generated)
   "main.aux"
   "main.bcf"

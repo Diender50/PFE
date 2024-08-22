@@ -17,6 +17,7 @@
 \usepackage{amssymb}
 \renewcommand{\frac}{\dfrac}
 \usepackage{siunitx}
+\sisetup{group-separator = \ }
 
 %bib 
 \usepackage[backend=biber,
@@ -44,7 +45,10 @@ natbib
 \usepackage{comment}
 \usepackage{fancyhdr}
 
-\usepackage{hyperref}
+\usepackage[bookmarks=true,bookmarksopen=true,
+bookmarksnumbered=true,
+colorlinks=true,citecolor=black,linkcolor=black                 
+]{hyperref}
 
 \usepackage{titlesec}
 \setlength\parindent{0pt}

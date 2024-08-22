@@ -41,4 +41,6 @@
 \contentsline {subsubsection}{\numberline {4.3.4}Calcul témoin}{22}{subsubsection.4.3.4}%
 \contentsline {paragraph}{Prédimensionnement de l'ondulation}{22}{subsubsection.4.3.4}%
 \contentsline {paragraph}{Calcul de l'épaisseur de verre minimale}{24}{table.caption.16}%
-\contentsline {subsection}{\numberline {4.4}Le verre bulle}{25}{subsection.4.4}%
+\contentsline {subsubsection}{\numberline {4.3.5}Conclusions sur le verre ondulé}{25}{subsubsection.4.3.5}%
+\contentsline {subsection}{\numberline {4.4}Le verre bulle}{26}{subsection.4.4}%
+\contentsline {subsubsection}{\numberline {4.4.1}Etude préliminaire sur les formes de bulles}{27}{subsubsection.4.4.1}%

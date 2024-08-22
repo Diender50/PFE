@@ -134,13 +134,13 @@ blabla
 \subsubsection{Méthode simplifiée}
 DTU39: $P = \qty{3000}{\pascal}$
 \begin{align}
-    t_1 = \frac{L \cdot \sqrt{P}}{6.3} = \qty{86.94}{\milli\meter}
+    t_1 = \frac{L \times \sqrt{P}}{6.3} = \qty{86.94}{\milli\meter}
 \end{align}
 $c=1$, $\varepsilon_3 = 0.8$, $\varepsilon_3 = 0.61$
 \begin{align}
     t_R &= \frac{t}{\varepsilon_3} \geq t_1 =  \qty{86.94}{\milli\meter}\\ 
-    t_{\text{durci}} &= 0.8\cdot \qty{86.94}{\milli\meter}= \qty{70}{\milli\meter}\\
-    t_{\text{trempé}} &= 0.61 \cdot \qty{86.94}{\milli\meter} = \qty{54}{\milli\meter}
+    t_{\text{durci}} &= 0.8\times \qty{86.94}{\milli\meter}= \qty{70}{\milli\meter}\\
+    t_{\text{trempé}} &= 0.61 \times \qty{86.94}{\milli\meter} = \qty{54}{\milli\meter}
 \end{align}
 FD-P78 => méthode poutre
 \begin{align}
@@ -160,8 +160,8 @@ FD-P78 => méthode poutre
 \begin{tabularx}{\textwidth}{l*{5}{Y}}
 \toprule
 \textbf{Matériau} & \textbf{Module d'Young} $E$ [MPa] & \textbf{Module de cisaillement} $G$ [MPa]&\textbf{Coefficient de poisson} $\nu$ & \textbf{Limite d'élasticité} $f_y$ [MPa]& \textbf{Masse volumique} $\rho$ [kg/m$^3$] \\\midrule
-Verre durci & 72$\cdot 10^3$ & 29.5$\cdot 10^3$ & 0.22 &45 & 2457 \\
-Verre trempé & 72$\cdot 10^3$ & 29.5$\cdot 10^3$ & 0.22 &70 & 2457 \\
+Verre durci & 72$\times 10^3$ & 29.5$\times 10^3$ & 0.22 &45 & 2457 \\
+Verre trempé & 72$\times 10^3$ & 29.5$\times 10^3$ & 0.22 &70 & 2457 \\
 DOWSIL™ 895 & 1.0 & 0.33 & 0.499 & 1.06* & 1430 \\
 DOWSIL™ 781 & 0.4 & 0.13 & 0.499 & 1.8* & 1020 \\
 Silicone & 4.5 & 1.5 & 0.499 & 4.5* & 1000\\
@@ -171,7 +171,8 @@ Silicone & 4.5 & 1.5 & 0.499 & 4.5* & 1000\\
 {\RaggedLeft \footnotesize * Valeur de limite d'élasticité prise égale à la limite en traction.}\end{table}
 QCC. $L=10m$, $b=3m$, $P=2kPa$, self standing.
 
-Analyse linéaire solidworks: \qty{70.5}{\milli\meter} \qty{56.5}{\milli\meter}
+Analyse linéaire solidworks: \qty{70.5}{\milli\meter} ($S= \qty{2115}{\centi\square\meter}$)\qty{56.5}{\milli\meter} ($S=$\SI{1695}{\centi\square\meter})
+
 \subsubsection{Impact du silicone}
 Aucun impact sur le verre plat
 
@@ -406,7 +407,6 @@ En effet, relativement au cas sans joint, la contrainte maximale dans le cas des
     \label{fig:femjoints}
 \end{figure} 
 
-d
 
 L'ajout des joints dans l'axe semble avoir un effet sur les contraintes par rapport à un verre sans aucun joints. En effet, on observe une augmentation des contraintes en pied et en tête du verre mais une diminution au niveau des joints. Cela s'explique par la faible rigidité du joint en silicone qui va permettre au verre de plus se déformer. Or, en pied et en tête, sous l'effet de la pression du vent, le verre ondulé de par sa forme, va se rétracter latéralement. Cette rétractation va engendrer de la flexion au niveau du creux et donc une augmentation des contraintes dans cette zone. Tandis qu'a mi-portée, le verre s'étend, donnant lieu à de la compression dans le joint qui, plus souple que le verre, va permettre une diminution des contraintes. 
 \newpage
@@ -462,7 +462,32 @@ Verre trempé & 70 & 1 onde & 13.5 &715& 460 \\
 \end{table}
 Bien qu'on veuille diminuer l'épaisseur des vitrages, on souhaite avant tout économiser de la matière. On choisit donc un verre ondulé formé d'une seule onde de \qty{3}{\metre} de longueur d'onde et de \qty{790}{\milli\metre} de hauteur d'onde pour le verre durci et \qty{715}{\milli\metre} pour le verre trempé.
 
-\paragraph{Calcul de l'épaisseur de verre minimale}
+\paragraph{Calcul de l'épaisseur de verre minimale}\mbox{}
+
+Comme nous l'avons vu précédemment, le calcul analytique sous-évalue les contraintes dans le verre. De plus notre vitrage autoportant a vocation à être la composante d'un mur rideau de plusieurs vitrages. Il est donc nécessaire de dimensionner plus précisemment le vitrage en effectuant un calcul \acrshort{FEM} prenant en compte plusieurs vitrages comme on a pu le faire dans le calcul présenté dans la figure \ref{fig:femjoints}.
+
+On effectue donc un calcul \acrshort{FEM} pour un ensemble constitué de 7 panneaux de verre ondulé aux dimensions déterminées précédemment, pour différentes épaisseurs.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{img/ondul/fem/dim_fem.pdf}
+    \caption{Géométrie et maillage SOLIDWORKS du verre ondulé pour son dimensionnement.}
+    \label{fig:dim_onful_model}
+\end{figure}
+
+Les résultats des calculs \acrshort{FEM} sont présentés dans la figure \ref{fig:dim_onful_float}. On observe que la contrainte maximale sur l'ensemble des panneaux de verre est situé dans le verre aux extrémités du modèle. Cependant, afin de simuler un très grand nombre de vitrages, on ne s'intéresse qu'à la contrainte dans le verre central.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{img/ondul/fem/dim_float.pdf}
+    \caption{\textbf{a.} Résultats du dimensionnement du verre ondulé par calcul \acrshort{FEM} pour \textbf{1.}. le verre durci et \textbf{2.} le verre trempé. \textbf{b.} Contraintes maximales dans le verre selon son épaisseur pour le verre durci et trempé.}
+    \label{fig:dim_onful_float}
+\end{figure}
+
+On obtient ainsi pour le verre durci une épaisseur minimale de \qty{22}{\milli\meter} (section de verre de \qty{761}{\centi\square\meter}), engendrant une contrainte maximale dans le verre de $\qty{44.88}{\mega\pascal} < f_y = \qty{45}{\mega\pascal}$. Pour le verre trempé, on obtient \qty{16}{\milli\meter} (section de verre de \qty{847}{\centi\square\meter}) pour une contrainte maximale dans le verre de $\qty{67.17}{\mega\pascal} < f_y = \qty{70}{\mega\pascal}$ .
+
+\subsubsection{Conclusions sur le verre ondulé}
+
+Choix du silicone entre les verres, de son épaisseur, de la contrainte dedans. Faire un trou dans le vitrage au niveau des creux pour libérer les contraintes pour aller plus loin dans l'optimisation. Question de ce qui se passe au niveau des appuis qui n'est pas totalement clair. Question de la production du verre ondulé. Mettre des cales au au niveau du pied et de la tête entre les verres pour avoir une plus grande rigidité en bas et en haut. Mais on a quand même réussit à bien identifier les points problématiques: la rétractation en bas et en haut notamment.
 
 \subsection{Le verre bulle}
 
@@ -474,6 +499,14 @@ Bien qu'on veuille diminuer l'épaisseur des vitrages, on souhaite avant tout é
     \label{fig:VakkoHQ}
 \end{figure}
 
+\subsubsection{Etude préliminaire sur les formes de bulles}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{img/bulle/types_bulles.pdf}
+    \caption{Différentes géométries de bulles considérées.}
+    \label{fig:types_bulle}
+\end{figure}
 \newpage
 
 \printbibliography
