@@ -17,4 +17,6 @@
 \contentsline {figure}{\numberline {15}{\ignorespaces Géométrie et maillage SOLIDWORKS du verre ondulé pour son dimensionnement.}}{24}{figure.caption.17}%
 \contentsline {figure}{\numberline {16}{\ignorespaces \textbf {a.} Résultats du dimensionnement du verre ondulé par calcul \acrshort {FEM} pour \textbf {1.}. le verre durci et \textbf {2.} le verre trempé. \textbf {b.} Contraintes maximales dans le verre selon son épaisseur pour le verre durci et trempé.}}{25}{figure.caption.18}%
 \contentsline {figure}{\numberline {17}{\ignorespaces Photographie rapprochée de la façade du Vakko Headquarters and Power Media Center, par \blx@tocontentsinit {0}\cite {VekkoHQ}.}}{26}{figure.caption.19}%
-\contentsline {figure}{\numberline {18}{\ignorespaces Différentes géométries de bulles considérées.}}{27}{figure.caption.20}%
+\contentsline {figure}{\numberline {18}{\ignorespaces Géométries et nomenclature des bulles considérées.}}{27}{figure.caption.20}%
+\contentsline {figure}{\numberline {19}{\ignorespaces Description de la géométrie d'une bulle.}}{27}{figure.caption.21}%
+\contentsline {figure}{\numberline {20}{\ignorespaces Comparaisons de la contrainte maximale calculée avec SOLIDWORKS et Karamba3D selon l'épaisseur de verre (\textbf {a.} contrainte maximale et \textbf {b.} écart relatif par rapport à SOLIDWORKS).}}{28}{figure.caption.22}%

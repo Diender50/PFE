@@ -483,14 +483,14 @@ Les résultats des calculs \acrshort{FEM} sont présentés dans la figure \ref{f
     \label{fig:dim_onful_float}
 \end{figure}
 
-On obtient ainsi pour le verre durci une épaisseur minimale de \qty{22}{\milli\meter} (section de verre de \qty{761}{\centi\square\meter}), engendrant une contrainte maximale dans le verre de $\qty{44.88}{\mega\pascal} < f_y = \qty{45}{\mega\pascal}$. Pour le verre trempé, on obtient \qty{16}{\milli\meter} (section de verre de \qty{847}{\centi\square\meter}) pour une contrainte maximale dans le verre de $\qty{67.17}{\mega\pascal} < f_y = \qty{70}{\mega\pascal}$ .
+On obtient ainsi pour le verre durci une épaisseur minimale de \qty{22}{\milli\meter} (section de verre de \qty{761.08}{\centi\square\meter}), engendrant une contrainte maximale dans le verre de $\qty{44.88}{\mega\pascal} < f_y = \qty{45}{\mega\pascal}$. Pour le verre trempé, on obtient \qty{16}{\milli\meter} (section de verre de \qty{454.18}{\centi\square\meter}) pour une contrainte maximale dans le verre de $\qty{67.17}{\mega\pascal} < f_y = \qty{70}{\mega\pascal}$ .
 
 \subsubsection{Conclusions sur le verre ondulé}
 
 Choix du silicone entre les verres, de son épaisseur, de la contrainte dedans. Faire un trou dans le vitrage au niveau des creux pour libérer les contraintes pour aller plus loin dans l'optimisation. Question de ce qui se passe au niveau des appuis qui n'est pas totalement clair. Question de la production du verre ondulé. Mettre des cales au au niveau du pied et de la tête entre les verres pour avoir une plus grande rigidité en bas et en haut. Mais on a quand même réussit à bien identifier les points problématiques: la rétractation en bas et en haut notamment.
 
 \subsection{Le verre bulle}
-
+bg
 \begin{figure}[H]
     \centering
     \includegraphics[width=\linewidth]{img/bulle/Vakko_ext.jpg}
@@ -498,15 +498,64 @@ Choix du silicone entre les verres, de son épaisseur, de la contrainte dedans. 
     \caption{Photographie rapprochée de la façade du Vakko Headquarters and Power Media Center, par \cite{VekkoHQ}.}
     \label{fig:VakkoHQ}
 \end{figure}
-
+gh
 \subsubsection{Etude préliminaire sur les formes de bulles}
+
+On s'intéresse dans un premier temps aux formes de bulles possibles afin de déterminer la forme meilleure forme pour optimiser notre épaisseur de verre. On commence par étudier plusieurs cas simples, schématisés dans la figure \ref{fig:types_bulle}. 
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=\linewidth]{img/bulle/types_bulles.pdf}
-    \caption{Différentes géométries de bulles considérées.}
+    \caption{Géométries et nomenclature des bulles considérées.}
     \label{fig:types_bulle}
 \end{figure}
+
+Les lignes épaisses noires représentent la position de la bulle sur le verre. 
+
+\begin{wrapfigure}{l}{0.3\textwidth}
+    \centering
+    \includegraphics[width=0.8\linewidth]{img/bulle/geo_bulles1.pdf}
+    \caption{Description de la géométrie d'une bulle.}
+    \label{fig:geo_bulle1}
+    \vspace{-10pt}
+    \end{wrapfigure}
+
+Pour cette approche simpliste on modélise la bulle par un bout de cylindre de diamètre $d$ dont l'axe est à une distance $d/2-h$ du vitrage. En dehors de la bulle, le vitrage est plat. L'épaisseur du verre est la même en tout point du vitrage. Cette modélisation est présentée dans la figure \ref{fig:geo_bulle1}.
+\\
+
+L'objectif va donc être, pour chaque forme de bulles, de déterminer les valeurs optimales de $h$ et $d$, c'est-à-dire donnant lieu à la plus faible épaisseur de verre. 
+
+Pour cela on utilise l'outil paramétrique Karamba3D permettant de faire de rapides calculs \acrshort{FEM} via Grasshopper dans le logiciel de modélisation 3D Rhino3D. Afin de pouvoir préserver une cohérence des outils de calcul utilisés, on décide de comparer, sur un exemple de géométrie non simple, les résultats de SOLIDWORKS avec ceux de Karamba3D.
+
+La figure \ref{fig:comp_kar} présente des résultats très similaires entre les deux logiciels de calcul. L'écart entre les contraintes maximales est bien plus grande pour de grandes contraintes que pour de faibles contraintes. Toutefois, Karamba3D est plus sensible au flambement que SOLIDWORKS. Ainsi, il pourrait être possible d'avoir des géométries flambant avec Karamba3D mais étant admissible avec SOLIDWORKS. Le calcul au second ordre de Karamba3D est d'ailleurs plus proche de celui de SOLIDWORKS que le premier ordre. Lorsqu'il n'y a pas de flambement, on peut observer que l'écart relatif de la contrainte maximale est inférieure à \qty{6}{\percent} pour le premier ordre et \qty{4}{\percent} pour le second ordre. 
+
+On peut donc aisément faire confiance à Karamba3D pour les calculs de cette première approche. 
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{img/bulle/comp_kar.pdf}
+    \caption{Comparaisons de la contrainte maximale calculée avec SOLIDWORKS et Karamba3D selon l'épaisseur de verre (\textbf{a.} contrainte maximale et \textbf{b.} écart relatif par rapport à SOLIDWORKS).}
+    \label{fig:comp_kar}
+\end{figure}
+
+\newpage
+
+\section{Conclusions et perspectives}
+
+\begin{table}[H]
+    \centering
+    \caption{Résultats finaux de l'optimisation.}
+    \label{tab:result_fin}
+    \begin{tabularx}{\textwidth}{l*{6}{Y}}
+    \toprule
+    \textbf{Solution} & \textbf{Plat}& \textbf{Cintrage simple} &\textbf{Pliage} & \textbf{Ondulation}& \textbf{Bulle}& \textbf{Double courbure} \\\midrule
+    \textbf{Épaisseur} [mm]& 71 / 57 & - & - & 22 / 16 & - & - \\
+    \textbf{Écart relatif} & - & - & - & \qty{69}{\percent} / \qty{72}{\percent} & - & - \\
+    \textbf{Section} [cm²] & 2130 / 1710 & - & - & 761 / 545 & - & - \\
+    \textbf{Écart relatif} & - & - & - & \qty{64}{\percent} / \qty{68}{\percent} & - & - \\
+    \bottomrule
+    \end{tabularx}
+    \end{table}
 \newpage
 
 \printbibliography

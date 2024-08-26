@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber main"] 1724319009.38987 "main.bcf" "main.bbl" "main" 1724324582.90164 0
+["biber main"] 1724399376.02284 "main.bcf" "main.bbl" "main" 1724639972.98588 0
   "bib/Biblio.bib" 1724229302 1967 17747ab6841e4e47e5f835ee35910883 ""
-  "main.bcf" 1724324582 108801 5e7dc6234089036a3b6c5854941ec89d "pdflatex"
+  "main.bcf" 1724639971 108801 5e7dc6234089036a3b6c5854941ec89d "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1724324572.09383 "main.tex" "main.pdf" "main" 1724324582.90323 0
+["pdflatex"] 1724639958.69178 "main.tex" "main.pdf" "main" 1724639972.98841 0
   "c:/texlive/2024/texmf-dist/fonts/enc/dvips/inconsolata/i4-t1-5.enc" 1724220816 7709 74634db4a06477f35279f32281f87689 ""
   "c:/texlive/2024/texmf-dist/fonts/enc/dvips/libertine/lbtn_76gpa5.enc" 1724221014 2933 9ad527ce78d7c5fa0a642dead095f172 ""
   "c:/texlive/2024/texmf-dist/fonts/enc/dvips/libertine/lbtn_7grukw.enc" 1724221014 2934 a4a9158faed2e9e89c771b4e3b7fc12f ""
@@ -210,6 +210,8 @@
   "c:/texlive/2024/texmf.cnf" 1724222251 713 e69b156964470283e0530f5060668171 ""
   "img/bulle/Vakko_ext.jpg" 1724201000 155768 b37e4fa532389846308663d29f41f15a ""
   "img/bulle/Vakko_int.jpg" 1724201000 138864 2b52982ebdc09a6fee32e6ae9a79755c ""
+  "img/bulle/comp_kar.pdf" 1724387500 619266 6f50c9938d0eb2b5d50ce2f3d22a3584 ""
+  "img/bulle/geo_bulles1.pdf" 1724382887 143008 d5edde81130eb800837f81d1ef53afcf ""
   "img/bulle/types_bulles.pdf" 1724324027 76049 ddb86dbb9eb51a5686c44820c7fefd6e ""
   "img/logo/logo_enpc.png" 1724224125 20965 451de268d8c67372bc56805b57d2a923 ""
   "img/ondul/casa_musica1 (1).jpg" 1724226110 409706 f3ed83cd15a16e1f6018b3e353feecc6 ""
@@ -230,15 +232,15 @@
   "img/ondul/section_circ.pdf" 1724201000 588485 9a477c9848d212e4facd5d5dd700f589 ""
   "img/ondul/torsion.pdf" 1724201000 402790 d8149383f5de3fc7471b87632c12d5d4 ""
   "main.acr" 0 -1 0 ""
-  "main.aux" 1724324582 17179 a5e9515857e0ddfe87bc5541870f2b9e "pdflatex"
-  "main.bbl" 1724319010 3201 918139c12cbc68d0b81fdfe6ef2f5215 "biber main"
-  "main.glsdefs" 1724324582 5049 58ef34d3671962d04844f2cffb62e6ef "pdflatex"
-  "main.lof" 1724324582 4611 eb1d13a847419a0621ffbb06d262a890 "pdflatex"
-  "main.lot" 1724324582 354 7f8826207b4ae10aa4fc830ab0171faf "pdflatex"
-  "main.out" 1724324582 7525 c7795cee756ec82481b538cef307bc6f "pdflatex"
-  "main.run.xml" 1724324582 2414 f28ac3c0befa8544f4b4e800375f3d09 "pdflatex"
-  "main.tex" 1724324559 36215 a1f2b03cc176634acddb19cd649bdca0 ""
-  "main.toc" 1724324582 4065 bc003e4f81f6375c73e6f6143ac299d3 "pdflatex"
+  "main.aux" 1724639971 18399 9878248532056cfce26f2f5d665a9c0a "pdflatex"
+  "main.bbl" 1724399377 3201 918139c12cbc68d0b81fdfe6ef2f5215 "biber main"
+  "main.glsdefs" 1724639971 5049 58ef34d3671962d04844f2cffb62e6ef "pdflatex"
+  "main.lof" 1724639971 5017 9a15eff17f61b23a504716a4fea0a9a3 "pdflatex"
+  "main.lot" 1724639971 468 749322cb914d3944cb8eaa99aa91fecd "pdflatex"
+  "main.out" 1724639971 7722 7ca7d0be940864a44d305b4a98450df3 "pdflatex"
+  "main.run.xml" 1724639971 2414 f28ac3c0befa8544f4b4e800375f3d09 "pdflatex"
+  "main.tex" 1724639957 39659 47685b7fc898f4d7a7f83be14fb98249 ""
+  "main.toc" 1724639971 4149 8e13be3e1c5bfb1cd578723400e55f78 "pdflatex"
   "packages.sty" 1724318851 1843 0da52a7255d62fff38368f2ac10999d3 ""
   (generated)
   "main.aux"

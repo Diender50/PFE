@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.21)  22 AUG 2024 19:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.21)  26 AUG 2024 10:39
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1098,7 +1098,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-<img/logo/logo_enpc.png, id=152, 252.945pt x 322.20375pt>
+<img/logo/logo_enpc.png, id=156, 252.945pt x 322.20375pt>
 File: img/logo/logo_enpc.png Graphic file (type png)
 <use img/logo/logo_enpc.png>
 Package pdftex.def Info: img/logo/logo_enpc.png  used on input line 20.
@@ -1252,12 +1252,12 @@ LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
 [10{c:/texlive/2024/texmf-dist/fonts/enc/dvips/libertinust1math/libusSYM.enc}{c:/texlive/2024/texmf-dist/fonts/enc/dvips/libertine/lbtn_7ukmos.enc}]
 
 [11]
-<img/ondul/casa_musica4 (1).jpg, id=323, 1277.77374pt x 1003.75pt>
+<img/ondul/casa_musica4 (1).jpg, id=335, 1277.77374pt x 1003.75pt>
 File: img/ondul/casa_musica4 (1).jpg Graphic file (type jpg)
 <use img/ondul/casa_musica4 (1).jpg>
 Package pdftex.def Info: img/ondul/casa_musica4 (1).jpg  used on input line 196.
 (pdftex.def)             Requested size: 233.20639pt x 183.20416pt.
-<img/ondul/casa_musica1 (1).jpg, id=324, 1564.84625pt x 1243.64626pt>
+<img/ondul/casa_musica1 (1).jpg, id=336, 1564.84625pt x 1243.64626pt>
 File: img/ondul/casa_musica1 (1).jpg Graphic file (type jpg)
 <use img/ondul/casa_musica1 (1).jpg>
 Package pdftex.def Info: img/ondul/casa_musica1 (1).jpg  used on input line 197.
@@ -1265,7 +1265,7 @@ Package pdftex.def Info: img/ondul/casa_musica1 (1).jpg  used on input line 197.
 
 
 pdfTeX warning: pdflatex.exe (file ./img/ondul/circ.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<img/ondul/circ.pdf, id=327, 614.65334pt x 117.34038pt>
+<img/ondul/circ.pdf, id=339, 614.65334pt x 117.34038pt>
 File: img/ondul/circ.pdf Graphic file (type pdf)
 <use img/ondul/circ.pdf>
 Package pdftex.def Info: img/ondul/circ.pdf  used on input line 206.
@@ -1275,7 +1275,7 @@ Package pdftex.def Info: img/ondul/circ.pdf  used on input line 206.
 [12 <./img/ondul/casa_musica4 (1).jpg> <./img/ondul/casa_musica1 (1).jpg> <./img/ondul/circ.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./img/ondul/circ2.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<img/ondul/circ2.pdf, id=346, 479.46829pt x 117.34038pt>
+<img/ondul/circ2.pdf, id=358, 479.46829pt x 117.34038pt>
 File: img/ondul/circ2.pdf Graphic file (type pdf)
 <use img/ondul/circ2.pdf>
 Package pdftex.def Info: img/ondul/circ2.pdf  used on input line 220.
@@ -1288,7 +1288,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 227--230
 
 
 pdfTeX warning: pdflatex.exe (file ./img/ondul/section_circ.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<img/ondul/section_circ.pdf, id=350, 629.83107pt x 602.2008pt>
+<img/ondul/section_circ.pdf, id=362, 629.83107pt x 602.2008pt>
 File: img/ondul/section_circ.pdf Graphic file (type pdf)
 <use img/ondul/section_circ.pdf>
 Package pdftex.def Info: img/ondul/section_circ.pdf  used on input line 234.
@@ -1305,7 +1305,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 242--244
 
 
 pdfTeX warning: pdflatex.exe (file ./img/ondul/schem_stat.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<img/ondul/schem_stat.pdf, id=405, 104.90793pt x 164.25867pt>
+<img/ondul/schem_stat.pdf, id=417, 104.90793pt x 164.25867pt>
 File: img/ondul/schem_stat.pdf Graphic file (type pdf)
 <use img/ondul/schem_stat.pdf>
 Package pdftex.def Info: img/ondul/schem_stat.pdf  used on input line 257.
@@ -1313,7 +1313,7 @@ Package pdftex.def Info: img/ondul/schem_stat.pdf  used on input line 257.
 
 
 pdfTeX warning: pdflatex.exe (file ./img/ondul/proj_load.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<img/ondul/proj_load.pdf, id=408, 464.70412pt x 305.6278pt>
+<img/ondul/proj_load.pdf, id=420, 464.70412pt x 305.6278pt>
 File: img/ondul/proj_load.pdf Graphic file (type pdf)
 <use img/ondul/proj_load.pdf>
 Package pdftex.def Info: img/ondul/proj_load.pdf  used on input line 280.
@@ -1323,7 +1323,7 @@ Package pdftex.def Info: img/ondul/proj_load.pdf  used on input line 280.
 [15 <./img/ondul/schem_stat.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./img/ondul/torsion.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<img/ondul/torsion.pdf, id=458, 96.20302pt x 112.80846pt>
+<img/ondul/torsion.pdf, id=470, 96.20302pt x 112.80846pt>
 File: img/ondul/torsion.pdf Graphic file (type pdf)
 <use img/ondul/torsion.pdf>
 Package pdftex.def Info: img/ondul/torsion.pdf  used on input line 320.
@@ -1333,7 +1333,7 @@ Package pdftex.def Info: img/ondul/torsion.pdf  used on input line 320.
 [16 <./img/ondul/proj_load.pdf> <./img/ondul/torsion.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./img/ondul/fem/maillage_simple.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<img/ondul/fem/maillage_simple.pdf, id=529, 979.6891pt x 597.50829pt>
+<img/ondul/fem/maillage_simple.pdf, id=541, 979.6891pt x 597.50829pt>
 File: img/ondul/fem/maillage_simple.pdf Graphic file (type pdf)
 <use img/ondul/fem/maillage_simple.pdf>
 Package pdftex.def Info: img/ondul/fem/maillage_simple.pdf  used on input line 350.
@@ -1341,7 +1341,7 @@ Package pdftex.def Info: img/ondul/fem/maillage_simple.pdf  used on input line 3
 
 
 pdfTeX warning: pdflatex.exe (file ./img/ondul/fem/FEM1.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<img/ondul/fem/FEM1.pdf, id=533, 790.36882pt x 644.09634pt>
+<img/ondul/fem/FEM1.pdf, id=545, 790.36882pt x 644.09634pt>
 File: img/ondul/fem/FEM1.pdf Graphic file (type pdf)
 <use img/ondul/fem/FEM1.pdf>
 Package pdftex.def Info: img/ondul/fem/FEM1.pdf  used on input line 361.
@@ -1351,7 +1351,7 @@ Package pdftex.def Info: img/ondul/fem/FEM1.pdf  used on input line 361.
 [17 <./img/ondul/fem/maillage_simple.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./img/ondul/fem/simple_fem.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<img/ondul/fem/simple_fem.pdf, id=563, 628.06342pt x 291.67067pt>
+<img/ondul/fem/simple_fem.pdf, id=575, 628.06342pt x 291.67067pt>
 File: img/ondul/fem/simple_fem.pdf Graphic file (type pdf)
 <use img/ondul/fem/simple_fem.pdf>
 Package pdftex.def Info: img/ondul/fem/simple_fem.pdf  used on input line 376.
@@ -1363,7 +1363,7 @@ Package pdftex.def Info: img/ondul/fem/simple_fem.pdf  used on input line 376.
 [19 <./img/ondul/fem/simple_fem.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./img/ondul/jointsq.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<img/ondul/jointsq.pdf, id=655, 683.76456pt x 389.21812pt>
+<img/ondul/jointsq.pdf, id=667, 683.76456pt x 389.21812pt>
 File: img/ondul/jointsq.pdf Graphic file (type pdf)
 <use img/ondul/jointsq.pdf>
 Package pdftex.def Info: img/ondul/jointsq.pdf  used on input line 394.
@@ -1371,7 +1371,7 @@ Package pdftex.def Info: img/ondul/jointsq.pdf  used on input line 394.
 
 
 pdfTeX warning: pdflatex.exe (file ./img/ondul/fem/femjoint.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<img/ondul/fem/femjoint.pdf, id=657, 629.77686pt x 448.34802pt>
+<img/ondul/fem/femjoint.pdf, id=669, 629.77686pt x 448.34802pt>
 File: img/ondul/fem/femjoint.pdf Graphic file (type pdf)
 <use img/ondul/fem/femjoint.pdf>
 Package pdftex.def Info: img/ondul/fem/femjoint.pdf  used on input line 405.
@@ -1383,7 +1383,7 @@ Package pdftex.def Info: img/ondul/fem/femjoint.pdf  used on input line 405.
 [21 <./img/ondul/fem/femjoint.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./img/ondul/fem/femjoint3.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<img/ondul/fem/femjoint3.pdf, id=765, 315.12129pt x 224.17351pt>
+<img/ondul/fem/femjoint3.pdf, id=777, 315.12129pt x 224.17351pt>
 File: img/ondul/fem/femjoint3.pdf Graphic file (type pdf)
 <use img/ondul/fem/femjoint3.pdf>
 Package pdftex.def Info: img/ondul/fem/femjoint3.pdf  used on input line 415.
@@ -1391,7 +1391,7 @@ Package pdftex.def Info: img/ondul/fem/femjoint3.pdf  used on input line 415.
 
 
 pdfTeX warning: pdflatex.exe (file ./img/ondul/predim.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<img/ondul/predim.pdf, id=771, 628.57834pt x 600.0478pt>
+<img/ondul/predim.pdf, id=783, 628.57834pt x 600.0478pt>
 File: img/ondul/predim.pdf Graphic file (type pdf)
 <use img/ondul/predim.pdf>
 Package pdftex.def Info: img/ondul/predim.pdf  used on input line 441.
@@ -1403,7 +1403,7 @@ Package pdftex.def Info: img/ondul/predim.pdf  used on input line 441.
 [23 <./img/ondul/predim.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./img/ondul/fem/dim_fem.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<img/ondul/fem/dim_fem.pdf, id=841, 683.76456pt x 355.91068pt>
+<img/ondul/fem/dim_fem.pdf, id=853, 683.76456pt x 355.91068pt>
 File: img/ondul/fem/dim_fem.pdf Graphic file (type pdf)
 <use img/ondul/fem/dim_fem.pdf>
 Package pdftex.def Info: img/ondul/fem/dim_fem.pdf  used on input line 472.
@@ -1413,17 +1413,17 @@ Package pdftex.def Info: img/ondul/fem/dim_fem.pdf  used on input line 472.
 [24 <./img/ondul/fem/dim_fem.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./img/ondul/fem/dim_float.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<img/ondul/fem/dim_float.pdf, id=871, 629.77686pt x 444.2467pt>
+<img/ondul/fem/dim_float.pdf, id=883, 629.77686pt x 444.2467pt>
 File: img/ondul/fem/dim_float.pdf Graphic file (type pdf)
 <use img/ondul/fem/dim_float.pdf>
 Package pdftex.def Info: img/ondul/fem/dim_float.pdf  used on input line 481.
 (pdftex.def)             Requested size: 469.75502pt x 331.3743pt.
-<img/bulle/Vakko_ext.jpg, id=872, 331.2375pt x 218.0145pt>
+<img/bulle/Vakko_ext.jpg, id=884, 331.2375pt x 218.0145pt>
 File: img/bulle/Vakko_ext.jpg Graphic file (type jpg)
 <use img/bulle/Vakko_ext.jpg>
 Package pdftex.def Info: img/bulle/Vakko_ext.jpg  used on input line 496.
 (pdftex.def)             Requested size: 469.75502pt x 309.20016pt.
-<img/bulle/Vakko_int.jpg, id=873, 529.98pt x 235.6002pt>
+<img/bulle/Vakko_int.jpg, id=885, 529.98pt x 235.6002pt>
 File: img/bulle/Vakko_int.jpg Graphic file (type jpg)
 <use img/bulle/Vakko_int.jpg>
 Package pdftex.def Info: img/bulle/Vakko_int.jpg  used on input line 497.
@@ -1432,49 +1432,79 @@ Package pdftex.def Info: img/bulle/Vakko_int.jpg  used on input line 497.
 
 [25 <./img/ondul/fem/dim_float.pdf>]
 
+[26 <./img/bulle/Vakko_ext.jpg> <./img/bulle/Vakko_int.jpg>]
+
 pdfTeX warning: pdflatex.exe (file ./img/bulle/types_bulles.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<img/bulle/types_bulles.pdf, id=922, 683.76456pt x 212.55109pt>
+<img/bulle/types_bulles.pdf, id=939, 683.76456pt x 212.55109pt>
 File: img/bulle/types_bulles.pdf Graphic file (type pdf)
 <use img/bulle/types_bulles.pdf>
-Package pdftex.def Info: img/bulle/types_bulles.pdf  used on input line 506.
+Package pdftex.def Info: img/bulle/types_bulles.pdf  used on input line 508.
 (pdftex.def)             Requested size: 469.75502pt x 146.02795pt.
 
 
-[26 <./img/bulle/Vakko_ext.jpg> <./img/bulle/Vakko_int.jpg>]
+pdfTeX warning: pdflatex.exe (file ./img/bulle/geo_bulles1.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
+<img/bulle/geo_bulles1.pdf, id=940, 149.72035pt x 363.52512pt>
+File: img/bulle/geo_bulles1.pdf Graphic file (type pdf)
+<use img/bulle/geo_bulles1.pdf>
+Package pdftex.def Info: img/bulle/geo_bulles1.pdf  used on input line 517.
+(pdftex.def)             Requested size: 112.74277pt x 273.74146pt.
 
-[27 <./img/bulle/types_bulles.pdf>]
-LaTeX Font Info:    Trying to load font information for T1+zi4 on input line 512.
+Underfull \hbox (badness 10000) in paragraph at lines 523--525
+
+ []
+
+
+
+pdfTeX warning: pdflatex.exe (file ./img/bulle/comp_kar.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
+<img/bulle/comp_kar.pdf, id=943, 629.77686pt x 337.26pt>
+File: img/bulle/comp_kar.pdf Graphic file (type pdf)
+<use img/bulle/comp_kar.pdf>
+Package pdftex.def Info: img/bulle/comp_kar.pdf  used on input line 536.
+(pdftex.def)             Requested size: 469.75502pt x 251.57034pt.
+
+
+[27 <./img/bulle/types_bulles.pdf> <./img/bulle/geo_bulles1.pdf>]
+
+[28 <./img/bulle/comp_kar.pdf>]
+Overfull \hbox (0.6993pt too wide) in paragraph at lines 557--557
+ []|\T1/LinuxLibertineT-TLF/sb/n/10.95 Ondulation| 
+ []
+
+
+
+[29]
+LaTeX Font Info:    Trying to load font information for T1+zi4 on input line 561.
  (c:/texlive/2024/texmf-dist/tex/latex/inconsolata/t1zi4.fd
 File: t1zi4.fd 2018/01/14 T1/zi4 (Inconsolata)
 )
 LaTeX Font Info:    Font shape `T1/zi4/m/n' will be
-(Font)              scaled to size 10.95pt on input line 512.
+(Font)              scaled to size 10.95pt on input line 561.
 
 
-[28{c:/texlive/2024/texmf-dist/fonts/enc/dvips/inconsolata/i4-t1-5.enc}] (./main.aux)
+[30{c:/texlive/2024/texmf-dist/fonts/enc/dvips/inconsolata/i4-t1-5.enc}] (./main.aux)
  ***********
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-07-20>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: C7795CEE756EC82481B538CEF307BC6F;7525.
+(rerunfilecheck)             Checksum: 7CA7D0BE940864A44D305B4A98450DF3;7722.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 33263 strings out of 473578
- 640180 string characters out of 5732242
- 1949960 words of memory out of 5000000
- 55581 multiletter control sequences out of 15000+600000
+ 33288 strings out of 473578
+ 640801 string characters out of 5732242
+ 1950960 words of memory out of 5000000
+ 55600 multiletter control sequences out of 15000+600000
  660410 words of font info for 97 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  109i,14n,131p,2393b,2985s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/libertinust1math/LibertinusT1Math.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/libertine/LinLibertineT.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/libertine/LinLibertineTI.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/libertine/LinLibertineTZ.pfb>
-Output written on main.pdf (29 pages, 19693683 bytes).
+Output written on main.pdf (31 pages, 20376917 bytes).
 PDF statistics:
- 1025 PDF objects out of 1200 (max. 8388607)
- 664 compressed objects within 7 object streams
- 109 named destinations out of 1000 (max. 500000)
- 402 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1106 PDF objects out of 1200 (max. 8388607)
+ 716 compressed objects within 8 object streams
+ 115 named destinations out of 1000 (max. 500000)
+ 420 words of extra memory for PDF output out of 10000 (max. 10000000)
 
