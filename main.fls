@@ -426,21 +426,21 @@ INPUT c:/texlive/2024/texmf-dist/tex/latex/libertine/TS1LinuxLibertineT-TLF.fd
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/libertine/LinLibertineT-tlf-ts1.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/libertine/LinLibertineT-tlf-t1.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/libertine/LinLibertineT-tlf-t1.tfm
-OUTPUT main.lof
+INPUT c:/texlive/2024/texmf-dist/fonts/enc/dvips/libertinust1math/libusMR.enc
+INPUT c:/texlive/2024/texmf-dist/fonts/enc/dvips/libertinust1math/libusMI.enc
 INPUT c:/texlive/2024/texmf-dist/fonts/vf/public/libertine/LinLibertineT-tlf-sc-t1.vf
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/libertine/LinLibertineT-tlf-sc-t1--base.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/enc/dvips/libertine/lbtn_ncsllp.enc
 INPUT c:/texlive/2024/texmf-dist/fonts/vf/public/libertine/LinLibertineTI-tlf-t1.vf
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/libertine/LinLibertineTI-tlf-t1--base.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/enc/dvips/libertine/lbtn_7grukw.enc
-INPUT c:/texlive/2024/texmf-dist/fonts/enc/dvips/libertinust1math/libusMI.enc
-INPUT c:/texlive/2024/texmf-dist/fonts/enc/dvips/libertinust1math/libusMR.enc
 INPUT c:/texlive/2024/texmf-dist/fonts/enc/dvips/libertinust1math/libusEX.enc
 INPUT c:/texlive/2024/texmf-dist/fonts/vf/public/libertine/LinLibertineT-tlf-ts1.vf
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/libertine/LinLibertineT-tlf-ts1--base.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/enc/dvips/libertine/lbtn_naooyc.enc
 INPUT c:/texlive/2024/texmf-dist/fonts/vf/public/libertine/LinLibertineT-tlf-t1.vf
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/libertine/LinLibertineT-tlf-t1--base.tfm
+OUTPUT main.lof
 INPUT ./main.lot
 INPUT ./main.lot
 INPUT main.lot
@@ -452,9 +452,19 @@ INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/libertine/LinLibertineTZ-tlf-t
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/libertine/LinLibertineTZ-tlf-t1.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/vf/public/libertine/LinLibertineTZ-tlf-t1.vf
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/libertine/LinLibertineTZ-tlf-t1--base.tfm
+INPUT ./img/plat/fem.pdf
+INPUT ./img/plat/fem.pdf
+INPUT ./img/plat/fem.pdf
+INPUT ./img/plat/fem.pdf
+INPUT ./img/plat/fem.pdf
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/libertine/LinLibertineTZ-tlf-sc-t1.tfm
-INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/libertine/LinLibertineT-tlf-t1.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/enc/dvips/libertinust1math/libusSYM.enc
+INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/libertine/LinLibertineT-tlf-t1.tfm
+INPUT ./img/plat/dim_fem.pdf
+INPUT ./img/plat/dim_fem.pdf
+INPUT ./img/plat/dim_fem.pdf
+INPUT ./img/plat/dim_fem.pdf
+INPUT ./img/plat/dim_fem.pdf
 INPUT c:/texlive/2024/texmf-dist/fonts/vf/public/libertine/LinLibertineTZ-tlf-sc-t1.vf
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/libertine/LinLibertineTZ-tlf-sc-t1--base.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/enc/dvips/libertine/lbtn_7ukmos.enc
@@ -470,6 +480,16 @@ INPUT ./img/ondul/casa_musica1 (1).jpg
 INPUT ./img/ondul/casa_musica1 (1).jpg
 INPUT ./img/ondul/casa_musica1 (1).jpg
 INPUT ./img/ondul/casa_musica1 (1).jpg
+INPUT ./img/ondul/02_Qatar_National_Library__Photo_by_Hans_Werlemann_4180.jpg
+INPUT ./img/ondul/02_Qatar_National_Library__Photo_by_Hans_Werlemann_4180.jpg
+INPUT ./img/ondul/02_Qatar_National_Library__Photo_by_Hans_Werlemann_4180.jpg
+INPUT ./img/ondul/02_Qatar_National_Library__Photo_by_Hans_Werlemann_4180.jpg
+INPUT ./img/ondul/02_Qatar_National_Library__Photo_by_Hans_Werlemann_4180.jpg
+INPUT ./img/ondul/07_Qatar_National_Library__Photo_by_Iwan_Baan_5345.jpg
+INPUT ./img/ondul/07_Qatar_National_Library__Photo_by_Iwan_Baan_5345.jpg
+INPUT ./img/ondul/07_Qatar_National_Library__Photo_by_Iwan_Baan_5345.jpg
+INPUT ./img/ondul/07_Qatar_National_Library__Photo_by_Iwan_Baan_5345.jpg
+INPUT ./img/ondul/07_Qatar_National_Library__Photo_by_Iwan_Baan_5345.jpg
 INPUT ./img/ondul/circ.pdf
 INPUT ./img/ondul/circ.pdf
 INPUT ./img/ondul/circ.pdf
@@ -545,6 +565,11 @@ INPUT ./img/ondul/fem/dim_float.pdf
 INPUT ./img/ondul/fem/dim_float.pdf
 INPUT ./img/ondul/fem/dim_float.pdf
 INPUT ./img/ondul/fem/dim_float.pdf
+INPUT ./img/bulle/Vakko_ext2.jpg
+INPUT ./img/bulle/Vakko_ext2.jpg
+INPUT ./img/bulle/Vakko_ext2.jpg
+INPUT ./img/bulle/Vakko_ext2.jpg
+INPUT ./img/bulle/Vakko_ext2.jpg
 INPUT ./img/bulle/Vakko_ext.jpg
 INPUT ./img/bulle/Vakko_ext.jpg
 INPUT ./img/bulle/Vakko_ext.jpg
@@ -555,6 +580,11 @@ INPUT ./img/bulle/Vakko_int.jpg
 INPUT ./img/bulle/Vakko_int.jpg
 INPUT ./img/bulle/Vakko_int.jpg
 INPUT ./img/bulle/Vakko_int.jpg
+INPUT ./img/bulle/stringio.jpg
+INPUT ./img/bulle/stringio.jpg
+INPUT ./img/bulle/stringio.jpg
+INPUT ./img/bulle/stringio.jpg
+INPUT ./img/bulle/stringio.jpg
 INPUT ./img/bulle/types_bulles.pdf
 INPUT ./img/bulle/types_bulles.pdf
 INPUT ./img/bulle/types_bulles.pdf

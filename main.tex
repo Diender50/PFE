@@ -152,7 +152,23 @@ FD-P78 => méthode poutre
 \subsubsection{Méthode VEC}
 \subsubsection{Méthode non linéaire}
 
-\subsection{Calcul FEM}\label{sec:temoin}
+\subsection{Calcul aux Élements Finis}\label{sec:temoin}
+
+Pour commencer, on peut comparer les épaisseurs de verre obtenus par l'application des normes françaises avec un calcul par \acrfull{FEM} via le logiciel de calcul SOLIDWORKS.
+
+On modélise le verre par un parallélépipède solide de \qtyproduct{10 x 3}{\metre} d'épaisseur notée $t$. Afin de modéliser le mieux possible les appuis réels du verre on l'encastre sur \qty{50}{\milli\metre} en tête et en pied dans des parallélépipèdes en silicone. Le contact entre le silicone et le verre est simple. Ainsi le verre peut se déplacer librement verticalement en tête. Les faces de ce silicone qui ne sont pas en contact avec le verre ne sont pas libres de se déplacer. L'ensemble est maillé automatiquement par SOLIDWORKS en gardant la même précision de maillage quelquesoit l'épaisseur $t$. 
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{img/plat/fem.pdf}
+    \caption{Géométrie et maillage SOLIDWORKS du verre plat.}
+    \label{fig:fem_plat}
+\end{figure}
+
+On applique à un des deux côtés du verre une pression uniforme (à l'\acrshort{ELU}: \qty{3}{\kilo\pascal}) et on soumet l'ensemble à une gravité (à l'\acrshort{ELU}: \qty{13.5}{\metre\per\squared\second}). Les caractéristiques matériaux utilisés dans ce calcul et dans tous les suivants sont répertoriés dans le tableau \ref{tab:mat_autoportant}. 
+
+On effectue finalement une analyse linéaire donnant la contrainte, selon le critère Von Mises, dans le verre. 
+
 \begin{table}[H]
 \begin{center}
 \caption{Description des matériaux utilisés dans les \acrshort{FEM}.}
@@ -169,12 +185,18 @@ Silicone & 4.5 & 1.5 & 0.499 & 4.5* & 1000\\
 \end{tabularx}
 \end{center}
 {\RaggedLeft \footnotesize * Valeur de limite d'élasticité prise égale à la limite en traction.}\end{table}
-QCC. $L=10m$, $b=3m$, $P=2kPa$, self standing.
+
+Cette méthodologie de calcul \acrshort{FEM} sera utilisée dans toute la suite du mémoire.
 
 Analyse linéaire solidworks: \qty{70.5}{\milli\meter} ($S= \qty{2115}{\centi\square\meter}$)\qty{56.5}{\milli\meter} ($S=$\SI{1695}{\centi\square\meter})
 
-\subsubsection{Impact du silicone}
-Aucun impact sur le verre plat
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{img/plat/dim_fem.pdf}
+    \caption{Résultats du calcul \acrshort{FEM} du verre plat. \textbf{a.} Profil des contraintes dans le verre (\textbf{1.} verre trempé, \qty{56.5}{\milli\meter} et \textbf{1.} verre durci, \qty{70.5}{\milli\meter}) et \textbf{b.} contrainte maximale dans le verre en fonction de son épaisseur pour le verre trempé et le verre durci.}
+    \label{fig:fem_plat_dim}
+\end{figure}
+
 
 \newpage
 
@@ -189,13 +211,16 @@ Introduction sur l'optimisation géométrique... Gain en inertie, section en I p
 \subsubsection{Limitations géométriques}
 
 \subsection{Le verre plié}
-
+\newpage
 \subsection{Le verre ondulé}
 \begin{figure}[H]
     \centering
-    \includegraphics[height=0.39\textwidth]{img/ondul/casa_musica4 (1).jpg}
-    \includegraphics[height=0.39\textwidth]{img/ondul/casa_musica1 (1).jpg}
-    \caption{Photographie de la façade en verre ondulé de la Casa Da Música de Porto, par \cite{CasaDaMusica}.}
+    \includegraphics[height=0.392\textwidth]{img/ondul/casa_musica4 (1).jpg}\hfill
+    \includegraphics[height=0.392\textwidth]{img/ondul/casa_musica1 (1).jpg}
+    \\[\smallskipamount]
+    \includegraphics[height=0.331\textwidth]{img/ondul/02_Qatar_National_Library__Photo_by_Hans_Werlemann_4180.jpg}\hfill
+    \includegraphics[height=0.331\textwidth]{img/ondul/07_Qatar_National_Library__Photo_by_Iwan_Baan_5345.jpg}
+    \caption{Photographies de la façade en verre ondulé de la Casa Da Música de Porto, par \cite{CasaDaMusica} (première ligne) et de la Qatar National Library, par \cite{quatNatLib} et \cite{quatNatLib2} (seconde ligne).}
     \label{fig:CasaDaMusica}
 \end{figure}
 L'intérêt premier du verre ondulé, en plus de attrait esthétique, est sa grande inertie dans le sens des ondulations, à l'instar des bacaciers. Cette inertie lui permet d'être plus rigide dans ce sens et donc d'être plus résistant.
@@ -490,18 +515,36 @@ On obtient ainsi pour le verre durci une épaisseur minimale de \qty{22}{\milli\
 Choix du silicone entre les verres, de son épaisseur, de la contrainte dedans. Faire un trou dans le vitrage au niveau des creux pour libérer les contraintes pour aller plus loin dans l'optimisation. Question de ce qui se passe au niveau des appuis qui n'est pas totalement clair. Question de la production du verre ondulé. Mettre des cales au au niveau du pied et de la tête entre les verres pour avoir une plus grande rigidité en bas et en haut. Mais on a quand même réussit à bien identifier les points problématiques: la rétractation en bas et en haut notamment.
 
 \subsection{Le verre bulle}
-bg
+
+Introduction sur le Vakko HQ et lien avec le verre ondulé. 
+
 \begin{figure}[H]
     \centering
-    \includegraphics[width=\linewidth]{img/bulle/Vakko_ext.jpg}
+    \includegraphics[height=0.324\linewidth]{img/bulle/Vakko_ext2.jpg}\hfill
+    \includegraphics[height=0.324\linewidth]{img/bulle/Vakko_ext.jpg}
+    \\[\smallskipamount]
     \includegraphics[width=\linewidth]{img/bulle/Vakko_int.jpg}
-    \caption{Photographie rapprochée de la façade du Vakko Headquarters and Power Media Center, par \cite{VekkoHQ}.}
+    \caption{Photographies de la façade du Vakko Headquarters and Power Media Center, par \cite{VekkoHQ}.}
     \label{fig:VakkoHQ}
 \end{figure}
-gh
+
+La volonté architecturale de REX pour le Vakko Headquarters a été de mettre en valeur une ancienne structure en béton plutôt que de la cacher. Pour cela ils ont voulu réaliser une façade en verre très mince afin qu'elle soit le plus transparent possible et ce sans cadre. Cette volonté architecturale a engendré un défi technologique: celui de concevoir une façade en verre mince sans meneaux. 
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{img/bulle/stringio.jpg}
+    \caption{Calcul de la façade su Vakko Headquarters and Power Media Center, par \cite{REX}. \textit{Sous-titre: L'insertion d'un X structurel dans chaque vitre permet d'augmenter la résistance du verre, d'éliminer le besoin de meaneaux aux bords et de réduire son épaisseur. (traduit de l'anglais)}}
+    \label{fig:REXcalc}
+\end{figure}
+
+Pour cela ils ont renforcé le panneau de verre tenu ponctuellement en ajoutant un "X". D'après REX, ce "X" permet d'augmenter la résistance du verre malgré, ses maintiens ponctuels, et donc de réduire l'épaisseur du verre.
+\\
+
+On peut donc s'inspirer de ce principe dans le cadre de notre recherche autour de l'optimisation géométrique des panneaux de verre autoportant. Nous allons donc étudier le bénifice structurel d'une telle nervure mais aussi explorer les différentes formes de bulles possibles afin de déterminer s'il existe des formes plus ou moins optimales. 
+
 \subsubsection{Etude préliminaire sur les formes de bulles}
 
-On s'intéresse dans un premier temps aux formes de bulles possibles afin de déterminer la forme meilleure forme pour optimiser notre épaisseur de verre. On commence par étudier plusieurs cas simples, schématisés dans la figure \ref{fig:types_bulle}. 
+On commence donc par s'intéresser aux formes de bulles possibles afin de déterminer la ou les meilleures formes pour optimiser notre épaisseur de verre. Les cas simples étudiés sont schématisés dans la figure \ref{fig:types_bulle}. 
 
 \begin{figure}[H]
     \centering
@@ -529,7 +572,7 @@ Pour cela on utilise l'outil paramétrique Karamba3D permettant de faire de rapi
 
 La figure \ref{fig:comp_kar} présente des résultats très similaires entre les deux logiciels de calcul. L'écart entre les contraintes maximales est bien plus grande pour de grandes contraintes que pour de faibles contraintes. Toutefois, Karamba3D est plus sensible au flambement que SOLIDWORKS. Ainsi, il pourrait être possible d'avoir des géométries flambant avec Karamba3D mais étant admissible avec SOLIDWORKS. Le calcul au second ordre de Karamba3D est d'ailleurs plus proche de celui de SOLIDWORKS que le premier ordre. Lorsqu'il n'y a pas de flambement, on peut observer que l'écart relatif de la contrainte maximale est inférieure à \qty{6}{\percent} pour le premier ordre et \qty{4}{\percent} pour le second ordre. 
 
-On peut donc aisément faire confiance à Karamba3D pour les calculs de cette première approche. 
+On peut donc aisément faire confiance à Karamba3D pour les calculs de cette première approche.
 
 \begin{figure}[H]
     \centering
@@ -537,6 +580,9 @@ On peut donc aisément faire confiance à Karamba3D pour les calculs de cette pr
     \caption{Comparaisons de la contrainte maximale calculée avec SOLIDWORKS et Karamba3D selon l'épaisseur de verre (\textbf{a.} contrainte maximale et \textbf{b.} écart relatif par rapport à SOLIDWORKS).}
     \label{fig:comp_kar}
 \end{figure}
+
+\newpage
+\subsection{Verre à double courbure}
 
 \newpage
 

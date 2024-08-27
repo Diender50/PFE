@@ -36,6 +36,7 @@
       \strng{authornamehash}{564642c53fc19c6a889c727539a5665e}
       \strng{authorfullhash}{564642c53fc19c6a889c727539a5665e}
       \strng{authorfullhashraw}{564642c53fc19c6a889c727539a5665e}
+      \field{extraname}{1}
       \field{sortinit}{B}
       \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
       \field{extradatescope}{labelyear}
@@ -46,6 +47,60 @@
       \field{note}{[En ligne; consulté le 25 juillet 2024]}
       \field{title}{{Vakko Headquarters and Power Media Center / REX}}
       \field{year}{2010}
+    \endentry
+    \entry{quatNatLib2}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=564642c53fc19c6a889c727539a5665e}{%
+           family={Baan},
+           familyi={B\bibinitperiod},
+           given={Iwan},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{564642c53fc19c6a889c727539a5665e}
+      \strng{fullhash}{564642c53fc19c6a889c727539a5665e}
+      \strng{fullhashraw}{564642c53fc19c6a889c727539a5665e}
+      \strng{bibnamehash}{564642c53fc19c6a889c727539a5665e}
+      \strng{authorbibnamehash}{564642c53fc19c6a889c727539a5665e}
+      \strng{authornamehash}{564642c53fc19c6a889c727539a5665e}
+      \strng{authorfullhash}{564642c53fc19c6a889c727539a5665e}
+      \strng{authorfullhashraw}{564642c53fc19c6a889c727539a5665e}
+      \field{extraname}{2}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.archdaily.com/892727/qatar-national-library-oma}}
+      \field{note}{[En ligne; consulté le 27 août 2024]}
+      \field{title}{{Quatar National Library / OMA}}
+      \field{year}{2017}
+    \endentry
+    \entry{REX}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=322bc8b0879e315d869ffab825d19bb0}{%
+           family={REX},
+           familyi={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{322bc8b0879e315d869ffab825d19bb0}
+      \strng{fullhash}{322bc8b0879e315d869ffab825d19bb0}
+      \strng{fullhashraw}{322bc8b0879e315d869ffab825d19bb0}
+      \strng{bibnamehash}{322bc8b0879e315d869ffab825d19bb0}
+      \strng{authorbibnamehash}{322bc8b0879e315d869ffab825d19bb0}
+      \strng{authornamehash}{322bc8b0879e315d869ffab825d19bb0}
+      \strng{authorfullhash}{322bc8b0879e315d869ffab825d19bb0}
+      \strng{authorfullhashraw}{322bc8b0879e315d869ffab825d19bb0}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://rex-ny.com/project/vakko-fashion-center/}}
+      \field{note}{[En ligne; consulté le 27 août 2024]}
+      \field{title}{{Vakko Headquarters and Power Media Center, Facade Calculation}}
+      \field{year}{2017}
     \endentry
     \entry{CasaDaMusica}{misc}{}{}
       \name{author}{1}{}{%
@@ -74,6 +129,34 @@
       \field{note}{[En ligne; consulté le 25 juillet 2024]}
       \field{title}{{Casa da Música / OMA}}
       \field{year}{2005}
+    \endentry
+    \entry{quatNatLib}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=c2123b346475a9d637875fcb55fdab4e}{%
+           family={Werlemann},
+           familyi={W\bibinitperiod},
+           given={Hans},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{c2123b346475a9d637875fcb55fdab4e}
+      \strng{fullhash}{c2123b346475a9d637875fcb55fdab4e}
+      \strng{fullhashraw}{c2123b346475a9d637875fcb55fdab4e}
+      \strng{bibnamehash}{c2123b346475a9d637875fcb55fdab4e}
+      \strng{authorbibnamehash}{c2123b346475a9d637875fcb55fdab4e}
+      \strng{authornamehash}{c2123b346475a9d637875fcb55fdab4e}
+      \strng{authorfullhash}{c2123b346475a9d637875fcb55fdab4e}
+      \strng{authorfullhashraw}{c2123b346475a9d637875fcb55fdab4e}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.archdaily.com/892727/qatar-national-library-oma}}
+      \field{note}{[En ligne; consulté le 27 août 2024]}
+      \field{title}{{Quatar National Library / OMA}}
+      \field{year}{2017}
     \endentry
   \enddatalist
 \endrefsection
