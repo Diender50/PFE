@@ -77,6 +77,63 @@
       \field{title}{{Quatar National Library / OMA}}
       \field{year}{2017}
     \endentry
+    \entry{fdp78}{report}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=342b823d8f92c148ce2769c02e515ed8}{%
+           family={{FD P78-468}},
+           familyi={F\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Afnor}%
+      }
+      \strng{namehash}{342b823d8f92c148ce2769c02e515ed8}
+      \strng{fullhash}{342b823d8f92c148ce2769c02e515ed8}
+      \strng{fullhashraw}{342b823d8f92c148ce2769c02e515ed8}
+      \strng{bibnamehash}{342b823d8f92c148ce2769c02e515ed8}
+      \strng{authorbibnamehash}{342b823d8f92c148ce2769c02e515ed8}
+      \strng{authornamehash}{342b823d8f92c148ce2769c02e515ed8}
+      \strng{authorfullhash}{342b823d8f92c148ce2769c02e515ed8}
+      \strng{authorfullhashraw}{342b823d8f92c148ce2769c02e515ed8}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{1}
+      \field{title}{Verre dans la construction - Calculs des épaisseurs de vitrages - Compléments pour l'application de EN 16612 et EN 16613}
+      \field{type}{Norme française homologuée}
+      \field{year}{2023}
+    \endentry
+    \entry{mcst2}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=00f1178fad6f198e63232840795db5a5}{%
+           family={Poulain},
+           familyi={P\bibinitperiod},
+           given={Jocelyn},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{organization}{1}{%
+        {École Nationale des Ponts et Chaussées}%
+      }
+      \strng{namehash}{00f1178fad6f198e63232840795db5a5}
+      \strng{fullhash}{00f1178fad6f198e63232840795db5a5}
+      \strng{fullhashraw}{00f1178fad6f198e63232840795db5a5}
+      \strng{bibnamehash}{00f1178fad6f198e63232840795db5a5}
+      \strng{authorbibnamehash}{00f1178fad6f198e63232840795db5a5}
+      \strng{authornamehash}{00f1178fad6f198e63232840795db5a5}
+      \strng{authorfullhash}{00f1178fad6f198e63232840795db5a5}
+      \strng{authorfullhashraw}{00f1178fad6f198e63232840795db5a5}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Mécanique des Structures 2}
+      \field{year}{2023}
+    \endentry
     \entry{REX}{misc}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=322bc8b0879e315d869ffab825d19bb0}{%
@@ -129,6 +186,38 @@
       \field{note}{[En ligne; consulté le 25 juillet 2024]}
       \field{title}{{Casa da Música / OMA}}
       \field{year}{2005}
+    \endentry
+    \entry{timo_plaque}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=f2d21554dd543dac41bf0f42d193f8ba}{%
+           family={Timoshenko},
+           familyi={T\bibinitperiod},
+           given={Stephen},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {McGRAW-HILL BOOK COMPANY}%
+      }
+      \strng{namehash}{f2d21554dd543dac41bf0f42d193f8ba}
+      \strng{fullhash}{f2d21554dd543dac41bf0f42d193f8ba}
+      \strng{fullhashraw}{f2d21554dd543dac41bf0f42d193f8ba}
+      \strng{bibnamehash}{f2d21554dd543dac41bf0f42d193f8ba}
+      \strng{authorbibnamehash}{f2d21554dd543dac41bf0f42d193f8ba}
+      \strng{authornamehash}{f2d21554dd543dac41bf0f42d193f8ba}
+      \strng{authorfullhash}{f2d21554dd543dac41bf0f42d193f8ba}
+      \strng{authorfullhashraw}{f2d21554dd543dac41bf0f42d193f8ba}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{Seconde édition}
+      \field{langid}{english}
+      \field{title}{Theory of plates and shells}
+      \field{year}{1959}
+      \field{dateera}{ce}
     \endentry
     \entry{quatNatLib}{misc}{}{}
       \name{author}{1}{}{%

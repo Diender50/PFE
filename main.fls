@@ -470,6 +470,21 @@ INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/libertine/LinLibertineTZ-tlf-s
 INPUT c:/texlive/2024/texmf-dist/fonts/enc/dvips/libertine/lbtn_7ukmos.enc
 INPUT c:/texlive/2024/texmf-dist/fonts/vf/public/libertine/LinLibertineT-tlf-t1.vf
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/libertine/LinLibertineT-tlf-t1--base.tfm
+INPUT ./img/cintrage_froid/petitedef.pdf
+INPUT ./img/cintrage_froid/petitedef.pdf
+INPUT ./img/cintrage_froid/petitedef.pdf
+INPUT ./img/cintrage_froid/petitedef.pdf
+INPUT ./img/cintrage_froid/petitedef.pdf
+INPUT ./img/cintrage_froid/shapes.pdf
+INPUT ./img/cintrage_froid/shapes.pdf
+INPUT ./img/cintrage_froid/shapes.pdf
+INPUT ./img/cintrage_froid/shapes.pdf
+INPUT ./img/cintrage_froid/shapes.pdf
+INPUT ./img/cintrage_froid/critere_petitedef.pdf
+INPUT ./img/cintrage_froid/critere_petitedef.pdf
+INPUT ./img/cintrage_froid/critere_petitedef.pdf
+INPUT ./img/cintrage_froid/critere_petitedef.pdf
+INPUT ./img/cintrage_froid/critere_petitedef.pdf
 INPUT ./img/ondul/casa_musica4 (1).jpg
 INPUT ./img/ondul/casa_musica4 (1).jpg
 INPUT ./img/ondul/casa_musica4 (1).jpg

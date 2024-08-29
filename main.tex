@@ -140,7 +140,7 @@ $c=1$, $\varepsilon_3 = 0.8$, $\varepsilon_3 = 0.61$
 \begin{align}
     t_R &= \frac{t}{\varepsilon_3} \geq t_1 =  \qty{86.94}{\milli\meter}\\ 
     t_{\text{durci}} &= 0.8\times \qty{86.94}{\milli\meter}= \qty{70}{\milli\meter}\\
-    t_{\text{trempé}} &= 0.61 \times \qty{86.94}{\milli\meter} = \qty{54}{\milli\meter}
+    t_{\text{trempé}} &= 0.61 \times \qty{86.94}{\milli\meter} = \qty{53.5}{\milli\meter}
 \end{align}
 FD-P78 => méthode poutre
 \begin{align}
@@ -188,8 +188,6 @@ Silicone & 4.5 & 1.5 & 0.499 & 4.5* & 1000\\
 
 Cette méthodologie de calcul \acrshort{FEM} sera utilisée dans toute la suite du mémoire.
 
-Analyse linéaire solidworks: \qty{70.5}{\milli\meter} ($S= \qty{2115}{\centi\square\meter}$)\qty{56.5}{\milli\meter} ($S=$\SI{1695}{\centi\square\meter})
-
 \begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{img/plat/dim_fem.pdf}
@@ -197,18 +195,148 @@ Analyse linéaire solidworks: \qty{70.5}{\milli\meter} ($S= \qty{2115}{\centi\sq
     \label{fig:fem_plat_dim}
 \end{figure}
 
-
+En traçant la contrainte maximale calculée par \acrshort{FEM} dans le verre en fonction de son épaisseur on observe des résultats très proche du calcul du document \cite{fdp78}, c'est-à-dire du calcul analytique d'une poutre sur deux appuis. On trouve ainsi une épaisseur minimale légérement inférieure à celle calculée précédemment: \qty{70.5}{\milli\meter} pour le verre trempé et \qty{56.5}{\milli\meter} pour le verre durci. Un rapide calcul \acrshort{FEM} au flambement nous donne des coefficients de flambement respectifs de 10.887 et 16.943: il n'y a pas de risque de flambement avec ces épaisseurs de verre. 
 \newpage
 
 \section{Optimisation géométrique du verre}
 
 Introduction sur l'optimisation géométrique... Gain en inertie, section en I pour l'acier etc...
+blablabla courber le verre pour l'architecture, mettre photo d'architectures avec verre courbe (zaha hadid)
+mais on peut le courber pour que ça soit intéressant structurellement.
 
-\subsection{Le cintrage du verre}
+\subsection{Cintrage du verre à froid}
 
-\subsubsection{Cintrage à froid}
+Plusieurs techniques pour courber le verre, cintrage à froid, à chaud etc.. froid + simple + économique mais + limité géométriquement
 
-\subsubsection{Limitations géométriques}
+\subsubsection{Théorie des petites déformations}
+Pour étudier le cintrage à froid des panneaux de verre on peut commencer par étudier la théorie la plus simple: la théorie des petites déformations des plaques minces (théorie de Kirchoff). On fait donc les hypothèses suivantes (d'après \cite{mcst2}):
+\begin{itemize}
+    \item Le matériau (ici  le verre) est homogène, isotropique et élastique linéaire;
+    \item La plaque est initiallement plane;
+    \item Le plan moyen de la plaque ne subit pas d'allongement ou de contraction pendant le chargement;
+    \item L'épaisseur de la plaque est petite comparée aux autres dimensions ($t < \text{min}(L,l)/10$);
+    \item La déformation de la plaque $w(x,y)$ est petite comparée à l'épaisseur de la plaque ($w < t/10$) et les pentes ou angles de roation sont petits devant l'unité;
+    \item L'hypothèse de Navier-Bernoulli reste valable: les sections planes restent planes après déformations et perpendiculaires au plan moyen déformé;
+    \item Les déformations dues à l'effort tranchant sont négligées;
+    \item Les contraintes $\sigma_{zz}$ dans la direction transverse sont négligeables par rapport aux contraintes $\sigma_{xx}$ et $\sigma_{yy}$.
+\end{itemize}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{img/cintrage_froid/petitedef.pdf}
+    \caption{\textbf{a.} Schéma de la plaque mince en flexion pure. \textbf{b.} Section de plaque considérée dans la direction $x$.}
+    \label{fig:petite_def}
+\end{figure}
+
+On étudie une plaque de longueur $L$, de largeur $l$ et d'épaisseur $t$ en flexion pure, c'est-à-dire soumis à des moments linéiques $M_x$ et $M_y$ le long de ses bords de direction $x$ (longueur $L$) et $y$ (largeur $l$). On cherche à calculer la contrainte dans cette situation. On base nos calculs sur l'ouvrage de \cite{timo_plaque}.
+
+Une section de la plaque dans un plan normal à l'axe $y$ (section de direction $x$) va se courber sous l'effet de la flexion. On peut alors calculer l'élongation et la contraction de ses fibres via son rayon de courbure $R_x$ donné par:
+\begin{align}
+    \theta = \frac{\mathrm{d}x}{R_x} = \frac{a+\mathrm{d}a}{z+R_x}
+\end{align}
+sous l'hypothèse que sa fibre neutre ni ne s'allonge ni ne se rétracte. Alors:
+\begin{align}
+    \mathrm{d}a = \frac{z\mathrm{d}x}{R_x}
+\end{align}
+On en déduit la déformation dans la direction $x$, et par la même occasion dans la direction $y$:
+\begin{align}
+    \varepsilon_x &= \frac{\mathrm{d}a}{a} = \frac{z}{R_x}\\
+    \varepsilon_y &= \frac{\mathrm{d}a}{a} = \frac{z}{R_y}
+\end{align}
+On rappelle la loi de Hooke pour une plaque:
+\begin{align}
+    \varepsilon_x &= \frac{1}{E}\left ( \sigma_x - \nu \sigma_y \right )\\
+    \varepsilon_y &= \frac{1}{E}\left ( \sigma_y - \nu \sigma_x \right )
+\end{align}
+Ce qui nous permet de calculer les contraintes dans la plaque:
+\begin{align}
+    \sigma_x &= \frac{E}{1-\nu^2}z\left (\frac{1}{R_x} + \nu \frac{1}{R_y}\right )\label{eq:cintragex}\\
+    \sigma_y &= \frac{E}{1-\nu^2}z\left (\frac{1}{R_y} + \nu \frac{1}{R_x}\right ) \label{eq:cintragey}
+\end{align}
+Dans la suite on notera les courbures de la plaque $K_x = \frac{1}{R_x}$ et $K_y = \frac{1}{R_y}$. 
+
+On peut ainsi calculer les moments linéique dans la section de la plaque:
+\begin{align}
+    M_x &= \int_{-t/2}^{t/2} \sigma_x z \mathrm{d}z = D \left (K_x + \nu K_y\right )\\
+    M_y &= \int_{-t/2}^{t/2} \sigma_y z \mathrm{d}z = D \left (K_y + \nu K_x\right )
+\end{align}
+où $D = \frac{Et^3}{1-\nu^2}$ est la rigidité de la plaque. Cela nous permet de calculer la déformation de la plaque en utilisant les équations différentielles suivantes:
+\begin{align}
+\frac{\partial^2w}{\partial x^2} &= -K_x \\
+\frac{\partial^2w}{\partial y^2} &= -K_y
+\end{align}
+Ainsi, en plaçant l'origine du repère au centre de la plaque et que le plan tangent à la surface de la plaque en ce point reste horizontal, on obtient l'équation d'un paraboloïde:
+\begin{align}
+w(x,y)  = -\frac{M_x - \nu M_y}{2D(1-\nu^2)} x^2 - \frac{M_y - \nu M_x}{2D(1-\nu^2)} y^2
+\end{align}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{img/cintrage_froid/shapes.pdf}
+    \caption{Formes prises par la plaque en flexion pure ($M_y < M_x$).}
+    \label{fig:petite_def}
+\end{figure}
+
+\subsubsection{Limites géométriques en petites déformations}
+
+La théorie des petites déformations impose donc l'espace des formes obtenable par la mise en flexion pure d'une plaque. En effet, il n'est possible de réaliser que des paraboloïdes elliptiques (ce qu'on pourrait appeler vulgairement un "bout de dirigeable") ou des paraboloïdes hyperboliques (ce qu'on pourrait appeler vulgairement une "selle de cheval"). Il n'est donc, par exemple, pas possible d'obtenir des surfaces sphériques (bout de sphère) d'après la théorie des petites déformations.
+\\
+
+De plus, les équations (\ref{eq:cintragex}) et (\ref{eq:cintragey}) nous permettent d'obtenir des informations sur les courbures possibles de la plaque. En effet, on peut calculer les courbures extremales possibles sans rupture de la plaque. On s'intéresse pour cela à deux critères: le critère de Tresca et le critère de Von Mises.
+
+Pour Tresca, le critère s'écrit simplement:
+\begin{align}
+\max\left ( \left | \sigma_x - \sigma_y\right |,\left | \sigma_x\right |,\left | \sigma_y\right |\right ) \leq f_y
+\end{align}
+
+Le critère de Von Mises sécrit quant à lui:
+\begin{align}
+\sqrt{\sigma_x^2+\sigma_y^2-\sigma_x\sigma_y} \leq f_y
+\end{align}
+
+En traçant la frontière du domaine de ces deux critères en fonction des courbures de la plaque on peut remarquer que la courbure obtenu par la flexion pure de la plaque est limitée. Comme attendu, le critère de Tresca, plus simple, offre moins de possibilités pour les courbures. 
+
+\begin{wrapfigure}{l}{0.45\textwidth}
+    \vspace{-10pt}
+    \includegraphics[width=\linewidth]{img/cintrage_froid/critere_petitedef.pdf}
+       \caption{Schéma du critère de Tresca et de Von Mises en fonction des courbures $K_x$ et $K_y$ de la plaque.}
+   \label{fig:tresca_mises}
+   \end{wrapfigure}
+
+Selon le critère de Tresca, on peut obtenir une plus forte courbure de la plaque en cherchant une forme à double courbure négative ($K_x/K_y < 0$). Dans ce cas, la courbure maximale dans un sens est égale à:
+\begin{align}
+K_{\text{tresca,max}} = \frac{f_y}{Et/2}
+\end{align}
+On aura alors une courbure plus faible dans l'autre sens égale à:
+\begin{align}
+    -K_{\text{tresca,0}} = \frac{-\nu f_y}{Et/2}
+\end{align}
+Le critère de Von Mises permet d'obtenir une plus grande courbure avec de la double courbure positive ($K_x/K_y > 0$). Avec ce critère la courbure maximale dans un sens est:
+\begin{align}
+K_{\text{mises,max}} = \frac{f_y}{Et/2}\times 2\sqrt{\frac{1-\nu+\nu^2}{3}}
+\end{align}
+Dans ce cas, la courbure dans l'autre sens vaudra:
+\begin{align}
+    K_{\text{mises,0}} = \frac{f_y}{Et/2}\times \frac{1-4\nu+\nu^2}{\sqrt{3(1-\nu+\nu^2)}}
+\end{align}
+
+On peut soulever une dernière situation remarquable: la courbure maximale lorsque que les courbures dans les deux sens sont égales (donc en double courbure positive) est la même pour les deux critères et est égale à:
+\begin{align}
+    K_0 = \frac{f_y}{Et/2}\times (1-\nu)
+\end{align}
+
+On peut effectuer une rapide application numérique pour un verre durci de \qty{10}{\milli\metre} d'épaisseur. La courbure maximale admise par le critère de Von Mises est alors de \qty{0.0676}{\per\metre}. Cela correspond à une flèche de \qty{0.456}{\milli\metre} sur une plaque de \qty{1}{\metre} de long, soit une flèche de l'ordre de $L^2/2200$. 
+
+De plus, pour rester dans le domaine de la théorie des petites déformations, il faut que la déformation soit plus petite que le dixième de l'épaisseur de la plaque. On peut relier cette hypothèse à la courbure et obtenir que la courbure de la plaque doit respecter l'inégalité suivante:
+\begin{align}
+K_{\text{max}} < \frac{4t}{5L^2}
+\end{align}
+Ce qui, pour une plaque en verre durci de \qty{10}{\milli\metre} d'épaisseur et de \qty{1}{\metre} de long, impose que la courbure ne dépasse pas \qty{0.008}{\per\metre}, ce qui est 10 fois moins que la courbure maximale admise par le critère de Von Mises. 
+\newpage
+
+\subsubsection{Théorie inextensionnelle des plaques fines (à enlever peut-être)}
+
+\subsubsection{Limites géométriques}
 
 \subsection{Le verre plié}
 \newpage
