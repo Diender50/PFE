@@ -26,24 +26,24 @@
 \contentsline {subsubsection}{\numberline {3.2.3}Méthode non linéaire}{11}{subsubsection.3.2.3}%
 \contentsline {subsection}{\numberline {3.3}Calcul aux Élements Finis}{11}{subsection.3.3}%
 \contentsline {section}{\numberline {4}Optimisation géométrique du verre}{14}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Cintrage du verre à froid}{14}{subsection.4.1}%
-\contentsline {subsubsection}{\numberline {4.1.1}Théorie des petites déformations}{14}{subsubsection.4.1.1}%
-\contentsline {subsubsection}{\numberline {4.1.2}Limites géométriques en petites déformations}{16}{subsubsection.4.1.2}%
-\contentsline {subsubsection}{\numberline {4.1.3}Théorie inextensionnelle des plaques fines (à enlever peut-être)}{18}{subsubsection.4.1.3}%
-\contentsline {subsubsection}{\numberline {4.1.4}Limites géométriques}{18}{subsubsection.4.1.4}%
-\contentsline {subsection}{\numberline {4.2}Le verre plié}{18}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}Le verre ondulé}{19}{subsection.4.3}%
-\contentsline {subsubsection}{\numberline {4.3.1}Forme des ondulations}{19}{subsubsection.4.3.1}%
-\contentsline {subsubsection}{\numberline {4.3.2}Autoportance}{22}{subsubsection.4.3.2}%
-\contentsline {paragraph}{Première approche analytique linéaire}{22}{subsubsection.4.3.2}%
-\contentsline {paragraph}{Prise en compte de la torsion dans la section}{23}{equation.4.10}%
-\contentsline {paragraph}{Calcul \acrshort {FEM}}{24}{equation.4.13}%
-\contentsline {subsubsection}{\numberline {4.3.3}Assemblage des vitrages (trouver meilleur nom)}{26}{subsubsection.4.3.3}%
-\contentsline {subsubsection}{\numberline {4.3.4}Calcul témoin}{29}{subsubsection.4.3.4}%
-\contentsline {paragraph}{Prédimensionnement de l'ondulation}{29}{subsubsection.4.3.4}%
-\contentsline {paragraph}{Calcul de l'épaisseur de verre minimale}{31}{table.caption.21}%
-\contentsline {subsubsection}{\numberline {4.3.5}Conclusions sur le verre ondulé}{32}{subsubsection.4.3.5}%
-\contentsline {subsection}{\numberline {4.4}Le verre bulle}{33}{subsection.4.4}%
-\contentsline {subsubsection}{\numberline {4.4.1}Etude préliminaire sur les formes de bulles}{34}{subsubsection.4.4.1}%
-\contentsline {subsection}{\numberline {4.5}Verre à double courbure}{37}{subsection.4.5}%
-\contentsline {section}{\numberline {5}Conclusions et perspectives}{38}{section.5}%
+\contentsline {subsection}{\numberline {4.1}Cintrage du verre à froid}{15}{subsection.4.1}%
+\contentsline {subsubsection}{\numberline {4.1.1}Théorie des petites déformations}{15}{subsubsection.4.1.1}%
+\contentsline {subsubsection}{\numberline {4.1.2}Limites géométriques en petites déformations}{18}{subsubsection.4.1.2}%
+\contentsline {subsubsection}{\numberline {4.1.3}Théorie inextensionnelle des plaques fines (changer titre)}{20}{subsubsection.4.1.3}%
+\contentsline {subsubsection}{\numberline {4.1.4}Limites géométriques}{20}{subsubsection.4.1.4}%
+\contentsline {subsection}{\numberline {4.2}Le verre plié}{20}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Le verre ondulé}{21}{subsection.4.3}%
+\contentsline {subsubsection}{\numberline {4.3.1}Forme des ondulations}{21}{subsubsection.4.3.1}%
+\contentsline {subsubsection}{\numberline {4.3.2}Autoportance}{24}{subsubsection.4.3.2}%
+\contentsline {paragraph}{Première approche analytique linéaire}{24}{subsubsection.4.3.2}%
+\contentsline {paragraph}{Prise en compte de la torsion dans la section}{25}{equation.4.10}%
+\contentsline {paragraph}{Calcul \acrshort {FEM}}{26}{equation.4.13}%
+\contentsline {subsubsection}{\numberline {4.3.3}Assemblage des vitrages (trouver meilleur nom)}{28}{subsubsection.4.3.3}%
+\contentsline {subsubsection}{\numberline {4.3.4}Calcul témoin}{31}{subsubsection.4.3.4}%
+\contentsline {paragraph}{Prédimensionnement de l'ondulation}{31}{subsubsection.4.3.4}%
+\contentsline {paragraph}{Calcul de l'épaisseur de verre minimale}{33}{table.caption.23}%
+\contentsline {subsubsection}{\numberline {4.3.5}Conclusions sur le verre ondulé}{34}{subsubsection.4.3.5}%
+\contentsline {subsection}{\numberline {4.4}Le verre bulle}{35}{subsection.4.4}%
+\contentsline {subsubsection}{\numberline {4.4.1}Etude préliminaire sur les formes de bulles}{36}{subsubsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.5}Verre à double courbure}{39}{subsection.4.5}%
+\contentsline {section}{\numberline {5}Conclusions et perspectives}{40}{section.5}%

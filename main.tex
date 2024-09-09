@@ -29,7 +29,7 @@
 \\[0.5cm]
 {\Large Élève ingénieur, double-diplôme d'architecture}
 \\[1cm]
-{\Large Tuteur professionnel: Robert JAN VAN SANTEN}
+{\Large Tuteur professionnel: Robert Jan VAN SANTEN}
 \\[1cm]
 {\Large Tuteur académique: Jorge HIDALGO}
 \\[1cm]
@@ -204,9 +204,20 @@ Introduction sur l'optimisation géométrique... Gain en inertie, section en I p
 blablabla courber le verre pour l'architecture, mettre photo d'architectures avec verre courbe (zaha hadid)
 mais on peut le courber pour que ça soit intéressant structurellement.
 
+\newpage
 \subsection{Cintrage du verre à froid}
 
 Plusieurs techniques pour courber le verre, cintrage à froid, à chaud etc.. froid + simple + économique mais + limité géométriquement
+\begin{figure}[H]
+    \centering
+    \includegraphics[height=0.327\textwidth]{img/cintrage_froid/BahnshofStrassburg_c_Reithmeier__1_.jpg}\hfill
+    \includegraphics[height=0.327\textwidth]{img/cintrage_froid/BahnhofStrassburg_c_Obertreis__2_.jpg}
+    \\[\smallskipamount]
+    \includegraphics[height=0.465\textwidth]{img/cintrage_froid/ChadstoneSC_05.jpg}\hfill
+    \includegraphics[height=0.465\textwidth]{img/cintrage_froid/ChadstoneSC_09.jpg}\hfill
+    \caption{Photographies de la façade en verre cintré à froid de la Gare de Strasbourg, par \cite{GareStrasbourg} (première ligne) et du Chadstone Shopping Center, par \cite{chadstone1} et \cite{chadstone2} (seconde ligne).}
+    \label{fig:cintragefroidphoto}
+\end{figure}
 
 \subsubsection{Théorie des petites déformations}
 Pour étudier le cintrage à froid des panneaux de verre on peut commencer par étudier la théorie la plus simple: la théorie des petites déformations des plaques minces (théorie de Kirchoff). On fait donc les hypothèses suivantes (d'après \cite{mcst2}):
@@ -332,10 +343,17 @@ De plus, pour rester dans le domaine de la théorie des petites déformations, i
 K_{\text{max}} < \frac{4t}{5L^2}
 \end{align}
 Ce qui, pour une plaque en verre durci de \qty{10}{\milli\metre} d'épaisseur et de \qty{1}{\metre} de long, impose que la courbure ne dépasse pas \qty{0.008}{\per\metre}, ce qui est 10 fois moins que la courbure maximale admise par le critère de Von Mises. 
-\newpage
 
-\subsubsection{Théorie inextensionnelle des plaques fines (à enlever peut-être)}
+\subsubsection{Théorie inextensionnelle des plaques fines (changer titre)}
 
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{img/cintrage_froid/non_linear.pdf}
+\caption{Déformations d'une plaque de verre carré de \qtyproduct{1 x 1}{\metre} sous l'effet d'un déplacement vertical imposé $\delta$ à deux coins opposés. \textbf{a.} $\delta = \qty{10}{\milli\metre}$, \textbf{b.} $\delta = \qty{50}{\milli\metre}$ et \textbf{c.} $\delta = \qty{100}{\milli\metre}$.}
+\label{fig:non_linear_cintr}
+\end{figure}
+
+\cite{buckling_cold}
 \subsubsection{Limites géométriques}
 
 \subsection{Le verre plié}

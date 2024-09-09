@@ -438,9 +438,9 @@ INPUT c:/texlive/2024/texmf-dist/fonts/enc/dvips/libertinust1math/libusEX.enc
 INPUT c:/texlive/2024/texmf-dist/fonts/vf/public/libertine/LinLibertineT-tlf-ts1.vf
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/libertine/LinLibertineT-tlf-ts1--base.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/enc/dvips/libertine/lbtn_naooyc.enc
+OUTPUT main.lof
 INPUT c:/texlive/2024/texmf-dist/fonts/vf/public/libertine/LinLibertineT-tlf-t1.vf
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/libertine/LinLibertineT-tlf-t1--base.tfm
-OUTPUT main.lof
 INPUT ./main.lot
 INPUT ./main.lot
 INPUT main.lot
@@ -470,6 +470,26 @@ INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/libertine/LinLibertineTZ-tlf-s
 INPUT c:/texlive/2024/texmf-dist/fonts/enc/dvips/libertine/lbtn_7ukmos.enc
 INPUT c:/texlive/2024/texmf-dist/fonts/vf/public/libertine/LinLibertineT-tlf-t1.vf
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/libertine/LinLibertineT-tlf-t1--base.tfm
+INPUT ./img/cintrage_froid/BahnshofStrassburg_c_Reithmeier__1_.jpg
+INPUT ./img/cintrage_froid/BahnshofStrassburg_c_Reithmeier__1_.jpg
+INPUT ./img/cintrage_froid/BahnshofStrassburg_c_Reithmeier__1_.jpg
+INPUT ./img/cintrage_froid/BahnshofStrassburg_c_Reithmeier__1_.jpg
+INPUT ./img/cintrage_froid/BahnshofStrassburg_c_Reithmeier__1_.jpg
+INPUT ./img/cintrage_froid/BahnhofStrassburg_c_Obertreis__2_.jpg
+INPUT ./img/cintrage_froid/BahnhofStrassburg_c_Obertreis__2_.jpg
+INPUT ./img/cintrage_froid/BahnhofStrassburg_c_Obertreis__2_.jpg
+INPUT ./img/cintrage_froid/BahnhofStrassburg_c_Obertreis__2_.jpg
+INPUT ./img/cintrage_froid/BahnhofStrassburg_c_Obertreis__2_.jpg
+INPUT ./img/cintrage_froid/ChadstoneSC_05.jpg
+INPUT ./img/cintrage_froid/ChadstoneSC_05.jpg
+INPUT ./img/cintrage_froid/ChadstoneSC_05.jpg
+INPUT ./img/cintrage_froid/ChadstoneSC_05.jpg
+INPUT ./img/cintrage_froid/ChadstoneSC_05.jpg
+INPUT ./img/cintrage_froid/ChadstoneSC_09.jpg
+INPUT ./img/cintrage_froid/ChadstoneSC_09.jpg
+INPUT ./img/cintrage_froid/ChadstoneSC_09.jpg
+INPUT ./img/cintrage_froid/ChadstoneSC_09.jpg
+INPUT ./img/cintrage_froid/ChadstoneSC_09.jpg
 INPUT ./img/cintrage_froid/petitedef.pdf
 INPUT ./img/cintrage_froid/petitedef.pdf
 INPUT ./img/cintrage_froid/petitedef.pdf
@@ -485,6 +505,11 @@ INPUT ./img/cintrage_froid/critere_petitedef.pdf
 INPUT ./img/cintrage_froid/critere_petitedef.pdf
 INPUT ./img/cintrage_froid/critere_petitedef.pdf
 INPUT ./img/cintrage_froid/critere_petitedef.pdf
+INPUT ./img/cintrage_froid/non_linear.pdf
+INPUT ./img/cintrage_froid/non_linear.pdf
+INPUT ./img/cintrage_froid/non_linear.pdf
+INPUT ./img/cintrage_froid/non_linear.pdf
+INPUT ./img/cintrage_froid/non_linear.pdf
 INPUT ./img/ondul/casa_musica4 (1).jpg
 INPUT ./img/ondul/casa_musica4 (1).jpg
 INPUT ./img/ondul/casa_musica4 (1).jpg
