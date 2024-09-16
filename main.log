@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.21)  30 AUG 2024 15:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.21)  13 SEP 2024 12:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -970,6 +970,9 @@ LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
 
 LaTeX Warning: Label `fig:petite_def' multiply defined.
 
+
+LaTeX Warning: Label `tab:result_fin' multiply defined.
+
 )
 \openout1 = `main.aux'.
 
@@ -1205,17 +1208,17 @@ LaTeX Font Info:    Font shape `LS1/libertinust1math/b/it' will be
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/sc' will be
 (Font)              scaled to size 10.95pt on input line 5.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
-(Font)              scaled to size 10.95pt on input line 11.
-LaTeX Font Info:    Trying to load font information for TS1+LinuxLibertineT-TLF on input line 22.
+(Font)              scaled to size 10.95pt on input line 13.
+LaTeX Font Info:    Trying to load font information for TS1+LinuxLibertineT-TLF on input line 24.
  (c:/texlive/2024/texmf-dist/tex/latex/libertine/TS1LinuxLibertineT-TLF.fd
 File: TS1LinuxLibertineT-TLF.fd 2017/03/20 (autoinst) Font definitions for TS1/LinuxLibertineT-TLF.
 )
 LaTeX Font Info:    Font shape `TS1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 10.95pt on input line 22.
+(Font)              scaled to size 10.95pt on input line 24.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 8.0pt on input line 23.
+(Font)              scaled to size 8.0pt on input line 25.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 6.0pt on input line 23.
+(Font)              scaled to size 6.0pt on input line 25.
 
 
 [5{c:/texlive/2024/texmf-dist/fonts/enc/dvips/libertinust1math/libusMR.enc}{c:/texlive/2024/texmf-dist/fonts/enc/dvips/libertinust1math/libusMI.enc}{c:/texlive/2024/texmf-dist/fonts/enc/dvips/libertine/lbtn_ncsllp.enc}{c:/texlive/2024/texmf-dist/fonts/enc/dvips/libertine/lbtn_7grukw.enc}{c:/texlive/2024/texmf-dist/fonts/enc/dvips/libertinust1math/libusEX.enc}{c:/texlive/2024/texmf-dist/fonts/enc/dvips/libertine/lbtn_naooyc.enc}])
@@ -1251,7 +1254,7 @@ LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/sb/n' will be
 [10]
 
 pdfTeX warning: pdflatex.exe (file ./img/plat/fem.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<img/plat/fem.pdf, id=369, 683.76456pt x 347.73413pt>
+<img/plat/fem.pdf, id=382, 683.76456pt x 347.73413pt>
 File: img/plat/fem.pdf Graphic file (type pdf)
 <use img/plat/fem.pdf>
 Package pdftex.def Info: img/plat/fem.pdf  used on input line 163.
@@ -1266,7 +1269,7 @@ LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
 
 
 pdfTeX warning: pdflatex.exe (file ./img/plat/dim_fem.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<img/plat/dim_fem.pdf, id=384, 629.77686pt x 302.29036pt>
+<img/plat/dim_fem.pdf, id=397, 629.77686pt x 302.29036pt>
 File: img/plat/dim_fem.pdf Graphic file (type pdf)
 <use img/plat/dim_fem.pdf>
 Package pdftex.def Info: img/plat/dim_fem.pdf  used on input line 193.
@@ -1278,411 +1281,443 @@ Package pdftex.def Info: img/plat/dim_fem.pdf  used on input line 193.
 [13 <./img/plat/dim_fem.pdf>]
 
 [14]
-<img/cintrage_froid/BahnshofStrassburg_c_Reithmeier__1_.jpg, id=459, 1077.02374pt x 702.625pt>
+<img/cintrage_froid/BahnshofStrassburg_c_Reithmeier__1_.jpg, id=473, 1077.02374pt x 702.625pt>
 File: img/cintrage_froid/BahnshofStrassburg_c_Reithmeier__1_.jpg Graphic file (type jpg)
 <use img/cintrage_froid/BahnshofStrassburg_c_Reithmeier__1_.jpg>
 Package pdftex.def Info: img/cintrage_froid/BahnshofStrassburg_c_Reithmeier__1_.jpg  used on input line 213.
 (pdftex.def)             Requested size: 235.45045pt x 153.60794pt.
-<img/cintrage_froid/BahnhofStrassburg_c_Obertreis__2_.jpg, id=460, 1053.9375pt x 702.625pt>
+<img/cintrage_froid/BahnhofStrassburg_c_Obertreis__2_.jpg, id=474, 1053.9375pt x 702.625pt>
 File: img/cintrage_froid/BahnhofStrassburg_c_Obertreis__2_.jpg Graphic file (type jpg)
 <use img/cintrage_froid/BahnhofStrassburg_c_Obertreis__2_.jpg>
 Package pdftex.def Info: img/cintrage_froid/BahnhofStrassburg_c_Obertreis__2_.jpg  used on input line 214.
 (pdftex.def)             Requested size: 230.40352pt x 153.60794pt.
-<img/cintrage_froid/ChadstoneSC_05.jpg, id=461, 361.35pt x 240.9pt>
+<img/cintrage_froid/ChadstoneSC_05.jpg, id=475, 361.35pt x 240.9pt>
 File: img/cintrage_froid/ChadstoneSC_05.jpg Graphic file (type jpg)
 <use img/cintrage_froid/ChadstoneSC_05.jpg>
 Package pdftex.def Info: img/cintrage_froid/ChadstoneSC_05.jpg  used on input line 216.
 (pdftex.def)             Requested size: 327.6601pt x 218.43436pt.
-<img/cintrage_froid/ChadstoneSC_09.jpg, id=462, 150.8034pt x 240.9pt>
+<img/cintrage_froid/ChadstoneSC_09.jpg, id=476, 150.8034pt x 240.9pt>
 File: img/cintrage_froid/ChadstoneSC_09.jpg Graphic file (type jpg)
 <use img/cintrage_froid/ChadstoneSC_09.jpg>
 Package pdftex.def Info: img/cintrage_froid/ChadstoneSC_09.jpg  used on input line 217.
 (pdftex.def)             Requested size: 136.74347pt x 218.43436pt.
+<img/cintrage_froid/fig4_74.jpg, id=483, 494.59781pt x 627.09282pt>
+File: img/cintrage_froid/fig4_74.jpg Graphic file (type jpg)
+<use img/cintrage_froid/fig4_74.jpg>
+Package pdftex.def Info: img/cintrage_froid/fig4_74.jpg  used on input line 225.
+(pdftex.def)             Requested size: 352.31625pt x 446.69345pt.
 
 
 [15 <./img/cintrage_froid/BahnshofStrassburg_c_Reithmeier__1_.jpg> <./img/cintrage_froid/BahnhofStrassburg_c_Obertreis__2_.jpg> <./img/cintrage_froid/ChadstoneSC_05.jpg> <./img/cintrage_froid/ChadstoneSC_09.jpg>]
 
+[16 <./img/cintrage_froid/fig4_74.jpg>]
+
 pdfTeX warning: pdflatex.exe (file ./img/cintrage_froid/petitedef.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<img/cintrage_froid/petitedef.pdf, id=476, 629.77686pt x 239.34619pt>
+<img/cintrage_froid/petitedef.pdf, id=496, 629.77686pt x 239.34619pt>
 File: img/cintrage_froid/petitedef.pdf Graphic file (type pdf)
 <use img/cintrage_froid/petitedef.pdf>
-Package pdftex.def Info: img/cintrage_froid/petitedef.pdf  used on input line 237.
+Package pdftex.def Info: img/cintrage_froid/petitedef.pdf  used on input line 244.
 (pdftex.def)             Requested size: 469.75502pt x 178.53407pt.
 
 
-[16 <./img/cintrage_froid/petitedef.pdf>]
+[17 <./img/cintrage_froid/petitedef.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./img/cintrage_froid/shapes.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<img/cintrage_froid/shapes.pdf, id=518, 629.77686pt x 136.4297pt>
+<img/cintrage_froid/shapes.pdf, id=540, 629.77686pt x 136.4297pt>
 File: img/cintrage_froid/shapes.pdf Graphic file (type pdf)
 <use img/cintrage_froid/shapes.pdf>
-Package pdftex.def Info: img/cintrage_froid/shapes.pdf  used on input line 286.
+Package pdftex.def Info: img/cintrage_froid/shapes.pdf  used on input line 293.
 (pdftex.def)             Requested size: 469.75502pt x 101.76617pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 293--295
+Underfull \hbox (badness 10000) in paragraph at lines 300--302
 
  []
 
 
 
-[17 <./img/cintrage_froid/shapes.pdf>]
+[18 <./img/cintrage_froid/shapes.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./img/cintrage_froid/critere_petitedef.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<img/cintrage_froid/critere_petitedef.pdf, id=570, 284.80603pt x 288.51288pt>
+<img/cintrage_froid/critere_petitedef.pdf, id=591, 284.80603pt x 288.51288pt>
 File: img/cintrage_froid/critere_petitedef.pdf Graphic file (type pdf)
 <use img/cintrage_froid/critere_petitedef.pdf>
-Package pdftex.def Info: img/cintrage_froid/critere_petitedef.pdf  used on input line 312.
+Package pdftex.def Info: img/cintrage_froid/critere_petitedef.pdf  used on input line 319.
 (pdftex.def)             Requested size: 211.38832pt x 214.14333pt.
 
 
-[18 <./img/cintrage_froid/critere_petitedef.pdf>]
+[19 <./img/cintrage_froid/critere_petitedef.pdf>]
 
-pdfTeX warning: pdflatex.exe (file ./img/cintrage_froid/non_linear.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<img/cintrage_froid/non_linear.pdf, id=609, 629.77686pt x 548.70897pt>
-File: img/cintrage_froid/non_linear.pdf Graphic file (type pdf)
-<use img/cintrage_froid/non_linear.pdf>
-Package pdftex.def Info: img/cintrage_froid/non_linear.pdf  used on input line 351.
-(pdftex.def)             Requested size: 469.75502pt x 409.29523pt.
+pdfTeX warning: pdflatex.exe (file ./img/cintrage_froid/non_linear2.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
+<img/cintrage_froid/non_linear2.pdf, id=632, 627.57361pt x 282.89589pt>
+File: img/cintrage_froid/non_linear2.pdf Graphic file (type pdf)
+<use img/cintrage_froid/non_linear2.pdf>
+Package pdftex.def Info: img/cintrage_froid/non_linear2.pdf  used on input line 360.
+(pdftex.def)             Requested size: 469.75502pt x 211.75699pt.
 
 
-[19]
+[20 <./img/cintrage_froid/non_linear2.pdf>]
 
-[20 <./img/cintrage_froid/non_linear.pdf>]
-<img/ondul/casa_musica4 (1).jpg, id=668, 1277.77374pt x 1003.75pt>
+pdfTeX warning: pdflatex.exe (file ./img/cintrage_froid/def.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
+<img/cintrage_froid/def.pdf, id=676, 627.57361pt x 371.54912pt>
+File: img/cintrage_froid/def.pdf Graphic file (type pdf)
+<use img/cintrage_froid/def.pdf>
+Package pdftex.def Info: img/cintrage_froid/def.pdf  used on input line 376.
+(pdftex.def)             Requested size: 469.75502pt x 278.11688pt.
+
+
+[21]
+
+[22 <./img/cintrage_froid/def.pdf>]
+<img/ondul/casa_musica4 (1).jpg, id=717, 1277.77374pt x 1003.75pt>
 File: img/ondul/casa_musica4 (1).jpg Graphic file (type jpg)
 <use img/ondul/casa_musica4 (1).jpg>
-Package pdftex.def Info: img/ondul/casa_musica4 (1).jpg  used on input line 364.
+Package pdftex.def Info: img/ondul/casa_musica4 (1).jpg  used on input line 386.
 (pdftex.def)             Requested size: 234.41522pt x 184.14316pt.
-<img/ondul/casa_musica1 (1).jpg, id=669, 1564.84625pt x 1243.64626pt>
+<img/ondul/casa_musica1 (1).jpg, id=718, 1564.84625pt x 1243.64626pt>
 File: img/ondul/casa_musica1 (1).jpg Graphic file (type jpg)
 <use img/ondul/casa_musica1 (1).jpg>
-Package pdftex.def Info: img/ondul/casa_musica1 (1).jpg  used on input line 365.
+Package pdftex.def Info: img/ondul/casa_musica1 (1).jpg  used on input line 387.
 (pdftex.def)             Requested size: 231.68436pt x 184.14316pt.
-<img/ondul/02_Qatar_National_Library__Photo_by_Hans_Werlemann_4180.jpg, id=670, 360.8682pt x 240.9pt>
+<img/ondul/02_Qatar_National_Library__Photo_by_Hans_Werlemann_4180.jpg, id=719, 360.8682pt x 240.9pt>
 File: img/ondul/02_Qatar_National_Library__Photo_by_Hans_Werlemann_4180.jpg Graphic file (type jpg)
 <use img/ondul/02_Qatar_National_Library__Photo_by_Hans_Werlemann_4180.jpg>
-Package pdftex.def Info: img/ondul/02_Qatar_National_Library__Photo_by_Hans_Werlemann_4180.jpg  used on input line 367.
+Package pdftex.def Info: img/ondul/02_Qatar_National_Library__Photo_by_Hans_Werlemann_4180.jpg  used on input line 389.
 (pdftex.def)             Requested size: 232.92615pt x 155.48592pt.
-<img/ondul/07_Qatar_National_Library__Photo_by_Iwan_Baan_5345.jpg, id=671, 361.35pt x 240.9pt>
+<img/ondul/07_Qatar_National_Library__Photo_by_Iwan_Baan_5345.jpg, id=720, 361.35pt x 240.9pt>
 File: img/ondul/07_Qatar_National_Library__Photo_by_Iwan_Baan_5345.jpg Graphic file (type jpg)
 <use img/ondul/07_Qatar_National_Library__Photo_by_Iwan_Baan_5345.jpg>
-Package pdftex.def Info: img/ondul/07_Qatar_National_Library__Photo_by_Iwan_Baan_5345.jpg  used on input line 368.
+Package pdftex.def Info: img/ondul/07_Qatar_National_Library__Photo_by_Iwan_Baan_5345.jpg  used on input line 390.
 (pdftex.def)             Requested size: 233.23714pt x 155.48592pt.
 
 
 pdfTeX warning: pdflatex.exe (file ./img/ondul/circ.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<img/ondul/circ.pdf, id=678, 614.65334pt x 117.34038pt>
+<img/ondul/circ.pdf, id=727, 614.65334pt x 117.34038pt>
 File: img/ondul/circ.pdf Graphic file (type pdf)
 <use img/ondul/circ.pdf>
-Package pdftex.def Info: img/ondul/circ.pdf  used on input line 377.
+Package pdftex.def Info: img/ondul/circ.pdf  used on input line 399.
 (pdftex.def)             Requested size: 469.75502pt x 89.68092pt.
 
 
-[21 <./img/ondul/casa_musica4 (1).jpg> <./img/ondul/casa_musica1 (1).jpg> <./img/ondul/02_Qatar_National_Library__Photo_by_Hans_Werlemann_4180.jpg> <./img/ondul/07_Qatar_National_Library__Photo_by_Iwan_Baan_5345.jpg> <./img/ondul/circ.pdf>]
+[23 <./img/ondul/casa_musica4 (1).jpg> <./img/ondul/casa_musica1 (1).jpg> <./img/ondul/02_Qatar_National_Library__Photo_by_Hans_Werlemann_4180.jpg> <./img/ondul/07_Qatar_National_Library__Photo_by_Iwan_Baan_5345.jpg>]
 pdfTeX warning (ext4): destination with the same identifier (name{equation.4.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.386 \end{align}
+l.408 \end{align}
                  
 
 pdfTeX warning: pdflatex.exe (file ./img/ondul/circ2.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<img/ondul/circ2.pdf, id=696, 479.46829pt x 117.34038pt>
+<img/ondul/circ2.pdf, id=733, 479.46829pt x 117.34038pt>
 File: img/ondul/circ2.pdf Graphic file (type pdf)
 <use img/ondul/circ2.pdf>
-Package pdftex.def Info: img/ondul/circ2.pdf  used on input line 391.
+Package pdftex.def Info: img/ondul/circ2.pdf  used on input line 413.
 (pdftex.def)             Requested size: 375.80544pt x 91.9763pt.
 
 pdfTeX warning (ext4): destination with the same identifier (name{equation.4.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.398 \end{align}
+l.420 \end{align}
                  
-Underfull \hbox (badness 10000) in paragraph at lines 398--401
+Underfull \hbox (badness 10000) in paragraph at lines 420--423
 
  []
 
 
 
+[24 <./img/ondul/circ.pdf> <./img/ondul/circ2.pdf>]
+
 pdfTeX warning: pdflatex.exe (file ./img/ondul/section_circ.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<img/ondul/section_circ.pdf, id=700, 629.83107pt x 602.2008pt>
+<img/ondul/section_circ.pdf, id=769, 629.83107pt x 602.2008pt>
 File: img/ondul/section_circ.pdf Graphic file (type pdf)
 <use img/ondul/section_circ.pdf>
-Package pdftex.def Info: img/ondul/section_circ.pdf  used on input line 405.
+Package pdftex.def Info: img/ondul/section_circ.pdf  used on input line 427.
 (pdftex.def)             Requested size: 469.75502pt x 449.15932pt.
 
 
-[22 <./img/ondul/circ2.pdf>]
-
-[23 <./img/ondul/section_circ.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 413--415
+[25 <./img/ondul/section_circ.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 435--437
 
  []
 
 
 
 pdfTeX warning: pdflatex.exe (file ./img/ondul/schem_stat.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<img/ondul/schem_stat.pdf, id=753, 104.90793pt x 164.25867pt>
+<img/ondul/schem_stat.pdf, id=804, 104.90793pt x 164.25867pt>
 File: img/ondul/schem_stat.pdf Graphic file (type pdf)
 <use img/ondul/schem_stat.pdf>
-Package pdftex.def Info: img/ondul/schem_stat.pdf  used on input line 428.
+Package pdftex.def Info: img/ondul/schem_stat.pdf  used on input line 450.
 (pdftex.def)             Requested size: 140.92793pt x 220.65936pt.
 
 pdfTeX warning (ext4): destination with the same identifier (name{equation.4.3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.436 \end{align}
+l.458 \end{align}
                  
 pdfTeX warning (ext4): destination with the same identifier (name{equation.4.4}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.442 \end{align}
+l.464 \end{align}
                  
+
+[26 <./img/ondul/schem_stat.pdf>]
 pdfTeX warning (ext4): destination with the same identifier (name{equation.4.5}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.447 \end{align}
+l.469 \end{align}
                  
 
 pdfTeX warning: pdflatex.exe (file ./img/ondul/proj_load.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<img/ondul/proj_load.pdf, id=756, 464.70412pt x 305.6278pt>
+<img/ondul/proj_load.pdf, id=851, 464.70412pt x 305.6278pt>
 File: img/ondul/proj_load.pdf Graphic file (type pdf)
 <use img/ondul/proj_load.pdf>
-Package pdftex.def Info: img/ondul/proj_load.pdf  used on input line 451.
+Package pdftex.def Info: img/ondul/proj_load.pdf  used on input line 473.
 (pdftex.def)             Requested size: 211.3883pt x 139.02821pt.
 
-
-[24 <./img/ondul/schem_stat.pdf>]
 pdfTeX warning (ext4): destination with the same identifier (name{equation.4.6}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.460 \end{align}
+l.482 \end{align}
                  
 pdfTeX warning (ext4): destination with the same identifier (name{equation.4.7}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.465 \end{align}
+l.487 \end{align}
                  
 pdfTeX warning (ext4): destination with the same identifier (name{equation.4.8}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.475 \end{align}
+l.497 \end{align}
                  
 pdfTeX warning (ext4): destination with the same identifier (name{equation.4.9}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.479 \end{align}
+l.501 \end{align}
                  
 pdfTeX warning (ext4): destination with the same identifier (name{equation.4.10}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.483 \end{align}
+l.505 \end{align}
                  
 
 pdfTeX warning: pdflatex.exe (file ./img/ondul/torsion.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<img/ondul/torsion.pdf, id=804, 96.20302pt x 112.80846pt>
+<img/ondul/torsion.pdf, id=853, 96.20302pt x 112.80846pt>
 File: img/ondul/torsion.pdf Graphic file (type pdf)
 <use img/ondul/torsion.pdf>
-Package pdftex.def Info: img/ondul/torsion.pdf  used on input line 491.
+Package pdftex.def Info: img/ondul/torsion.pdf  used on input line 513.
 (pdftex.def)             Requested size: 131.53418pt x 154.2609pt.
 
 pdfTeX warning (ext4): destination with the same identifier (name{equation.4.11}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.502 \end{align}
+l.524 \end{align}
                  
 pdfTeX warning (ext4): destination with the same identifier (name{equation.4.12}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.507 \end{align}
+l.529 \end{align}
                  
 pdfTeX warning (ext4): destination with the same identifier (name{equation.4.13}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.512 \end{align}
+l.534 \end{align}
                  
 
-[25 <./img/ondul/proj_load.pdf> <./img/ondul/torsion.pdf>]
+[27 <./img/ondul/proj_load.pdf> <./img/ondul/torsion.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./img/ondul/fem/maillage_simple.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<img/ondul/fem/maillage_simple.pdf, id=868, 979.6891pt x 597.50829pt>
+<img/ondul/fem/maillage_simple.pdf, id=917, 979.6891pt x 597.50829pt>
 File: img/ondul/fem/maillage_simple.pdf Graphic file (type pdf)
 <use img/ondul/fem/maillage_simple.pdf>
-Package pdftex.def Info: img/ondul/fem/maillage_simple.pdf  used on input line 521.
+Package pdftex.def Info: img/ondul/fem/maillage_simple.pdf  used on input line 543.
 (pdftex.def)             Requested size: 375.80544pt x 229.20717pt.
 
 
+[28 <./img/ondul/fem/maillage_simple.pdf>]
+
 pdfTeX warning: pdflatex.exe (file ./img/ondul/fem/FEM1.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<img/ondul/fem/FEM1.pdf, id=872, 790.36882pt x 644.09634pt>
+<img/ondul/fem/FEM1.pdf, id=948, 790.36882pt x 644.09634pt>
 File: img/ondul/fem/FEM1.pdf Graphic file (type pdf)
 <use img/ondul/fem/FEM1.pdf>
-Package pdftex.def Info: img/ondul/fem/FEM1.pdf  used on input line 532.
+Package pdftex.def Info: img/ondul/fem/FEM1.pdf  used on input line 554.
 (pdftex.def)             Requested size: 469.75502pt x 382.82439pt.
 
 
-[26 <./img/ondul/fem/maillage_simple.pdf>]
+[29 <./img/ondul/fem/FEM1.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./img/ondul/fem/simple_fem.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<img/ondul/fem/simple_fem.pdf, id=902, 628.06342pt x 291.67067pt>
+<img/ondul/fem/simple_fem.pdf, id=1017, 628.06342pt x 291.67067pt>
 File: img/ondul/fem/simple_fem.pdf Graphic file (type pdf)
 <use img/ondul/fem/simple_fem.pdf>
-Package pdftex.def Info: img/ondul/fem/simple_fem.pdf  used on input line 547.
+Package pdftex.def Info: img/ondul/fem/simple_fem.pdf  used on input line 569.
 (pdftex.def)             Requested size: 469.75502pt x 218.16054pt.
 
 
-[27 <./img/ondul/fem/FEM1.pdf>]
-
-[28 <./img/ondul/fem/simple_fem.pdf>]
+[30 <./img/ondul/fem/simple_fem.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./img/ondul/jointsq.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<img/ondul/jointsq.pdf, id=992, 683.76456pt x 389.21812pt>
+<img/ondul/jointsq.pdf, id=1043, 683.76456pt x 389.21812pt>
 File: img/ondul/jointsq.pdf Graphic file (type pdf)
 <use img/ondul/jointsq.pdf>
-Package pdftex.def Info: img/ondul/jointsq.pdf  used on input line 565.
+Package pdftex.def Info: img/ondul/jointsq.pdf  used on input line 587.
 (pdftex.def)             Requested size: 469.75502pt x 267.40268pt.
 
 
 pdfTeX warning: pdflatex.exe (file ./img/ondul/fem/femjoint.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<img/ondul/fem/femjoint.pdf, id=994, 629.77686pt x 448.34802pt>
+<img/ondul/fem/femjoint.pdf, id=1045, 629.77686pt x 448.34802pt>
 File: img/ondul/fem/femjoint.pdf Graphic file (type pdf)
 <use img/ondul/fem/femjoint.pdf>
-Package pdftex.def Info: img/ondul/fem/femjoint.pdf  used on input line 576.
+Package pdftex.def Info: img/ondul/fem/femjoint.pdf  used on input line 598.
 (pdftex.def)             Requested size: 469.75502pt x 334.43358pt.
 
 
-[29 <./img/ondul/jointsq.pdf>]
+[31 <./img/ondul/jointsq.pdf>]
 
-[30 <./img/ondul/fem/femjoint.pdf>]
+[32 <./img/ondul/fem/femjoint.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./img/ondul/fem/femjoint3.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<img/ondul/fem/femjoint3.pdf, id=1104, 315.12129pt x 224.17351pt>
+<img/ondul/fem/femjoint3.pdf, id=1153, 315.12129pt x 224.17351pt>
 File: img/ondul/fem/femjoint3.pdf Graphic file (type pdf)
 <use img/ondul/fem/femjoint3.pdf>
-Package pdftex.def Info: img/ondul/fem/femjoint3.pdf  used on input line 586.
+Package pdftex.def Info: img/ondul/fem/femjoint3.pdf  used on input line 608.
 (pdftex.def)             Requested size: 234.8775pt x 167.09326pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 587--587
+Underfull \hbox (badness 10000) in paragraph at lines 609--609
 []\T1/LinuxLibertineT-TLF/sb/sc/10.95 Figure 4.3.13 \T1/LinuxLibertineT-TLF/sb/n/10.95 ^^U |\T1/LinuxLibertineT-TLF/m/n/10.95 Cal-cul FEM com-pa-rant les
  []
 
 
-Underfull \hbox (badness 2671) in paragraph at lines 587--587
+Underfull \hbox (badness 2671) in paragraph at lines 609--609
 \T1/LinuxLibertineT-TLF/m/n/10.95 contraintes dans le verre se-lon le type de si-li-
  []
 
 
 
 pdfTeX warning: pdflatex.exe (file ./img/ondul/predim.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<img/ondul/predim.pdf, id=1110, 628.57834pt x 600.0478pt>
+<img/ondul/predim.pdf, id=1159, 628.57834pt x 600.0478pt>
 File: img/ondul/predim.pdf Graphic file (type pdf)
 <use img/ondul/predim.pdf>
-Package pdftex.def Info: img/ondul/predim.pdf  used on input line 612.
+Package pdftex.def Info: img/ondul/predim.pdf  used on input line 634.
 (pdftex.def)             Requested size: 469.75502pt x 448.4416pt.
 
 
-[31 <./img/ondul/fem/femjoint3.pdf>]
+[33 <./img/ondul/fem/femjoint3.pdf>]
 
-[32 <./img/ondul/predim.pdf>]
+[34 <./img/ondul/predim.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./img/ondul/fem/dim_fem.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<img/ondul/fem/dim_fem.pdf, id=1180, 683.76456pt x 355.91068pt>
+<img/ondul/fem/dim_fem.pdf, id=1230, 683.76456pt x 355.91068pt>
 File: img/ondul/fem/dim_fem.pdf Graphic file (type pdf)
 <use img/ondul/fem/dim_fem.pdf>
-Package pdftex.def Info: img/ondul/fem/dim_fem.pdf  used on input line 643.
+Package pdftex.def Info: img/ondul/fem/dim_fem.pdf  used on input line 665.
 (pdftex.def)             Requested size: 469.75502pt x 244.51962pt.
 
 
-[33 <./img/ondul/fem/dim_fem.pdf>]
+[35 <./img/ondul/fem/dim_fem.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./img/ondul/fem/dim_float.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<img/ondul/fem/dim_float.pdf, id=1208, 629.77686pt x 444.2467pt>
+<img/ondul/fem/dim_float.pdf, id=1258, 629.77686pt x 444.2467pt>
 File: img/ondul/fem/dim_float.pdf Graphic file (type pdf)
 <use img/ondul/fem/dim_float.pdf>
-Package pdftex.def Info: img/ondul/fem/dim_float.pdf  used on input line 652.
+Package pdftex.def Info: img/ondul/fem/dim_float.pdf  used on input line 674.
 (pdftex.def)             Requested size: 469.75502pt x 331.3743pt.
-<img/bulle/Vakko_ext2.jpg, id=1209, 331.2375pt x 214.70212pt>
+<img/bulle/Vakko_ext2.jpg, id=1259, 331.2375pt x 214.70212pt>
 File: img/bulle/Vakko_ext2.jpg Graphic file (type jpg)
 <use img/bulle/Vakko_ext2.jpg>
-Package pdftex.def Info: img/bulle/Vakko_ext2.jpg  used on input line 669.
+Package pdftex.def Info: img/bulle/Vakko_ext2.jpg  used on input line 691.
 (pdftex.def)             Requested size: 234.82646pt x 152.20303pt.
-<img/bulle/Vakko_ext.jpg, id=1210, 331.2375pt x 218.0145pt>
+<img/bulle/Vakko_ext.jpg, id=1260, 331.2375pt x 218.0145pt>
 File: img/bulle/Vakko_ext.jpg Graphic file (type jpg)
 <use img/bulle/Vakko_ext.jpg>
-Package pdftex.def Info: img/bulle/Vakko_ext.jpg  used on input line 670.
+Package pdftex.def Info: img/bulle/Vakko_ext.jpg  used on input line 692.
 (pdftex.def)             Requested size: 231.25815pt x 152.20303pt.
-<img/bulle/Vakko_int.jpg, id=1211, 529.98pt x 235.6002pt>
+<img/bulle/Vakko_int.jpg, id=1261, 529.98pt x 235.6002pt>
 File: img/bulle/Vakko_int.jpg Graphic file (type jpg)
 <use img/bulle/Vakko_int.jpg>
-Package pdftex.def Info: img/bulle/Vakko_int.jpg  used on input line 672.
+Package pdftex.def Info: img/bulle/Vakko_int.jpg  used on input line 694.
 (pdftex.def)             Requested size: 469.75502pt x 208.8279pt.
 
 
-[34 <./img/ondul/fem/dim_float.pdf>]
-<img/bulle/stringio.jpg, id=1261, 158.19362pt x 58.9695pt>
+[36 <./img/ondul/fem/dim_float.pdf>]
+<img/bulle/stringio.jpg, id=1311, 158.19362pt x 58.9695pt>
 File: img/bulle/stringio.jpg Graphic file (type jpg)
 <use img/bulle/stringio.jpg>
-Package pdftex.def Info: img/bulle/stringio.jpg  used on input line 681.
+Package pdftex.def Info: img/bulle/stringio.jpg  used on input line 703.
 (pdftex.def)             Requested size: 469.75502pt x 175.11563pt.
 
 
-[35 <./img/bulle/Vakko_ext2.jpg> <./img/bulle/Vakko_ext.jpg> <./img/bulle/Vakko_int.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 686--688
+[37 <./img/bulle/Vakko_ext2.jpg> <./img/bulle/Vakko_ext.jpg> <./img/bulle/Vakko_int.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 708--710
 
  []
 
 
 
 pdfTeX warning: pdflatex.exe (file ./img/bulle/types_bulles.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<img/bulle/types_bulles.pdf, id=1269, 683.76456pt x 212.55109pt>
+<img/bulle/types_bulles.pdf, id=1319, 683.76456pt x 212.55109pt>
 File: img/bulle/types_bulles.pdf Graphic file (type pdf)
 <use img/bulle/types_bulles.pdf>
-Package pdftex.def Info: img/bulle/types_bulles.pdf  used on input line 697.
+Package pdftex.def Info: img/bulle/types_bulles.pdf  used on input line 719.
 (pdftex.def)             Requested size: 469.75502pt x 146.02795pt.
 
 
 pdfTeX warning: pdflatex.exe (file ./img/bulle/geo_bulles1.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<img/bulle/geo_bulles1.pdf, id=1270, 149.72035pt x 363.52512pt>
+<img/bulle/geo_bulles1.pdf, id=1320, 149.72035pt x 363.52512pt>
 File: img/bulle/geo_bulles1.pdf Graphic file (type pdf)
 <use img/bulle/geo_bulles1.pdf>
-Package pdftex.def Info: img/bulle/geo_bulles1.pdf  used on input line 706.
+Package pdftex.def Info: img/bulle/geo_bulles1.pdf  used on input line 728.
 (pdftex.def)             Requested size: 112.74277pt x 273.74146pt.
 
 
-[36 <./img/bulle/stringio.jpg> <./img/bulle/types_bulles.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 712--714
+[38 <./img/bulle/stringio.jpg> <./img/bulle/types_bulles.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 734--736
 
  []
 
 
 
 pdfTeX warning: pdflatex.exe (file ./img/bulle/comp_kar.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<img/bulle/comp_kar.pdf, id=1290, 629.77686pt x 337.26pt>
+<img/bulle/comp_kar.pdf, id=1339, 629.77686pt x 337.26pt>
 File: img/bulle/comp_kar.pdf Graphic file (type pdf)
 <use img/bulle/comp_kar.pdf>
-Package pdftex.def Info: img/bulle/comp_kar.pdf  used on input line 725.
+Package pdftex.def Info: img/bulle/comp_kar.pdf  used on input line 747.
 (pdftex.def)             Requested size: 469.75502pt x 251.57034pt.
 
 
-[37 <./img/bulle/geo_bulles1.pdf>]
+[39 <./img/bulle/geo_bulles1.pdf>]
 
-[38 <./img/bulle/comp_kar.pdf>]
+pdfTeX warning: pdflatex.exe (file ./img/bulle/surf_bulle.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
+<img/bulle/surf_bulle.pdf, id=1366, 627.57361pt x 306.80923pt>
+File: img/bulle/surf_bulle.pdf Graphic file (type pdf)
+<use img/bulle/surf_bulle.pdf>
+Package pdftex.def Info: img/bulle/surf_bulle.pdf  used on input line 756.
+(pdftex.def)             Requested size: 469.75502pt x 229.65692pt.
 
-[39]
-Overfull \hbox (0.6993pt too wide) in paragraph at lines 749--749
- []|\T1/LinuxLibertineT-TLF/sb/n/10.95 Ondulation| 
- []
+
+[40 <./img/bulle/comp_kar.pdf> <./img/bulle/surf_bulle.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./img/bulle/opti_bulle.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
+<img/bulle/opti_bulle.pdf, id=1422, 269.99168pt x 298.4701pt>
+File: img/bulle/opti_bulle.pdf Graphic file (type pdf)
+<use img/bulle/opti_bulle.pdf>
+Package pdftex.def Info: img/bulle/opti_bulle.pdf  used on input line 765.
+(pdftex.def)             Requested size: 187.89914pt x 207.72073pt.
 
 
+[41]
 
-[40]
-LaTeX Font Info:    Trying to load font information for T1+zi4 on input line 753.
+[42]
+
+[43]
+
+[44]
+LaTeX Font Info:    Trying to load font information for T1+zi4 on input line 809.
  (c:/texlive/2024/texmf-dist/tex/latex/inconsolata/t1zi4.fd
 File: t1zi4.fd 2018/01/14 T1/zi4 (Inconsolata)
 )
 LaTeX Font Info:    Font shape `T1/zi4/m/n' will be
-(Font)              scaled to size 10.95pt on input line 753.
+(Font)              scaled to size 10.95pt on input line 809.
 
 
-[41{c:/texlive/2024/texmf-dist/fonts/enc/dvips/inconsolata/i4-t1-5.enc}] (./main.aux)
+[45{c:/texlive/2024/texmf-dist/fonts/enc/dvips/inconsolata/i4-t1-5.enc}] (./main.aux)
  ***********
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-07-20>
@@ -1692,24 +1727,24 @@ L3 programming layer <2024-07-20>
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: A861EF6752A47112686C5CE6B07FCFAD;8672.
+(rerunfilecheck)             Checksum: E0C626D04A0E21D67266FEF7599A7B18;8624.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 33488 strings out of 473578
- 647708 string characters out of 5732242
- 1948960 words of memory out of 5000000
- 55761 multiletter control sequences out of 15000+600000
+ 33550 strings out of 473578
+ 649304 string characters out of 5732242
+ 1949960 words of memory out of 5000000
+ 55813 multiletter control sequences out of 15000+600000
  660410 words of font info for 97 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 109i,14n,131p,2393b,2985s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 109i,14n,131p,2393b,2852s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/libertinust1math/LibertinusT1Math.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/libertine/LinLibertineT.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/libertine/LinLibertineTI.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/libertine/LinLibertineTZ.pfb>
-Output written on main.pdf (42 pages, 28954412 bytes).
+Output written on main.pdf (46 pages, 28289707 bytes).
 PDF statistics:
- 1465 PDF objects out of 1728 (max. 8388607)
- 936 compressed objects within 10 object streams
- 154 named destinations out of 1000 (max. 500000)
- 506 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1546 PDF objects out of 1728 (max. 8388607)
+ 998 compressed objects within 10 object streams
+ 164 named destinations out of 1000 (max. 500000)
+ 526 words of extra memory for PDF output out of 10000 (max. 10000000)
 

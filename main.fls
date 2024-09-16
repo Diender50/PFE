@@ -490,6 +490,11 @@ INPUT ./img/cintrage_froid/ChadstoneSC_09.jpg
 INPUT ./img/cintrage_froid/ChadstoneSC_09.jpg
 INPUT ./img/cintrage_froid/ChadstoneSC_09.jpg
 INPUT ./img/cintrage_froid/ChadstoneSC_09.jpg
+INPUT ./img/cintrage_froid/fig4_74.jpg
+INPUT ./img/cintrage_froid/fig4_74.jpg
+INPUT ./img/cintrage_froid/fig4_74.jpg
+INPUT ./img/cintrage_froid/fig4_74.jpg
+INPUT ./img/cintrage_froid/fig4_74.jpg
 INPUT ./img/cintrage_froid/petitedef.pdf
 INPUT ./img/cintrage_froid/petitedef.pdf
 INPUT ./img/cintrage_froid/petitedef.pdf
@@ -505,11 +510,16 @@ INPUT ./img/cintrage_froid/critere_petitedef.pdf
 INPUT ./img/cintrage_froid/critere_petitedef.pdf
 INPUT ./img/cintrage_froid/critere_petitedef.pdf
 INPUT ./img/cintrage_froid/critere_petitedef.pdf
-INPUT ./img/cintrage_froid/non_linear.pdf
-INPUT ./img/cintrage_froid/non_linear.pdf
-INPUT ./img/cintrage_froid/non_linear.pdf
-INPUT ./img/cintrage_froid/non_linear.pdf
-INPUT ./img/cintrage_froid/non_linear.pdf
+INPUT ./img/cintrage_froid/non_linear2.pdf
+INPUT ./img/cintrage_froid/non_linear2.pdf
+INPUT ./img/cintrage_froid/non_linear2.pdf
+INPUT ./img/cintrage_froid/non_linear2.pdf
+INPUT ./img/cintrage_froid/non_linear2.pdf
+INPUT ./img/cintrage_froid/def.pdf
+INPUT ./img/cintrage_froid/def.pdf
+INPUT ./img/cintrage_froid/def.pdf
+INPUT ./img/cintrage_froid/def.pdf
+INPUT ./img/cintrage_froid/def.pdf
 INPUT ./img/ondul/casa_musica4 (1).jpg
 INPUT ./img/ondul/casa_musica4 (1).jpg
 INPUT ./img/ondul/casa_musica4 (1).jpg
@@ -640,6 +650,16 @@ INPUT ./img/bulle/comp_kar.pdf
 INPUT ./img/bulle/comp_kar.pdf
 INPUT ./img/bulle/comp_kar.pdf
 INPUT ./img/bulle/comp_kar.pdf
+INPUT ./img/bulle/surf_bulle.pdf
+INPUT ./img/bulle/surf_bulle.pdf
+INPUT ./img/bulle/surf_bulle.pdf
+INPUT ./img/bulle/surf_bulle.pdf
+INPUT ./img/bulle/surf_bulle.pdf
+INPUT ./img/bulle/opti_bulle.pdf
+INPUT ./img/bulle/opti_bulle.pdf
+INPUT ./img/bulle/opti_bulle.pdf
+INPUT ./img/bulle/opti_bulle.pdf
+INPUT ./img/bulle/opti_bulle.pdf
 INPUT c:/texlive/2024/texmf-dist/tex/latex/inconsolata/t1zi4.fd
 INPUT c:/texlive/2024/texmf-dist/tex/latex/inconsolata/t1zi4.fd
 INPUT c:/texlive/2024/texmf-dist/tex/latex/inconsolata/t1zi4.fd

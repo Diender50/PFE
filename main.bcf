@@ -100,7 +100,7 @@
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>maxcitenames</bcf:key>
-      <bcf:value>3</bcf:value>
+      <bcf:value>2</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>maxsortnames</bcf:key>
@@ -335,7 +335,7 @@
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>maxcitenames</bcf:key>
-      <bcf:value>3</bcf:value>
+      <bcf:value>2</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>maxsortnames</bcf:key>
@@ -2373,26 +2373,40 @@
     <bcf:datasource type="file" datatype="bibtex" glob="false">bib/Biblio.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="9" intorder="1">fdp78</bcf:citekey>
-    <bcf:citekey order="10" intorder="1">GareStrasbourg</bcf:citekey>
-    <bcf:citekey order="11" intorder="1">chadstone1</bcf:citekey>
-    <bcf:citekey order="12" intorder="1">chadstone2</bcf:citekey>
-    <bcf:citekey order="13" intorder="1">GareStrasbourg</bcf:citekey>
-    <bcf:citekey order="14" intorder="1">chadstone1</bcf:citekey>
-    <bcf:citekey order="15" intorder="1">chadstone2</bcf:citekey>
-    <bcf:citekey order="16" intorder="1">mcst2</bcf:citekey>
-    <bcf:citekey order="17" intorder="1">timo_plaque</bcf:citekey>
-    <bcf:citekey order="18" intorder="1">buckling_cold</bcf:citekey>
-    <bcf:citekey order="19" intorder="1">CasaDaMusica</bcf:citekey>
-    <bcf:citekey order="20" intorder="1">quatNatLib</bcf:citekey>
-    <bcf:citekey order="21" intorder="1">quatNatLib2</bcf:citekey>
-    <bcf:citekey order="22" intorder="1">CasaDaMusica</bcf:citekey>
-    <bcf:citekey order="23" intorder="1">quatNatLib</bcf:citekey>
-    <bcf:citekey order="24" intorder="1">quatNatLib2</bcf:citekey>
-    <bcf:citekey order="25" intorder="1">VekkoHQ</bcf:citekey>
-    <bcf:citekey order="26" intorder="1">VekkoHQ</bcf:citekey>
-    <bcf:citekey order="27" intorder="1">REX</bcf:citekey>
-    <bcf:citekey order="28" intorder="1">REX</bcf:citekey>
+    <bcf:citekey order="1" intorder="1">GareStrasbourg</bcf:citekey>
+    <bcf:citekey order="2" intorder="1">chadstone1</bcf:citekey>
+    <bcf:citekey order="3" intorder="1">chadstone2</bcf:citekey>
+    <bcf:citekey order="4" intorder="1">meinhardt</bcf:citekey>
+    <bcf:citekey order="5" intorder="1">CasaDaMusica</bcf:citekey>
+    <bcf:citekey order="6" intorder="1">quatNatLib</bcf:citekey>
+    <bcf:citekey order="7" intorder="1">quatNatLib2</bcf:citekey>
+    <bcf:citekey order="8" intorder="1">VekkoHQ</bcf:citekey>
+    <bcf:citekey order="9" intorder="1">REX</bcf:citekey>
+    <bcf:citekey order="10" intorder="1">fdp78</bcf:citekey>
+    <bcf:citekey order="11" intorder="1">GareStrasbourg</bcf:citekey>
+    <bcf:citekey order="12" intorder="1">chadstone1</bcf:citekey>
+    <bcf:citekey order="13" intorder="1">chadstone2</bcf:citekey>
+    <bcf:citekey order="14" intorder="1">GareStrasbourg</bcf:citekey>
+    <bcf:citekey order="15" intorder="1">chadstone1</bcf:citekey>
+    <bcf:citekey order="16" intorder="1">chadstone2</bcf:citekey>
+    <bcf:citekey order="17" intorder="1">meinhardt</bcf:citekey>
+    <bcf:citekey order="18" intorder="1">meinhardt</bcf:citekey>
+    <bcf:citekey order="19" intorder="1">mcst2</bcf:citekey>
+    <bcf:citekey order="20" intorder="1">timo_plaque</bcf:citekey>
+    <bcf:citekey order="21" intorder="1">staaks</bcf:citekey>
+    <bcf:citekey order="22" intorder="1">buckling_cold</bcf:citekey>
+    <bcf:citekey order="23" intorder="1">buckling_cold</bcf:citekey>
+    <bcf:citekey order="24" intorder="1">buckling_cold</bcf:citekey>
+    <bcf:citekey order="25" intorder="1">CasaDaMusica</bcf:citekey>
+    <bcf:citekey order="26" intorder="1">quatNatLib</bcf:citekey>
+    <bcf:citekey order="27" intorder="1">quatNatLib2</bcf:citekey>
+    <bcf:citekey order="28" intorder="1">CasaDaMusica</bcf:citekey>
+    <bcf:citekey order="29" intorder="1">quatNatLib</bcf:citekey>
+    <bcf:citekey order="30" intorder="1">quatNatLib2</bcf:citekey>
+    <bcf:citekey order="31" intorder="1">VekkoHQ</bcf:citekey>
+    <bcf:citekey order="32" intorder="1">VekkoHQ</bcf:citekey>
+    <bcf:citekey order="33" intorder="1">REX</bcf:citekey>
+    <bcf:citekey order="34" intorder="1">REX</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">

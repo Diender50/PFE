@@ -195,7 +195,7 @@ Cette méthodologie de calcul \acrshort{FEM} sera utilisée dans toute la suite 
     \label{fig:fem_plat_dim}
 \end{figure}
 
-En traçant la contrainte maximale calculée par \acrshort{FEM} dans le verre en fonction de son épaisseur on observe des résultats très proche du calcul du document \cite{fdp78}, c'est-à-dire du calcul analytique d'une poutre sur deux appuis. On trouve ainsi une épaisseur minimale légérement inférieure à celle calculée précédemment: \qty{70.5}{\milli\meter} pour le verre trempé et \qty{56.5}{\milli\meter} pour le verre durci. Un rapide calcul \acrshort{FEM} au flambement nous donne des coefficients de flambement respectifs de 10.887 et 16.943: il n'y a pas de risque de flambement avec ces épaisseurs de verre. 
+En traçant la contrainte maximale calculée par \acrshort{FEM} dans le verre en fonction de son épaisseur on observe des résultats très proche du calcul du document \Textcite{fdp78}, c'est-à-dire du calcul analytique d'une poutre sur deux appuis. On trouve ainsi une épaisseur minimale légérement inférieure à celle calculée précédemment: \qty{70.5}{\milli\meter} pour le verre trempé et \qty{56.5}{\milli\meter} pour le verre durci. Un rapide calcul \acrshort{FEM} au flambement nous donne des coefficients de flambement respectifs de 10.887 et 16.943: il n'y a pas de risque de flambement avec ces épaisseurs de verre. 
 \newpage
 
 \section{Optimisation géométrique du verre}
@@ -215,12 +215,19 @@ Plusieurs techniques pour courber le verre, cintrage à froid, à chaud etc.. fr
     \\[\smallskipamount]
     \includegraphics[height=0.465\textwidth]{img/cintrage_froid/ChadstoneSC_05.jpg}\hfill
     \includegraphics[height=0.465\textwidth]{img/cintrage_froid/ChadstoneSC_09.jpg}\hfill
-    \caption{Photographies de la façade en verre cintré à froid de la Gare de Strasbourg, par \cite{GareStrasbourg} (première ligne) et du Chadstone Shopping Center, par \cite{chadstone1} et \cite{chadstone2} (seconde ligne).}
+    \caption{Photographies de la façade en verre cintré à froid de la Gare de Strasbourg, par \Textcite{GareStrasbourg} (première ligne) et du Chadstone Shopping Center, par \Textcite{chadstone1} et \Textcite{chadstone2} (seconde ligne).}
     \label{fig:cintragefroidphoto}
 \end{figure}
 
+En premier lieu on doit déterminer les formes admissibles par cintrage à froid. En général on déforme le verre pour le fixer à un cadre linéaire ou courbe.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\textwidth]{img/cintrage_froid/fig4_74.jpg}
+    \caption{Formes les plus couramment utilisées par cintrage à froid, d'après \Textcite{meinhardt}.}
+    \label{fig:cintragefroidtypes}
+\end{figure}
 \subsubsection{Théorie des petites déformations}
-Pour étudier le cintrage à froid des panneaux de verre on peut commencer par étudier la théorie la plus simple: la théorie des petites déformations des plaques minces (théorie de Kirchoff). On fait donc les hypothèses suivantes (d'après \cite{mcst2}):
+Pour étudier le cintrage à froid des panneaux de verre on peut commencer par étudier la théorie la plus simple: la théorie des petites déformations des plaques minces (théorie de Kirchoff). On fait donc les hypothèses suivantes (d'après \Textcite{mcst2}):
 \begin{itemize}
     \item Le matériau (ici  le verre) est homogène, isotropique et élastique linéaire;
     \item La plaque est initiallement plane;
@@ -239,7 +246,7 @@ Pour étudier le cintrage à froid des panneaux de verre on peut commencer par �
     \label{fig:petite_def}
 \end{figure}
 
-On étudie une plaque de longueur $L$, de largeur $l$ et d'épaisseur $t$ en flexion pure, c'est-à-dire soumis à des moments linéiques $M_x$ et $M_y$ le long de ses bords de direction $x$ (longueur $L$) et $y$ (largeur $l$). On cherche à calculer la contrainte dans cette situation. On base nos calculs sur l'ouvrage de \cite{timo_plaque}.
+On étudie une plaque de longueur $L$, de largeur $l$ et d'épaisseur $t$ en flexion pure, c'est-à-dire soumis à des moments linéiques $M_x$ et $M_y$ le long de ses bords de direction $x$ (longueur $L$) et $y$ (largeur $l$). On cherche à calculer la contrainte dans cette situation. On base nos calculs sur l'ouvrage de \Textcite{timo_plaque}.
 
 Une section de la plaque dans un plan normal à l'axe $y$ (section de direction $x$) va se courber sous l'effet de la flexion. On peut alors calculer l'élongation et la contraction de ses fibres via son rayon de courbure $R_x$ donné par:
 \begin{align}
@@ -336,25 +343,40 @@ On peut soulever une dernière situation remarquable: la courbure maximale lorsq
     K_0 = \frac{f_y}{Et/2}\times (1-\nu)
 \end{align}
 
-On peut effectuer une rapide application numérique pour un verre durci de \qty{10}{\milli\metre} d'épaisseur. La courbure maximale admise par le critère de Von Mises est alors de \qty{0.0676}{\per\metre}. Cela correspond à une flèche de \qty{0.456}{\milli\metre} sur une plaque de \qty{1}{\metre} de long, soit une flèche de l'ordre de $L^2/2200$. 
+On peut effectuer une rapide application numérique pour un verre durci de \qty{10}{\milli\metre} d'épaisseur. La courbure maximale admise par le critère de Von Mises est alors de \qty{0.131}{\per\metre}. Cela correspond à une flèche de \qty{18}{\milli\metre} sur une plaque de \qty{1}{\metre} de long, soit une flèche de l'ordre de $L^2/55$. A noté que la flèche obtenue est inversement proportionnelle à l'épaisseur du verre. Ainsi, en passant, par exemple, à un verre de \qty{5}{\milli\metre} d'épaisseur on peut atteindre une flèche de \qty{36}{\milli\metre}.
 
-De plus, pour rester dans le domaine de la théorie des petites déformations, il faut que la déformation soit plus petite que le dixième de l'épaisseur de la plaque. On peut relier cette hypothèse à la courbure et obtenir que la courbure de la plaque doit respecter l'inégalité suivante:
+Toutefois, pour rester dans le domaine des hypothèses de la théorie des petites déformations, il faut que la déformation soit plus petite que le dixième de l'épaisseur de la plaque. On peut relier cette hypothèse à la courbure et obtenir que la courbure de la plaque doit respecter l'inégalité suivante:
 \begin{align}
-K_{\text{max}} < \frac{4t}{5L^2}
+K_{\text{max}} < \frac{2t}{5L^2}
 \end{align}
-Ce qui, pour une plaque en verre durci de \qty{10}{\milli\metre} d'épaisseur et de \qty{1}{\metre} de long, impose que la courbure ne dépasse pas \qty{0.008}{\per\metre}, ce qui est 10 fois moins que la courbure maximale admise par le critère de Von Mises. 
+Ce qui, pour une plaque en verre durci de \qty{10}{\milli\metre} d'épaisseur et de \qty{1}{\metre} de long, impose que la courbure ne dépasse pas \qty{0.004}{\per\metre}, ce qui est près de 30 fois moins que la courbure maximale admise par le critère de Von Mises. Mais en pratique, on réussit tout de même à obtenir de la double courbure et des formes se rapprochant de paraboloïdes par cintrage à froid avec de grandes déformations. Il faut donc pousser la théorie plus loin pour être dans le domaine de validité qui nous intéresse.
 
 \subsubsection{Théorie inextensionnelle des plaques fines (changer titre)}
 
-\begin{figure}[H]
-\centering
-\includegraphics[width=\textwidth]{img/cintrage_froid/non_linear.pdf}
-\caption{Déformations d'une plaque de verre carré de \qtyproduct{1 x 1}{\metre} sous l'effet d'un déplacement vertical imposé $\delta$ à deux coins opposés. \textbf{a.} $\delta = \qty{10}{\milli\metre}$, \textbf{b.} $\delta = \qty{50}{\milli\metre}$ et \textbf{c.} $\delta = \qty{100}{\milli\metre}$.}
-\label{fig:non_linear_cintr}
-\end{figure}
+Comme dit précédemment, on peut observer des formes se rapprochant de paraboloïdes lorsque l'on cintre du verre à froid. Toutefois \Textcite{staaks}, remarque, en observant la distorsion optique du verre, que la forme attendue par la théorie des petites déformations n'est pas celle réellement produite.
 
-\cite{buckling_cold}
-\subsubsection{Limites géométriques}
+En réalité, une plaque mise en flexion en grandes déformations va vouloir conserver une forme développable (donc à simple courbure). 
+\begin{figure}[H]
+    \includegraphics[width=\linewidth]{img/cintrage_froid/non_linear2.pdf}
+       \caption{\textbf{a.} Déformations linéaires et non linéaires sous l'effet d'un déplacement vertical imposé à deux coins opposés (\textbf{1.} $\delta = \qty{10}{\milli\metre}$, \textbf{2.} $\delta = \qty{100}{\milli\metre}$); \textbf{b.} contraintes maximales, calculées par une analyse FEM linéaire et non linéaire, selon le déplacement imposé; plaque de verre carré de \qtyproduct{1 x 1}{\metre} de \qty{10}{\milli\metre} d'épaisseur.}
+   \label{fig:non_linear_cintr2}
+   \end{figure}
+
+Si l'on prend le cas de la torsion par cintrage à froid du verre (c'est-à-dire le cas où $K_x = -K_y$, ou encore $M_x = -M_y$), l'expérience montre que le verre passe par deux modes de déformation lorsque l'on augmente la déformation. Un premier dans lequel le verre prend la forme d'un paraboloïde hyperbolique. Puis un second mode où la déformation ne va plus être symétrique et la plaque va tendre vers une forme à simple courbure. \Textcite{buckling_cold}, expliquent que ce second mode correspond au flambement du verre. Une diagonale va alors se rigidifier tandis que l'autre va gagner en courbure. Les bords de la plaque ne restent alors pas droits mais se courbent. Ils obtiennent, pour une plaque de verre de \qtyproduct{2 x 2}{\metre} et de \qty{10}{\milli\metre} d'épaisseur, que ce changement de mode de déformation se produit lorsque le déplacement atteint environ \qty{40}{\milli\metre} (c'est-à-dire une distance verticale de \qty{80}{\milli\metre} entre deux coins successifs). Un tel déplacement engendre une courbure de \qty{0.04}{\per\metre}, ce qui est 10 fois supérieur à la limite de l'hypothèse des petites déformations. 
+
+\Textcite{buckling_cold}, montrent par ailleurs que rigidifié les bords du verre avec un cadre rigide permet d'augmenter le déplacement limite avant le flambement de la plaque. 
+
+On observe sur la figure \ref{fig:non_linear_cintr2} que le calcul linéaire statique du cintrage sous-évalue les contraintes résiduelles dans le verre. \Textcite{buckling_cold}, expliquent que les grandes déformations entraônent de grandes contfraintes membranaires dans le plan médian de la plaque ce qui est négligé dans la théorie linéaire. Il est donc nécessaire dans la suite d'effectuer des calculs non linéaires, bien qu'ils soient plus complexes, afin de ne pas sous-évaluer les contraintes dans le verre. 
+
+\subsubsection{Cas d'étude}
+
+Dans notre étude nous nous intéressons essentiellement aux panneaux de verre autoportants. Mais dans ce cas il n'est pas possible d'encadrer le verre sur ses quatres bords puisque cela va à l'encontre du principe de verre autoportant. Ainsi on s'intéresse au cas particuluer où seuls les bords en pied et en tête du vitrage sont encadrés par des traverses rigides. On s'intéresse aux formes obtenus par cintrage à froid en faisant pivoter la traverse supérieure comme schématisé dans la figure \ref{fig:forme_cintr}. Dans ce cas, les bords supérieurs et inférieurs du verre restent droits grâce aux traverses mais les bords latéraux se courbent sous l'effet du déplacement imposé.
+
+\begin{figure}[H]
+    \includegraphics[width=\linewidth]{img/cintrage_froid/def.pdf}
+       \caption{Schémas des formes considérées pour l'étude du cintrage à froid.}
+   \label{fig:forme_cintr}
+   \end{figure}
 
 \subsection{Le verre plié}
 \newpage
@@ -366,7 +388,7 @@ Ce qui, pour une plaque en verre durci de \qty{10}{\milli\metre} d'épaisseur et
     \\[\smallskipamount]
     \includegraphics[height=0.331\textwidth]{img/ondul/02_Qatar_National_Library__Photo_by_Hans_Werlemann_4180.jpg}\hfill
     \includegraphics[height=0.331\textwidth]{img/ondul/07_Qatar_National_Library__Photo_by_Iwan_Baan_5345.jpg}
-    \caption{Photographies de la façade en verre ondulé de la Casa Da Música de Porto, par \cite{CasaDaMusica} (première ligne) et de la Qatar National Library, par \cite{quatNatLib} et \cite{quatNatLib2} (seconde ligne).}
+    \caption{Photographies de la façade en verre ondulé de la Casa Da Música de Porto, par \Textcite{CasaDaMusica} (première ligne) et de la Qatar National Library, par \Textcite{quatNatLib} et \Textcite{quatNatLib2} (seconde ligne).}
     \label{fig:CasaDaMusica}
 \end{figure}
 L'intérêt premier du verre ondulé, en plus de attrait esthétique, est sa grande inertie dans le sens des ondulations, à l'instar des bacaciers. Cette inertie lui permet d'être plus rigide dans ce sens et donc d'être plus résistant.
@@ -670,7 +692,7 @@ Introduction sur le Vakko HQ et lien avec le verre ondulé.
     \includegraphics[height=0.324\linewidth]{img/bulle/Vakko_ext.jpg}
     \\[\smallskipamount]
     \includegraphics[width=\linewidth]{img/bulle/Vakko_int.jpg}
-    \caption{Photographies de la façade du Vakko Headquarters and Power Media Center, par \cite{VekkoHQ}.}
+    \caption{Photographies de la façade du Vakko Headquarters and Power Media Center, par \Textcite{VekkoHQ}.}
     \label{fig:VakkoHQ}
 \end{figure}
 
@@ -679,7 +701,7 @@ La volonté architecturale de REX pour le Vakko Headquarters a été de mettre e
 \begin{figure}[H]
     \centering
     \includegraphics[width=\linewidth]{img/bulle/stringio.jpg}
-    \caption{Calcul de la façade su Vakko Headquarters and Power Media Center, par \cite{REX}. \textit{Sous-titre: L'insertion d'un X structurel dans chaque vitre permet d'augmenter la résistance du verre, d'éliminer le besoin de meaneaux aux bords et de réduire son épaisseur. (traduit de l'anglais)}}
+    \caption{Calcul de la façade su Vakko Headquarters and Power Media Center, par \Textcite{REX}. \textit{Sous-titre: L'insertion d'un X structurel dans chaque vitre permet d'augmenter la résistance du verre, d'éliminer le besoin de meaneaux aux bords et de réduire son épaisseur. (traduit de l'anglais)}}
     \label{fig:REXcalc}
 \end{figure}
 
@@ -727,6 +749,26 @@ On peut donc aisément faire confiance à Karamba3D pour les calculs de cette pr
     \label{fig:comp_kar}
 \end{figure}
 
+Pour chacunes des formes de bulles présentées dans la figure \ref{fig:types_bulle} on détermine, pour chaque épaisseur de verre, les meilleurs paramètres $h$ et $d$ afin de minimiser la quantité de verre sous contrainte de la résistance aux charges. On dresse dans la figure \ref{fig:surf_bulle} la surface minimale obtenue pour chacune des bulles.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{img/bulle/surf_bulle.pdf}
+    \caption{Surface minimale selon l'épaisseur du verre pour chacunes des formes de bulles.}
+    \label{fig:surf_bulle}
+\end{figure}
+
+On observe d'abord que pour toutes les formes, à l'exception du "double l", il n'est pas possible de trouver des valeurs de $h$ et $d$ permettant de résister aux charges lorsque l'épaisseur de verre est trop faible. Si l'on distingue les formes en trois groupes: les barres verticales ("l" et "double l"), les barres obliques ("slash","X" et "X coupé") et les croix ("plus" et "multi plus"), on peut alors déterminer dans chacun de ces groupes une forme plus optimale. Ce sont les formes "double l", "X" et "multi plus".
+
+\begin{wrapfigure}{l}{0.4\textwidth}
+    \centering
+    \includegraphics[width=\linewidth]{img/bulle/opti_bulle.pdf}
+    \caption{Formes de bulles optimales}
+    \label{fig:opti_bulle1}
+    \vspace{-10pt}
+    \end{wrapfigure}
+
+
 \newpage
 \subsection{Verre à double courbure}
 
@@ -738,18 +780,32 @@ On peut donc aisément faire confiance à Karamba3D pour les calculs de cette pr
     \centering
     \caption{Résultats finaux de l'optimisation.}
     \label{tab:result_fin}
-    \begin{tabularx}{\textwidth}{l*{6}{Y}}
+    \begin{tabularx}{\textwidth}{l*{4}{Y}}
     \toprule
-    \textbf{Solution} & \textbf{Plat}& \textbf{Cintrage simple} &\textbf{Pliage} & \textbf{Ondulation}& \textbf{Bulle}& \textbf{Double courbure} \\\midrule
-    \textbf{Épaisseur} [mm]& 71 / 57 & - & - & 22 / 16 & - & - \\
-    \textbf{Écart relatif} & - & - & - & \qty{69}{\percent} / \qty{72}{\percent} & - & - \\
-    \textbf{Section} [cm²] & 2130 / 1710 & - & - & 761 / 545 & - & - \\
-    \textbf{Écart relatif} & - & - & - & \qty{64}{\percent} / \qty{68}{\percent} & - & - \\
+    \textbf{Solution} & \textbf{Plat}& \textbf{Cintrage simple} & \textbf{Ondulation}& \textbf{Bulle}\\\midrule
+    \textbf{Épaisseur} [mm]& 71 / 57  & - & 22 / 16 & -  \\
+    \textbf{Écart relatif} & - & - & \qty{69}{\percent} / \qty{72}{\percent} & - \\
+    \textbf{Masse} [kg] & 5233 / 4201 & - & 1870 / 1115 & -  \\
+    \textbf{Écart relatif} & - & - & \qty{64}{\percent} / \qty{68}{\percent} &  - \\
     \bottomrule
     \end{tabularx}
     \end{table}
 \newpage
-
+\begin{table}[H]
+    \centering
+    \caption{Résultats finaux de l'optimisation.}
+    \label{tab:result_fin}
+    \begin{tabularx}{\textwidth}{l*{4}{Y}}
+    \toprule
+    \textbf{Solution} & \textbf{Flat}& \textbf{Cold-bent} & \textbf{Wavy}& \textbf{Ribbed}\\\midrule
+    \textbf{Thickness} [mm]& 71  & - & 22 & 10  \\
+    \textbf{Relative difference} & - & - & \qty{69}{\percent}  & \qty{86}{\percent} \\
+    \textbf{Weight} [kg] & 5233  & - & 1870 & 806 \\
+    \textbf{Relative difference} & - & - & \qty{64}{\percent} &  \qty{85}{\percent} \\
+    \bottomrule
+    \end{tabularx}
+    \end{table}
+\newpage
 \printbibliography
 
 \end{document}

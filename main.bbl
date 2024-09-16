@@ -77,6 +77,35 @@
       \field{title}{{Quatar National Library / OMA}}
       \field{year}{2017}
     \endentry
+    \entry{meinhardt}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=a17b9a4e3c63aa018a5fb61659956a89}{%
+           family={Beer},
+           familyi={B\bibinitperiod},
+           given={Benjamin},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{organization}{1}{%
+        {Meinhardt Façade Technology}%
+      }
+      \strng{namehash}{a17b9a4e3c63aa018a5fb61659956a89}
+      \strng{fullhash}{a17b9a4e3c63aa018a5fb61659956a89}
+      \strng{fullhashraw}{a17b9a4e3c63aa018a5fb61659956a89}
+      \strng{bibnamehash}{a17b9a4e3c63aa018a5fb61659956a89}
+      \strng{authorbibnamehash}{a17b9a4e3c63aa018a5fb61659956a89}
+      \strng{authornamehash}{a17b9a4e3c63aa018a5fb61659956a89}
+      \strng{authorfullhash}{a17b9a4e3c63aa018a5fb61659956a89}
+      \strng{authorfullhashraw}{a17b9a4e3c63aa018a5fb61659956a89}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Free-form shape cold-bent structural silicone glazed facades - Design concept and challenges}
+      \field{year}{2017}
+    \endentry
     \entry{chadstone1}{misc}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=5381d367400900e3f3f2c77491df5a06}{%
@@ -151,12 +180,12 @@
            giveni={G\bibinitperiod},
            givenun=0}}%
       }
-      \strng{namehash}{b80d3f8532fa5caac3199b94dd8e8de0}
+      \strng{namehash}{2afa5679cb8ecfa7567288dd0166e65c}
       \strng{fullhash}{b80d3f8532fa5caac3199b94dd8e8de0}
       \strng{fullhashraw}{b80d3f8532fa5caac3199b94dd8e8de0}
       \strng{bibnamehash}{b80d3f8532fa5caac3199b94dd8e8de0}
       \strng{authorbibnamehash}{b80d3f8532fa5caac3199b94dd8e8de0}
-      \strng{authornamehash}{b80d3f8532fa5caac3199b94dd8e8de0}
+      \strng{authornamehash}{2afa5679cb8ecfa7567288dd0166e65c}
       \strng{authorfullhash}{b80d3f8532fa5caac3199b94dd8e8de0}
       \strng{authorfullhashraw}{b80d3f8532fa5caac3199b94dd8e8de0}
       \field{sortinit}{G}
@@ -302,6 +331,37 @@
       \field{note}{[En ligne; consulté le 30 août 2024]}
       \field{title}{{Chadstone Shopping Centre / CallisonRTKL + The Buchan Group}}
       \field{year}{2016}
+    \endentry
+    \entry{staaks}{thesis}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=025e3c1ce0453b6140a33b49e25ad891}{%
+           family={Staaks},
+           familyi={S\bibinitperiod},
+           given={Dries},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {Faculté d'architecture, Université de technologie d'Eindhoven}%
+      }
+      \strng{namehash}{025e3c1ce0453b6140a33b49e25ad891}
+      \strng{fullhash}{025e3c1ce0453b6140a33b49e25ad891}
+      \strng{fullhashraw}{025e3c1ce0453b6140a33b49e25ad891}
+      \strng{bibnamehash}{025e3c1ce0453b6140a33b49e25ad891}
+      \strng{authorbibnamehash}{025e3c1ce0453b6140a33b49e25ad891}
+      \strng{authornamehash}{025e3c1ce0453b6140a33b49e25ad891}
+      \strng{authorfullhash}{025e3c1ce0453b6140a33b49e25ad891}
+      \strng{authorfullhashraw}{025e3c1ce0453b6140a33b49e25ad891}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{10}
+      \field{title}{Koud torderen van glaspanelen in blobs}
+      \field{type}{Projet de fin d'études}
+      \field{year}{2003}
     \endentry
     \entry{timo_plaque}{book}{}{}
       \name{author}{1}{}{%
